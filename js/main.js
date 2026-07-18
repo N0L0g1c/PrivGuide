@@ -445,4 +445,43 @@
       }, 2200);
     });
   });
+
+  const donateRoot = document.getElementById("donate");
+  const copiedLabel =
+    (donateRoot && donateRoot.dataset.copied) || "Copied";
+
+  async function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+      return;
+    }
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.left = "-9999px";
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand("copy");
+    document.body.removeChild(ta);
+  }
+
+  document.querySelectorAll(".donate-copy[data-copy]").forEach((btn) => {
+    const original = btn.textContent;
+    btn.addEventListener("click", async () => {
+      const value = btn.getAttribute("data-copy") || "";
+      if (!value) return;
+      try {
+        await copyText(value);
+        btn.textContent = copiedLabel;
+        btn.classList.add("is-copied");
+        window.setTimeout(() => {
+          btn.textContent = original;
+          btn.classList.remove("is-copied");
+        }, 1600);
+      } catch (_) {
+        /* clipboard blocked — user can still select the address */
+      }
+    });
+  });
 })();

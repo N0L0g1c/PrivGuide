@@ -1397,6 +1397,81 @@ body.touch-device .faq-item summary { cursor: pointer; }
   font-size: 0.95rem;
 }
 
+/* Donate */
+.donate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.donate-card {
+  padding: 1.5rem 1.35rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+}
+.donate-card-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+.donate-card-top h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.donate-ticker {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  border: 1px solid rgba(0, 245, 255, 0.35);
+  background: rgba(0, 245, 255, 0.08);
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+}
+.donate-note {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 1rem;
+}
+.donate-address {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  word-break: break-all;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(0, 245, 255, 0.2);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  user-select: all;
+}
+.donate-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+.donate-actions .btn {
+  flex: 1 1 auto;
+  min-width: 8rem;
+  justify-content: center;
+  text-align: center;
+}
+.donate-foot {
+  margin: 1.5rem 0 0;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+@media (max-width: 960px) {
+  .donate-grid { grid-template-columns: 1fr; }
+}
+
 /* CTA */
 .cta-section { padding: 4rem 0 5rem; }
 .cta-inner {

@@ -472,6 +472,25 @@
       "paths": "Choose your path",
       "apps": "Browse apps"
     },
+    "donate": {
+      "nav": "Donate",
+      "eyebrow": "Support",
+      "title": "Donate with crypto",
+      "lead": "PrivGuide stays free, tracker-free, and independent. If it helps you, you can send a tip — no accounts, no middlemen.",
+      "copy": "Copy address",
+      "copied": "Copied",
+      "open_wallet": "Open wallet",
+      "foot": "Send only on the matching network. Double-check the address before confirming.",
+      "btc": {
+        "note": "Native Bitcoin (SegWit). Send BTC on the Bitcoin network only."
+      },
+      "xmr": {
+        "note": "Private by default. Send XMR on the Monero network only."
+      },
+      "evm": {
+        "note": "One address for Ethereum and other EVM chains (e.g. Polygon, Arbitrum, Base)."
+      }
+    },
     "footer": {
       "tag": "The ultimate go-to map for personal privacy — from Vassbrekke AS. Apps, phones, desktops, and life.",
       "explore": "Explore",
@@ -964,6 +983,25 @@
       "body": "Personvern er en praksis, ikke et produkt. Velg en sti, installer én bedre app, kryss av ett punkt — og fortsett.",
       "paths": "Velg din sti",
       "apps": "Utforsk apper"
+    },
+    "donate": {
+      "nav": "Doner",
+      "eyebrow": "Støtt",
+      "title": "Doner med krypto",
+      "lead": "PrivGuide forblir gratis, uten sporere og uavhengig. Hvis det hjelper deg, kan du sende et tips — ingen kontoer, ingen mellommenn.",
+      "copy": "Kopier adresse",
+      "copied": "Kopiert",
+      "open_wallet": "Åpne lommebok",
+      "foot": "Send bare på riktig nettverk. Dobbeltsjekk adressen før du bekrefter.",
+      "btc": {
+        "note": "Native Bitcoin (SegWit). Send BTC kun på Bitcoin-nettverket."
+      },
+      "xmr": {
+        "note": "Privat som standard. Send XMR kun på Monero-nettverket."
+      },
+      "evm": {
+        "note": "Én adresse for Ethereum og andre EVM-kjeder (f.eks. Polygon, Arbitrum, Base)."
+      }
     },
     "footer": {
       "tag": "Det ultimate kartet for personvern — fra Vassbrekke AS. Apper, telefoner, PC-er og liv.",
@@ -1458,6 +1496,25 @@
       "paths": "Elige tu camino",
       "apps": "Explorar apps"
     },
+    "donate": {
+      "nav": "Donar",
+      "eyebrow": "Apoyo",
+      "title": "Donar con cripto",
+      "lead": "PrivGuide sigue gratis, sin rastreadores e independiente. Si te ayuda, puedes enviar una propina — sin cuentas ni intermediarios.",
+      "copy": "Copiar dirección",
+      "copied": "Copiado",
+      "open_wallet": "Abrir monedero",
+      "foot": "Envía solo en la red correcta. Comprueba la dirección antes de confirmar.",
+      "btc": {
+        "note": "Bitcoin nativo (SegWit). Envía BTC solo en la red Bitcoin."
+      },
+      "xmr": {
+        "note": "Privado por defecto. Envía XMR solo en la red Monero."
+      },
+      "evm": {
+        "note": "Una dirección para Ethereum y otras cadenas EVM (p. ej. Polygon, Arbitrum, Base)."
+      }
+    },
     "footer": {
       "tag": "El mapa de referencia de privacidad personal — de Vassbrekke AS.",
       "explore": "Explorar",
@@ -1951,6 +2008,25 @@
       "paths": "Pfad wählen",
       "apps": "Apps entdecken"
     },
+    "donate": {
+      "nav": "Spenden",
+      "eyebrow": "Unterstützen",
+      "title": "Mit Krypto spenden",
+      "lead": "PrivGuide bleibt kostenlos, trackerfrei und unabhängig. Wenn es hilft, kannst du einen Tipp senden — keine Konten, keine Mittelsmänner.",
+      "copy": "Adresse kopieren",
+      "copied": "Kopiert",
+      "open_wallet": "Wallet öffnen",
+      "foot": "Nur im passenden Netzwerk senden. Adresse vor dem Bestätigen prüfen.",
+      "btc": {
+        "note": "Natives Bitcoin (SegWit). BTC nur im Bitcoin-Netzwerk senden."
+      },
+      "xmr": {
+        "note": "Privat standardmäßig. XMR nur im Monero-Netzwerk senden."
+      },
+      "evm": {
+        "note": "Eine Adresse für Ethereum und andere EVM-Ketten (z. B. Polygon, Arbitrum, Base)."
+      }
+    },
     "footer": {
       "tag": "Die ultimative Karte für persönliche Privatsphäre — von Vassbrekke AS.",
       "explore": "Entdecken",
@@ -2443,6 +2519,25 @@
       "body": "La confidentialité est une pratique, pas un produit. Choisissez un chemin, installez une meilleure app, cochez un point.",
       "paths": "Choisir mon chemin",
       "apps": "Parcourir les apps"
+    },
+    "donate": {
+      "nav": "Donner",
+      "eyebrow": "Soutenir",
+      "title": "Donner en crypto",
+      "lead": "PrivGuide reste gratuit, sans trackers et indépendant. Si cela vous aide, vous pouvez envoyer un pourboire — sans comptes ni intermédiaires.",
+      "copy": "Copier l'adresse",
+      "copied": "Copié",
+      "open_wallet": "Ouvrir le portefeuille",
+      "foot": "N'envoyez que sur le bon réseau. Vérifiez l'adresse avant de confirmer.",
+      "btc": {
+        "note": "Bitcoin natif (SegWit). Envoyez du BTC uniquement sur le réseau Bitcoin."
+      },
+      "xmr": {
+        "note": "Privé par défaut. Envoyez du XMR uniquement sur le réseau Monero."
+      },
+      "evm": {
+        "note": "Une adresse pour Ethereum et les autres chaînes EVM (ex. Polygon, Arbitrum, Base)."
+      }
     },
     "footer": {
       "tag": "La carte de référence pour la vie privée — par Vassbrekke AS.",

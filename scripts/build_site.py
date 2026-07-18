@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+from html import escape as esc
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -17,6 +18,31 @@ LANG_NAMES = {
     "de": "Deutsch",
     "fr": "Français",
 }
+
+# Public receiving addresses only — never put private keys here
+DONATIONS = [
+    {
+        "id": "btc",
+        "name": "Bitcoin",
+        "ticker": "BTC",
+        "address": "bc1qr2suucmufh36yay6g2wuhnema7fwmm549ug4ha",
+        "uri": "bitcoin:bc1qr2suucmufh36yay6g2wuhnema7fwmm549ug4ha",
+    },
+    {
+        "id": "xmr",
+        "name": "Monero",
+        "ticker": "XMR",
+        "address": "46gac1uxB8i6rCcmb7t2VzUtogwPPp5yVBuxqVbS2YoDcFw9BZu2E5kBRngSZRtQPB5JzHw4paZHuGaeWZ89BUhYPiUB481",
+        "uri": "monero:46gac1uxB8i6rCcmb7t2VzUtogwPPp5yVBuxqVbS2YoDcFw9BZu2E5kBRngSZRtQPB5JzHw4paZHuGaeWZ89BUhYPiUB481",
+    },
+    {
+        "id": "evm",
+        "name": "Ethereum / EVM",
+        "ticker": "EVM",
+        "address": "0x5e314E2bB8FfC67dD75629d104890B5feC520f1e",
+        "uri": "ethereum:0x5e314E2bB8FfC67dD75629d104890B5feC520f1e",
+    },
+]
 
 # Official websites for every recommended app
 # Vassbrekke AS first-party products are listed first and tagged ours=True
@@ -549,6 +575,35 @@ def checklist_items(tr: dict, lang: str, group: str, ids: list[str]) -> str:
             f'            <label class="check-item"><input type="checkbox" data-id="{i}" /> {text}</label>'
         )
     return "\n".join(lines)
+
+
+def donate_cards_html(tr: dict, lang: str) -> str:
+    copy_label = t(tr, lang, "donate.copy")
+    open_wallet = t(tr, lang, "donate.open_wallet")
+    cards = []
+    for coin in DONATIONS:
+        addr_esc = esc(coin["address"], quote=True)
+        name_esc = esc(coin["name"], quote=True)
+        ticker_esc = esc(coin["ticker"], quote=True)
+        uri_esc = esc(coin["uri"], quote=True)
+        note = t(tr, lang, f"donate.{coin['id']}.note")
+        cards.append(
+            f'''          <article class="donate-card" data-reveal>
+            <div class="donate-card-top">
+              <span class="donate-ticker">{ticker_esc}</span>
+              <h3>{name_esc}</h3>
+            </div>
+            <p class="donate-note">{esc(note)}</p>
+            <code class="donate-address" translate="no">{addr_esc}</code>
+            <div class="donate-actions">
+              <button type="button" class="btn btn-primary donate-copy" data-copy="{addr_esc}">
+                {esc(copy_label)}
+              </button>
+              <a class="btn btn-ghost" href="{uri_esc}">{esc(open_wallet)}</a>
+            </div>
+          </article>'''
+        )
+    return "\n".join(cards)
 
 
 def render_page(lang: str, tr: dict) -> str:
@@ -1228,6 +1283,20 @@ def render_page(lang: str, tr: dict) -> str:
       </div>
     </section>
 
+    <section class="section" id="donate" data-copied="{esc(t(tr, lang, "donate.copied"), quote=True)}">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">{t(tr, lang, "donate.eyebrow")}</p>
+          <h2>{t(tr, lang, "donate.title")}</h2>
+          <p class="section-lead">{t(tr, lang, "donate.lead")}</p>
+        </header>
+        <div class="donate-grid">
+{donate_cards_html(tr, lang)}
+        </div>
+        <p class="donate-foot" data-reveal>{t(tr, lang, "donate.foot")}</p>
+      </div>
+    </section>
+
     <section class="cta-section">
       <div class="container cta-inner" data-reveal="scale">
         <h2>{t(tr, lang, "cta.title")}</h2>
@@ -1279,6 +1348,7 @@ def render_page(lang: str, tr: dict) -> str:
           <li><a href="#checklist">{t(tr, lang, "nav.checklist")}</a></li>
           <li><a href="#faq">{t(tr, lang, "faq.title")}</a></li>
           <li><a href="#principles">{t(tr, lang, "principles.eyebrow")}</a></li>
+          <li><a href="#donate">{t(tr, lang, "donate.nav")}</a></li>
         </ul>
       </div>
       <div>
