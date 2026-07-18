@@ -1,0 +1,18 @@
+{
+  "name": "PrivGuide — Privacy Guide",
+  "short_name": "PrivGuide",
+  "description": "Ultimate privacy guide: find the best privacy apps (Signal, Bitwarden, Mullvad, Proton), harden Android & iOS, secure Windows/macOS/Linux, and protect personal privacy in everyday life. Hosted and owned by Vassbrekke AS — makers of PrivyDeck and PrivBeacon.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070b14",
+  "theme_color": "#0a0f1a",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

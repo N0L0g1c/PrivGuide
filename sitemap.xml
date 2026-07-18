@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://privguide.example/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+      <xhtml:link rel="alternate" hreflang="en" href="https://privguide.example/"/>
+      <xhtml:link rel="alternate" hreflang="no" href="https://privguide.example/no/"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://privguide.example/es/"/>
+      <xhtml:link rel="alternate" hreflang="de" href="https://privguide.example/de/"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="https://privguide.example/fr/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://privguide.example/"/>
+  </url>
+  <url>
+    <loc>https://privguide.example/no/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="en" href="https://privguide.example/"/>
+      <xhtml:link rel="alternate" hreflang="no" href="https://privguide.example/no/"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://privguide.example/es/"/>
+      <xhtml:link rel="alternate" hreflang="de" href="https://privguide.example/de/"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="https://privguide.example/fr/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://privguide.example/"/>
+  </url>
+  <url>
+    <loc>https://privguide.example/es/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="en" href="https://privguide.example/"/>
+      <xhtml:link rel="alternate" hreflang="no" href="https://privguide.example/no/"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://privguide.example/es/"/>
+      <xhtml:link rel="alternate" hreflang="de" href="https://privguide.example/de/"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="https://privguide.example/fr/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://privguide.example/"/>
+  </url>
+  <url>
+    <loc>https://privguide.example/de/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="en" href="https://privguide.example/"/>
+      <xhtml:link rel="alternate" hreflang="no" href="https://privguide.example/no/"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://privguide.example/es/"/>
+      <xhtml:link rel="alternate" hreflang="de" href="https://privguide.example/de/"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="https://privguide.example/fr/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://privguide.example/"/>
+  </url>
+  <url>
+    <loc>https://privguide.example/fr/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="en" href="https://privguide.example/"/>
+      <xhtml:link rel="alternate" hreflang="no" href="https://privguide.example/no/"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://privguide.example/es/"/>
+      <xhtml:link rel="alternate" hreflang="de" href="https://privguide.example/de/"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="https://privguide.example/fr/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://privguide.example/"/>
+  </url>
+</urlset>

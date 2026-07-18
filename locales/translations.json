@@ -1,0 +1,2463 @@
+{
+  "en": {
+    "meta": {
+      "title": "PrivGuide — Best Privacy Apps & Personal Privacy Guide (Phone, Desktop, Life)",
+      "description": "Ultimate privacy guide: find the best privacy apps (Signal, Bitwarden, Mullvad, Proton), harden Android & iOS, secure Windows/macOS/Linux, and protect personal privacy in everyday life. Hosted and owned by Vassbrekke AS — makers of PrivyDeck and PrivBeacon.",
+      "keywords": "PrivyDeck, PrivBeacon, Vassbrekke AS, privacy apps, best privacy apps, personal privacy, phone privacy, android privacy, ios privacy, desktop privacy, linux privacy, password manager, vpn, signal, bitwarden, proton mail, mullvad, grapheneos, digital privacy guide, privacy checklist, degoogle, encrypted messaging, privacy tools 2026"
+    },
+    "a11y": {
+      "skip": "Skip to content",
+      "menu_open": "Open menu",
+      "menu_close": "Close menu"
+    },
+    "nav": {
+      "apps": "Apps",
+      "life": "Life",
+      "phone": "Phone",
+      "desktop": "Desktop",
+      "paths": "Start here",
+      "checklist": "Checklist",
+      "language": "Language"
+    },
+    "hero": {
+      "eyebrow": "Open · Practical · Up to date",
+      "h1a": "Your privacy is not optional.",
+      "h1b": "This is your go-to map.",
+      "lead": "Find the best privacy apps, harden your phone and computers, and build real-world habits that keep your personal life yours — without needing a CS degree.",
+      "cta_apps": "Browse privacy apps",
+      "cta_path": "Pick your path →",
+      "stat_tools": "curated tools",
+      "stat_levels": "threat levels",
+      "stat_trackers": "trackers on this page",
+      "terminal_ok": "You own your data again."
+    },
+    "trust": {
+      "aria": "What this guide covers",
+      "1": {
+        "title": "Apps that respect you",
+        "body": "Open-source first, audited when it matters, no dark patterns."
+      },
+      "2": {
+        "title": "Phone & desktop",
+        "body": "Android, iOS, Windows, macOS, and Linux — practical steps."
+      },
+      "3": {
+        "title": "Life offline too",
+        "body": "Social, home, money, and physical privacy that actually sticks."
+      }
+    },
+    "paths": {
+      "eyebrow": "Start here",
+      "title": "Choose your privacy path",
+      "lead": "Not everyone needs a Faraday bag. Pick a level that matches your risk — then level up when you're ready.",
+      "l1": {
+        "badge": "Level 1",
+        "title": "Everyday privacy",
+        "body": "For normal people who want less tracking, fewer leaks, and better defaults.",
+        "1": "Password manager + unique passwords",
+        "2": "Signal for private chats",
+        "3": "PrivyDeck (+ Firefox / uBlock)",
+        "4": "2FA on email & banking",
+        "5": "Review phone app permissions",
+        "cta": "Start checklist →"
+      },
+      "l2": {
+        "badge": "Level 2 · Recommended",
+        "title": "Solid setup",
+        "body": "For freelancers, journalists-lite, and anyone who wants a real private stack.",
+        "1": "Proton or Tuta email",
+        "2": "Mullvad / Proton VPN on public Wi‑Fi",
+        "3": "Encrypted cloud or local backups",
+        "4": "Hardened browser profile",
+        "5": "Separate work / personal accounts",
+        "cta": "Explore the stack →"
+      },
+      "l3": {
+        "badge": "Level 3",
+        "title": "High threat",
+        "body": "For activists, whistleblowers, and high-risk targets. Assume skilled adversaries.",
+        "1": "GrapheneOS / de-Googled Android",
+        "2": "Tor Browser for research",
+        "3": "Compartmentalized devices & VMs",
+        "4": "Hardware security keys",
+        "5": "Opsec discipline (no weak links)",
+        "cta": "Phone hardening →"
+      }
+    },
+    "apps": {
+      "eyebrow": "App directory",
+      "title": "Best privacy apps — by category",
+      "lead": "Curated tools that put you first — led by PrivyDeck and our Vassbrekke privacy suite, then the best open community tools. Filter by need and open official websites.",
+      "note": "Vassbrekke AS products are marked Ours. Third-party recommendations prioritize open source, audits, and usability. Always verify download sources (official sites, F-Droid, App Store, Play Store).",
+      "use_when": "Use when:",
+      "visit": "Website",
+      "signal": {
+        "desc": "Gold standard for private messaging. End-to-end encryption, disappearing messages, open source, and no ads.",
+        "why": "friends/family will actually install it."
+      },
+      "session": {
+        "desc": "No phone number required. Onion-routed metadata resistance. Stronger anonymity model than mainstream chat apps.",
+        "why": "you want identity-light chat."
+      },
+      "element": {
+        "desc": "Federated, E2EE rooms, bridges to other networks. You can self-host and own the infrastructure.",
+        "why": "groups, orgs, or self-hosting matter."
+      },
+      "firefox": {
+        "desc": "Best balance of usability and control. Pair with PrivyDeck and/or uBlock Origin, multi-account containers, and strict tracking protection.",
+        "why": "daily browsing for most people."
+      },
+      "brave": {
+        "desc": "Chromium-based with aggressive built-in ad/tracker blocking and private windows with Tor option.",
+        "why": "you want Chrome-like UX with better defaults."
+      },
+      "tor": {
+        "desc": "Routes traffic through the Tor network. Essential for high-risk research and censorship circumvention. Not for everyday logins.",
+        "why": "threat model needs anonymity, not just privacy."
+      },
+      "mullvad_browser": {
+        "desc": "Tor Browser technology without the Tor network — privacy-hardened Firefox build designed to reduce fingerprinting.",
+        "why": "pairing with a trustworthy VPN."
+      },
+      "mullvad": {
+        "desc": "Anonymous accounts (no email), cash/crypto payment, audited, no-logs reputation. Privacy-first business model.",
+        "why": "you care more about privacy than fastest streaming."
+      },
+      "protonvpn": {
+        "desc": "Solid free tier, open-source apps, Secure Core, and ties into the Proton ecosystem. Good for beginners.",
+        "why": "you already use Proton Mail/Drive."
+      },
+      "ivpn": {
+        "desc": "Transparent privacy company, no email signup, strong anti-tracking features, and clear ethics around marketing.",
+        "why": "you want Mullvad-like values with more features."
+      },
+      "bitwarden": {
+        "desc": "Open source, audited, free for individuals, works everywhere. Self-host with Vaultwarden if you want full control.",
+        "why": "you still reuse passwords (start here today)."
+      },
+      "keepassxc": {
+        "desc": "Local-first password database. You control the file, the backups, and the sync method. Zero cloud dependency by design.",
+        "why": "you don't want a third-party vault cloud."
+      },
+      "protonpass": {
+        "desc": "Integrated with Proton accounts. Clean UX, hide-my-email aliases, and open-source apps.",
+        "why": "you live in the Proton suite."
+      },
+      "protonmail": {
+        "desc": "Encrypted email based in Switzerland. Easy onboarding, calendar/drive ecosystem, strong brand for privacy email.",
+        "why": "switching off Gmail for the first time."
+      },
+      "tuta": {
+        "desc": "Encrypted email and calendar from Germany. Minimal tracking surface and transparent development.",
+        "why": "you want a focused privacy-mail alternative."
+      },
+      "thunderbird": {
+        "desc": "Desktop email client with OpenPGP support. Use with any provider — including your own domain and self-hosted mail.",
+        "why": "you want client-side control of mail."
+      },
+      "ddg": {
+        "desc": "No search history profiling for ads. Simple switch from Google that immediately cuts a major tracking vector.",
+        "why": "you want zero friction privacy."
+      },
+      "bravesearch": {
+        "desc": "Independent indexes or privacy proxies for web results without building an ad profile around your queries.",
+        "why": "DDG results aren't enough."
+      },
+      "searxng": {
+        "desc": "Self-hostable metasearch. Aggregate engines without handing one company your entire curiosity graph.",
+        "why": "you run your own services."
+      },
+      "protondrive": {
+        "desc": "End-to-end encrypted cloud storage. Better than trust-us consumer clouds for sensitive documents.",
+        "why": "files must sync but stay encrypted."
+      },
+      "cryptomator": {
+        "desc": "Client-side vaults that sit on top of Dropbox, Google Drive, or any folder. Encrypt before upload.",
+        "why": "you can't leave your current cloud yet."
+      },
+      "nextcloud": {
+        "desc": "Self-host files, photos, and calendars (Nextcloud) or peer-to-peer sync with no central server (Syncthing).",
+        "why": "you're ready to leave big cloud entirely."
+      },
+      "aegis": {
+        "desc": "Open-source Android 2FA app with encrypted exports and no cloud lock-in. Prefer TOTP over SMS always.",
+        "why": "replacing Google Authenticator."
+      },
+      "enteauth": {
+        "desc": "Cross-platform open-source authenticator with optional encrypted sync. Clean alternative to proprietary 2FA apps.",
+        "why": "you need 2FA on multiple devices."
+      },
+      "yubikey": {
+        "desc": "Phishing-resistant MFA. Use security keys for email, password manager, GitHub, and critical accounts.",
+        "why": "account takeover would be devastating."
+      },
+      "graphene": {
+        "desc": "Hardened Android for Pixel devices. Best mobile security/privacy posture available to consumers today.",
+        "why": "phone security is non-negotiable."
+      },
+      "linux": {
+        "desc": "Leave Windows telemetry behind. Fedora/Debian for daily driving; Qubes OS for serious compartmentalization.",
+        "why": "desktop privacy is a long-term goal."
+      },
+      "ios": {
+        "desc": "Strong sandboxing out of the box. Lock down with Lockdown Mode, limit iCloud, disable ad tracking, and review permissions.",
+        "why": "you stay in Apple's ecosystem carefully."
+      },
+      "organicmaps": {
+        "desc": "Offline maps based on OpenStreetMap. Navigate without constantly broadcasting your location to Google.",
+        "why": "maps without the surveillance tax."
+      },
+      "notes": {
+        "desc": "Encrypted notes with cross-device sync. Keep journals and drafts out of plain-text cloud notes.",
+        "why": "Apple/Google Notes feel too exposed."
+      },
+      "photos": {
+        "desc": "Encrypted photo backup (Ente) or self-hosted Google Photos alternative (Immich).",
+        "why": "leaving Google Photos."
+      },
+      "calling": {
+        "desc": "Prefer E2EE voice/video. Avoid putting sensitive conversations on SMS or unencrypted defaults.",
+        "why": "the call content matters."
+      },
+      "privydeck": {
+        "desc": "Our personal privacy dashboard. Privacy score, one-tap tracker blocking on phone and browser, encrypted vault (with file sanitization and secure cleanup built in), and one-click data-access requests — no Raspberry Pi required.",
+        "why": "you want the simplest all-in-one blocker, vault, and privacy score (start here before stacking extras)."
+      },
+      "privbeacon": {
+        "desc": "Privacy compliance SaaS for websites. Scan trackers and consent gaps across 16 law frameworks, fix violations, and earn a verifiable Certified Private badge.",
+        "why": "you run a website or app and need real compliance — not a generic policy template."
+      },
+      "winprivacy": {
+        "desc": "Enhance privacy on Windows 10 and 11 with GUI and CLI tooling — cut telemetry and tighten defaults (open source, VassDev).",
+        "why": "you're on Windows and want practical hardening without a full OS switch yet."
+      },
+      "sechardening": {
+        "desc": "Practical security hardening scripts for a fresh install — a solid starting point for locking down a system (open source, VassDev).",
+        "why": "you're setting up Linux and want a fast, sane baseline."
+      },
+      "ublock": {
+        "desc": "The classic open-source browser content blocker. Pair with Firefox for excellent ad and tracker filtering on desktop.",
+        "why": "you want a free FOSS extension alongside or under PrivyDeck."
+      },
+      "rethinkdns": {
+        "desc": "DNS + firewall style protection for Android. Block tracker domains system-wide beyond the browser.",
+        "why": "you need network-level blocking on Android apps."
+      },
+      "ours_pill": "Ours",
+      "by_vassbrekke": "By Vassbrekke AS"
+    },
+    "filters": {
+      "aria": "App categories",
+      "all": "All",
+      "messaging": "Messaging",
+      "browser": "Browsers",
+      "vpn": "VPN",
+      "passwords": "Passwords",
+      "email": "Email",
+      "search": "Search",
+      "storage": "Storage",
+      "auth": "2FA / Auth",
+      "os": "OS / ROM",
+      "extra": "More tools",
+      "ours": "Ours"
+    },
+    "life": {
+      "eyebrow": "Real life",
+      "title": "Personal privacy beyond apps",
+      "lead": "The best VPN can't fix oversharing, weak locks, or a camera pointed at your desk. Privacy is a lifestyle system.",
+      "1": {
+        "title": "Social & identity",
+        "1": "Audit public profiles — strip DOB, home city, workplace, family photos.",
+        "2": "Use different usernames per context; stop recycling one handle everywhere.",
+        "3": "Turn off face recognition and contact syncing in social apps.",
+        "4": "Think before you post location in real time (wait until you've left).",
+        "5": "Create separate email aliases for shopping, newsletters, and banking."
+      },
+      "2": {
+        "title": "Home & physical",
+        "1": "Cover laptop cameras; prefer mics you can mute in hardware.",
+        "2": "Lock screens aggressively; enable full-disk encryption everywhere.",
+        "3": "Shred or destroy documents with ID numbers — don't just recycle.",
+        "4": "Question smart speakers in private rooms; segment IoT on guest Wi‑Fi.",
+        "5": "Know who has physical access to your devices when you travel."
+      },
+      "3": {
+        "title": "Money & shopping",
+        "1": "Use privacy-friendly payment options where legal and practical.",
+        "2": "Avoid store loyalty cards tied to your real identity when possible.",
+        "3": "Don't photograph credit cards or IDs into cloud camera rolls.",
+        "4": "Opt out of data brokers (varies by country — do annual sweeps).",
+        "5": "Keep financial 2FA on hardware keys or authenticator apps, never SMS alone."
+      },
+      "4": {
+        "title": "Communication habits",
+        "1": "Default to Signal for anything you wouldn't put on a postcard.",
+        "2": "Disappearing messages for ephemeral plans; screenshots still exist.",
+        "3": "Verify safety numbers for high-stakes contacts.",
+        "4": "Don't discuss secrets on employer devices or workplace chat.",
+        "5": "Assume group chats expand your threat surface with every new member."
+      }
+    },
+    "phone": {
+      "eyebrow": "Mobile",
+      "title": "Phone privacy — Android & iOS",
+      "lead": "Your phone is a tracking supercomputer you carry everywhere. Lock it down by platform.",
+      "tabs_aria": "Phone platforms",
+      "android": {
+        "title": "Android hardening checklist",
+        "stack": "Quick Android stack",
+        "note": "GrapheneOS users: sandboxed Google Play is optional — only if you truly need it.",
+        "1": "Prefer a modern Pixel + GrapheneOS if you can. Otherwise keep stock OS updated.",
+        "2": "Install apps from trusted sources — Play Store carefully, or F-Droid for FOSS.",
+        "3": "Permission diet: deny location, mic, camera, contacts unless required. Use only while using.",
+        "4": "Disable ad ID / ads personalization and reset advertising IDs.",
+        "5": "Turn off unnecessary sensors and connectivity: Bluetooth, NFC, precise location when idle.",
+        "6": "Use a DNS blocker (Private DNS / RethinkDNS / NextDNS) to cut tracker domains.",
+        "7": "Lock screen: strong PIN/passphrase, biometrics OK as convenience with PIN fallback.",
+        "8": "Backup plan: encrypted backups you control — not only Google One defaults.",
+        "9": "Work profile / secondary user to isolate sketchy apps from your main life.",
+        "10": "Avoid sideloading APKs from random sites — supply-chain malware is common."
+      },
+      "ios": {
+        "title": "iOS hardening checklist",
+        "stack": "Quick iOS stack",
+        "note": "iOS is closed-source — compensate with strong Apple ID security and minimal app surface.",
+        "1": "Update iOS promptly — Apple's sandbox is strong; unpatched is not.",
+        "2": "Enable Lockdown Mode if you face targeted attacks (extreme but effective).",
+        "3": "Privacy and Security: review every permission; reset tracking; disable unused Bluetooth sharing.",
+        "4": "Apple ID hygiene: strong unique password, hardware key or passkeys, Hide My Email for sign-ins.",
+        "5": "iCloud: know what's syncing. Advanced Data Protection strengthens E2EE for more categories.",
+        "6": "Limit Analytics and Improvements and personalized ads.",
+        "7": "Safari: enable Fraudulent Website Warning; consider Firefox Focus or Brave for extra blocking.",
+        "8": "App Tracking Transparency: deny by default. Still assume apps track within their walls.",
+        "9": "USB accessories / Stolen Device Protection for physical threat models.",
+        "10": "Avoid shady configuration profiles and enterprise MDMs you don't understand."
+      }
+    },
+    "desktop": {
+      "eyebrow": "Computers",
+      "title": "Desktop & laptop privacy",
+      "lead": "Laptops hold your life's work. Encrypt the disk, minimize telemetry, and stop treating browsers like dumpsters.",
+      "windows": {
+        "1": "Use a local account when possible; limit Microsoft account sync.",
+        "2": "Turn off advertising ID, tailored experiences, and diagnostic Full telemetry.",
+        "3": "Enable BitLocker (or device encryption) + strong login.",
+        "4": "Replace Edge defaults: Firefox + uBlock Origin.",
+        "5": "Uninstall bloat; disable startup apps you don't recognize.",
+        "6": "Windows Sandbox / separate browser profile for risky sites.",
+        "7": "Consider switching to Linux when you're ready for a cleaner slate."
+      },
+      "macos": {
+        "1": "FileVault on. Firewall on. Automatic updates on.",
+        "2": "Review Privacy and Security permissions per app regularly.",
+        "3": "iCloud: enable Advanced Data Protection if suitable for your recovery setup.",
+        "4": "Prefer App Store or verified developers; Gatekeeper stays on.",
+        "5": "Limit Continuity features that broadcast presence if threat model requires it.",
+        "6": "Use Firefox/Brave; containerize work vs personal browsing.",
+        "7": "Lock screen hot corners + short idle timeout."
+      },
+      "linux": {
+        "1": "Full-disk encryption at install (LUKS).",
+        "2": "Fedora, Debian, or openSUSE for sane defaults; avoid random gaming ISOs.",
+        "3": "Flatpak + Flathub with care; prefer distro packages for system tools.",
+        "4": "Firewall (firewalld/ufw); automatic security updates.",
+        "5": "Qubes OS if you need strong app isolation (steeper learning curve).",
+        "6": "Keep firmware updated (fwupd) — hardware matters too.",
+        "7": "Separate browser for banking vs general use."
+      },
+      "universal_title": "Universal desktop rules",
+      "u1": {
+        "title": "Encrypt or lose",
+        "body": "Lost laptop without FDE = full data breach. Always encrypt disks."
+      },
+      "u2": {
+        "title": "Password manager everywhere",
+        "body": "Browser-built-in is better than nothing; Bitwarden/KeePassXC is better."
+      },
+      "u3": {
+        "title": "Updates are security",
+        "body": "Unpatched OS/browser is the #1 easy compromise path."
+      },
+      "u4": {
+        "title": "Least privilege",
+        "body": "Don't run daily work as admin/root. Don't install random .exe/.dmg."
+      },
+      "u5": {
+        "title": "Backup offline",
+        "body": "3-2-1 backups with at least one offline/encrypted copy."
+      },
+      "u6": {
+        "title": "Public Wi‑Fi = VPN",
+        "body": "Treat cafés and airports as hostile networks."
+      }
+    },
+    "checklist": {
+      "eyebrow": "Action plan",
+      "title": "Privacy checklist",
+      "lead": "Tick items as you complete them. Progress saves in this browser only — nothing is uploaded.",
+      "complete": "complete",
+      "reset": "Reset",
+      "reset_confirm": "Reset all checklist progress on this device?",
+      "g1": "Week 1 — Foundations",
+      "g2": "Week 2–3 — Solid stack",
+      "g3": "Level up — Stronger threat models",
+      "items": {
+        "c1": "Install a password manager and migrate critical accounts",
+        "c2": "Turn on 2FA (authenticator app) for email and banking",
+        "c3": "Install Signal and move sensitive chats off SMS",
+        "c4": "Install PrivyDeck and harden your browser (Firefox + uBlock optional)",
+        "c5": "Change search engine away from Google",
+        "c6": "Review phone app permissions (location, mic, camera)",
+        "c7": "Move primary email to Proton / Tuta (or harden current mail)",
+        "c8": "Set up a no-logs VPN for travel and public Wi‑Fi",
+        "c9": "Enable full-disk encryption on all computers and phones",
+        "c10": "Create email aliases for shopping and newsletters",
+        "c11": "Encrypted cloud or Cryptomator vault for sensitive files",
+        "c12": "Audit social media privacy settings and public posts",
+        "c13": "Hardware security key for critical accounts",
+        "c14": "Separate devices or profiles for high-risk activity",
+        "c15": "GrapheneOS / hardened mobile OS evaluation",
+        "c16": "Data broker opt-outs and people-search removals",
+        "c17": "Offline / encrypted backups tested with a restore drill",
+        "c18": "Written personal threat model (who / what / why)"
+      }
+    },
+    "principles": {
+      "eyebrow": "Mindset",
+      "title": "Privacy principles that never go out of date",
+      "p1": {
+        "title": "Threat model first",
+        "body": "Protect against the risks you actually face — not a movie villain. Different jobs need different stacks."
+      },
+      "p2": {
+        "title": "Minimize data",
+        "body": "You can't leak what you never collect. Share less, keep less, delete what you don't need."
+      },
+      "p3": {
+        "title": "Defense in depth",
+        "body": "One tool fails. Layer passwords, 2FA, encryption, updates, and good habits."
+      },
+      "p4": {
+        "title": "Prefer open and audited",
+        "body": "Open source isn't magic, but secrecy is a worse bet for security-critical software."
+      },
+      "p5": {
+        "title": "Usability wins",
+        "body": "The private tool you abandon is worse than the good-enough tool you use daily."
+      },
+      "p6": {
+        "title": "Assume breach",
+        "body": "Plan recovery: backups, key escrow you control, and accounts you can still reclaim."
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Common questions",
+      "q1": "Do I need a VPN every day?",
+      "a1": "Not always. A VPN hides your traffic from local networks and your ISP, and can reduce location-based tracking — but it does not make you anonymous, and a bad VPN is worse than none. Use a reputable no-logs provider on hostile networks; combine with HTTPS, good browsers, and account hygiene.",
+      "q2": "Is Signal really private if it needs my phone number?",
+      "a2": "Signal encrypts message content excellently. Your number is an identifier for discovery — a tradeoff for usability. If that matters for your threat model, look at Session or similar. For most people, Signal is still the best everyone-will-actually-use-it choice.",
+      "q3": "What's the single highest-impact change?",
+      "a3": "A password manager + unique passwords + authenticator 2FA on email. Most account takeovers are reused passwords and SIM swaps, not nation-state zero-days.",
+      "q4": "Should I delete social media?",
+      "a4": "If you can, it helps a lot. If you can't, lock down profiles, strip personal data, stop real-time location posts, and use a browser container so trackers don't follow you across the whole web.",
+      "q5": "Is this site tracking me?",
+      "a5": "No analytics, no cookies for advertising, no third-party trackers for ads. Checklist progress stays in your browser's local storage only. Verify with your own blocker if you like — that's the point.",
+      "q6": "Where should I go deeper?",
+      "a6": "Read project docs for tools you adopt (Signal, Bitwarden, GrapheneOS, Mullvad). Community resources like privacyguides.org and official security whitepapers beat random top-10 VPN lists."
+    },
+    "cta": {
+      "title": "Start with one change today",
+      "body": "Privacy is a practice, not a product. Pick a path, install one better app, tick one checklist item — then keep going.",
+      "paths": "Choose your path",
+      "apps": "Browse apps"
+    },
+    "footer": {
+      "tag": "The ultimate go-to map for personal privacy — from Vassbrekke AS. Apps, phones, desktops, and life.",
+      "explore": "Explore",
+      "start": "Get started",
+      "disclaimer_title": "Disclaimer",
+      "disclaimer": "Educational guide published by Vassbrekke AS. Not legal or professional security advice. Threat models differ. Third-party tools are independent; verify software yourself. PrivyDeck, PrivBeacon and other marked products are built by Vassbrekke / VassDev.",
+      "built": "Built for humans who want their lives back",
+      "privacy": "No trackers · No accounts · Local checklist only",
+      "owned_by": "This page is hosted and owned by Vassbrekke AS."
+    },
+    "ours": {
+      "badge": "Vassbrekke AS · Our products",
+      "title": "Built by us — start with PrivyDeck",
+      "body": "PrivGuide is hosted and owned by Vassbrekke AS (Norway). Below you'll find our privacy products first — led by PrivyDeck — then the wider open ecosystem we recommend alongside them. See the full company lineup at vassbrekke.no."
+    }
+  },
+  "no": {
+    "meta": {
+      "title": "PrivGuide — Beste personvernapper og personvernveiledning (telefon, PC, liv)",
+      "description": "Ultimat personvernveiledning: finn de beste personvernappene (Signal, Bitwarden, Mullvad, Proton), sikre Android og iOS, Windows/macOS/Linux, og beskytt personvernet i hverdagen. Eies og hostes av Vassbrekke AS — bak PrivyDeck og PrivBeacon.",
+      "keywords": "PrivyDeck, PrivBeacon, Vassbrekke AS, personvernapper, beste personvernapper, personvern, telefon personvern, android personvern, ios personvern, passordbehandler, vpn, signal, bitwarden, proton mail, mullvad, digitalt personvern, personvern sjekkliste"
+    },
+    "a11y": {
+      "skip": "Hopp til innhold",
+      "menu_open": "Åpne meny",
+      "menu_close": "Lukk meny"
+    },
+    "nav": {
+      "apps": "Apper",
+      "life": "Livet",
+      "phone": "Telefon",
+      "desktop": "PC",
+      "paths": "Start her",
+      "checklist": "Sjekkliste",
+      "language": "Språk"
+    },
+    "hero": {
+      "eyebrow": "Åpen · Praktisk · Oppdatert",
+      "h1a": "Personvernet ditt er ikke valgfritt.",
+      "h1b": "Dette er kartet ditt.",
+      "lead": "Finn de beste personvernappene, sikre telefon og PC, og bygg vaner som holder privatlivet ditt privat — uten datavitenskapsgrad.",
+      "cta_apps": "Utforsk personvernapper",
+      "cta_path": "Velg din sti →",
+      "stat_tools": "utvalgte verktøy",
+      "stat_levels": "trusselnivåer",
+      "stat_trackers": "sporere på denne siden",
+      "terminal_ok": "Du eier dataene dine igjen."
+    },
+    "trust": {
+      "aria": "Hva denne guiden dekker",
+      "1": {
+        "title": "Apper som respekterer deg",
+        "body": "Åpen kildekode først, revidert når det gjelder, ingen mørke mønstre."
+      },
+      "2": {
+        "title": "Telefon og PC",
+        "body": "Android, iOS, Windows, macOS og Linux — praktiske steg."
+      },
+      "3": {
+        "title": "Også offline",
+        "body": "Sosialt, hjem, penger og fysisk personvern som faktisk sitter."
+      }
+    },
+    "paths": {
+      "eyebrow": "Start her",
+      "title": "Velg din personvernsti",
+      "lead": "Ikke alle trenger faraday-pose. Velg nivå etter risiko — og gå opp når du er klar.",
+      "l1": {
+        "badge": "Nivå 1",
+        "title": "Hverdagspersonvern",
+        "body": "For vanlige folk som vil ha mindre sporing, færre lekkasjer og bedre standarder.",
+        "1": "Passordbehandler + unike passord",
+        "2": "Signal for private samtaler",
+        "3": "PrivyDeck (+ Firefox / uBlock)",
+        "4": "2FA på e-post og bank",
+        "5": "Gå gjennom app-tillatelser på telefonen",
+        "cta": "Start sjekkliste →"
+      },
+      "l2": {
+        "badge": "Nivå 2 · Anbefalt",
+        "title": "Solid oppsett",
+        "body": "For frilansere, journalister-lite og alle som vil ha en ekte privat stack.",
+        "1": "Proton eller Tuta e-post",
+        "2": "Mullvad / Proton VPN på offentlig Wi‑Fi",
+        "3": "Kryptert sky eller lokale sikkerhetskopier",
+        "4": "Herdet nettleserprofil",
+        "5": "Separate jobb- og privatkontoer",
+        "cta": "Utforsk stakken →"
+      },
+      "l3": {
+        "badge": "Nivå 3",
+        "title": "Høy trussel",
+        "body": "For aktivister, varslere og høyrisikomål. Anta dyktige motstandere.",
+        "1": "GrapheneOS / de-Googlet Android",
+        "2": "Tor Browser til research",
+        "3": "Kompartmenterte enheter og VM-er",
+        "4": "Maskinvaresikkerhetsnøkler",
+        "5": "Opsec-disiplin (ingen svake ledd)",
+        "cta": "Telefonherding →"
+      }
+    },
+    "apps": {
+      "eyebrow": "Appkatalog",
+      "title": "Beste personvernapper — etter kategori",
+      "lead": "Utvalgte verktøy som setter deg først — ledet av PrivyDeck og Vassbrekke-suiten, deretter de beste fellesskapsverktøyene.",
+      "note": "Vassbrekke AS-produkter er merket Vårt. Tredjepartsanbefalinger prioriterer åpen kildekode, revisjoner og brukervennlighet. Verifiser alltid nedlastingskilder.",
+      "use_when": "Bruk når:",
+      "visit": "Nettsted",
+      "signal": {
+        "desc": "Gullstandard for private meldinger. Ende-til-ende-kryptering, forsvinnende meldinger, åpen kildekode, ingen annonser.",
+        "why": "venner/familie faktisk installerer det."
+      },
+      "session": {
+        "desc": "Ingen telefonnummer påkrevd. Løk-rutet metadata-motstand. Sterkere anonymitetsmodell enn vanlige chat-apper.",
+        "why": "du vil ha identitet-lett chat."
+      },
+      "element": {
+        "desc": "Fødererte E2EE-rom, broer til andre nettverk. Du kan self-hoste og eie infrastrukturen.",
+        "why": "grupper, organisasjoner eller self-hosting betyr noe."
+      },
+      "firefox": {
+        "desc": "Beste balanse av brukervennlighet og kontroll. Kombiner med PrivyDeck og/eller uBlock Origin, containere og streng sporingsbeskyttelse.",
+        "why": "daglig nettsurfing for de fleste."
+      },
+      "brave": {
+        "desc": "Chromium-basert med innebygd annonse-/sporingsblokkering og private vinduer med Tor-valg.",
+        "why": "du vil ha Chrome-lignende UX med bedre standarder."
+      },
+      "tor": {
+        "desc": "Ruter trafikk gjennom Tor-nettverket. Essensielt for høyrisiko-research og sensur-omgåelse. Ikke for daglig innlogging.",
+        "why": "trusselmodellen trenger anonymitet, ikke bare personvern."
+      },
+      "mullvad_browser": {
+        "desc": "Tor Browser-teknologi uten Tor-nettverket — personvernherdet Firefox for mindre fingerprinting.",
+        "why": "kombinert med en pålitelig VPN."
+      },
+      "mullvad": {
+        "desc": "Anonyme kontoer (ingen e-post), kontant/krypto-betaling, revidert, no-logs-rykte.",
+        "why": "du bryr deg mer om personvern enn raskest streaming."
+      },
+      "protonvpn": {
+        "desc": "Solid gratisnivå, åpne apper, Secure Core og Proton-økosystem. Bra for nybegynnere.",
+        "why": "du allerede bruker Proton Mail/Drive."
+      },
+      "ivpn": {
+        "desc": "Transparent personvernfirma, ingen e-postregistrering, sterke anti-sporingsfunksjoner.",
+        "why": "du vil ha Mullvad-lignende verdier med flere funksjoner."
+      },
+      "bitwarden": {
+        "desc": "Åpen kildekode, revidert, gratis for enkeltpersoner. Self-host med Vaultwarden for full kontroll.",
+        "why": "du fortsatt gjenbruker passord (start her i dag)."
+      },
+      "keepassxc": {
+        "desc": "Lokal-først passorddatabase. Du styrer filen, backup og synk. Null skyavhengighet.",
+        "why": "du ikke vil ha tredjeparts vault-sky."
+      },
+      "protonpass": {
+        "desc": "Integrert med Proton-kontoer. Ren UX, skjul-min-e-post-aliaser, åpne apper.",
+        "why": "du lever i Proton-suiten."
+      },
+      "protonmail": {
+        "desc": "Kryptert e-post basert i Sveits. Enkel onboarding, kalender/drive-økosystem.",
+        "why": "du bytter fra Gmail for første gang."
+      },
+      "tuta": {
+        "desc": "Kryptert e-post og kalender fra Tyskland. Minimal sporingsoverflate.",
+        "why": "du vil ha et fokusert personvern-mail-alternativ."
+      },
+      "thunderbird": {
+        "desc": "Skrivebords e-postklient med OpenPGP. Bruk med hvilken som helst leverandør — inkludert egen domeneserver.",
+        "why": "du vil ha klient-side kontroll over e-post."
+      },
+      "ddg": {
+        "desc": "Ingen søkehistorikk-profilering for annonser. Enkel bytte fra Google.",
+        "why": "du vil ha null friksjon personvern."
+      },
+      "bravesearch": {
+        "desc": "Uavhengige indekser eller personvern-proxyer for webresultater uten annonseprofil.",
+        "why": "DDG-resultater ikke er nok."
+      },
+      "searxng": {
+        "desc": "Self-hostbar metasøk. Aggreger motorer uten å gi ett selskap hele nysgjerrighetsgrafen din.",
+        "why": "du kjører egne tjenester."
+      },
+      "protondrive": {
+        "desc": "Ende-til-ende-kryptert skylagring. Bedre enn stol-på-oss forbrukerskyer for sensitive dokumenter.",
+        "why": "filer må synces men forbli kryptert."
+      },
+      "cryptomator": {
+        "desc": "Klient-side hvelv oppå Dropbox, Google Drive eller hvilken som helst mappe. Krypter før opplasting.",
+        "why": "du ikke kan forlate nåværende sky ennå."
+      },
+      "nextcloud": {
+        "desc": "Self-host filer, bilder og kalendere (Nextcloud) eller P2P-synk uten sentral server (Syncthing).",
+        "why": "du er klar til å forlate storsky helt."
+      },
+      "aegis": {
+        "desc": "Åpen Android 2FA-app med krypterte eksporter. Foretrekk TOTP over SMS.",
+        "why": "du erstatter Google Authenticator."
+      },
+      "enteauth": {
+        "desc": "Plattformuavhengig åpen authenticator med valgfri kryptert synk.",
+        "why": "du trenger 2FA på flere enheter."
+      },
+      "yubikey": {
+        "desc": "Phishing-resistent MFA. Bruk sikkerhetsnøkler for e-post, passordbehandler og kritiske kontoer.",
+        "why": "kontoovertakelse ville være ødeleggende."
+      },
+      "graphene": {
+        "desc": "Herdet Android for Pixel. Beste mobile sikkerhets-/personvernposisjon for forbrukere i dag.",
+        "why": "telefonsikkerhet er ufravikelig."
+      },
+      "linux": {
+        "desc": "Forlat Windows-telemetri. Fedora/Debian til daglig bruk; Qubes for seriøs kompartmentering.",
+        "why": "PC-personvern er et langsiktig mål."
+      },
+      "ios": {
+        "desc": "Sterk sandkasse ut av boksen. Lockdown Mode, begrens iCloud, skru av annonsesporing, gjennomgå tillatelser.",
+        "why": "du blir i Apples økosystem med omhu."
+      },
+      "organicmaps": {
+        "desc": "Offline-kart basert på OpenStreetMap. Naviger uten å sende posisjon til Google hele tiden.",
+        "why": "kart uten overvåkingsskatt."
+      },
+      "notes": {
+        "desc": "Krypterte notater med synk på tvers av enheter. Hold dagbøker og utkast utenfor klartekst-skynotater.",
+        "why": "Apple/Google Notes føles for eksponert."
+      },
+      "blockers": {
+        "desc": "Blokker annonser, sporere og skadelige domener. uBlock på skrivebord; RethinkDNS for mobil.",
+        "why": "dag én av enhver personvernreise."
+      },
+      "photos": {
+        "desc": "Kryptert bildesikkerhetskopi (Ente) eller self-hostet Google Photos-alternativ (Immich).",
+        "why": "du forlater Google Photos."
+      },
+      "calling": {
+        "desc": "Foretrekk E2EE tale/video. Unngå sensitive samtaler på SMS eller ukrypterte standarder.",
+        "why": "samtaleinnholdet betyr noe."
+      },
+      "privydeck": {
+        "desc": "Vårt personlige personvern-dashbord. Personvernscore, sporingsblokkering på telefon og nettleser med ett trykk, kryptert hvelv (med filrensing og sikker opprydding innebygd), og dataforespørsler — uten Raspberry Pi.",
+        "why": "du vil ha den enkleste alt-i-ett-blokkeren, hvelvet og scoren (start her før du stabler ekstra verktøy)."
+      },
+      "privbeacon": {
+        "desc": "Personvern-compliance SaaS for nettsteder. Skann sporere og samtykkehull på tvers av 16 lovverk, fiks brudd, og få et verifiserbart Certified Private-merke.",
+        "why": "du driver nettsted eller app og trenger ekte compliance — ikke en generisk policy-mal."
+      },
+      "winprivacy": {
+        "desc": "Forbedre personvern på Windows 10 og 11 med GUI og CLI — kutt telemetri og stram standarder (åpen kildekode, VassDev).",
+        "why": "du er på Windows og vil ha praktisk herding uten full OS-bytte ennå."
+      },
+      "sechardening": {
+        "desc": "Praktiske sikkerhetsherdingsskript for fersk installasjon — et solid utgangspunkt (åpen kildekode, VassDev).",
+        "why": "du setter opp Linux og vil ha en rask, fornuftig baseline."
+      },
+      "ublock": {
+        "desc": "Klassisk åpen nettleser-innholdsblokker. Kombiner med Firefox for utmerket annonse- og sporingsfiltrering på skrivebord.",
+        "why": "du vil ha et gratis FOSS-tillegg ved siden av eller under PrivyDeck."
+      },
+      "rethinkdns": {
+        "desc": "DNS + brannmur-stil beskyttelse for Android. Blokker sporingsdomener systemomfattende utenfor nettleseren.",
+        "why": "du trenger nettverksnivå-blokkering for Android-apper."
+      },
+      "ours_pill": "Vårt",
+      "by_vassbrekke": "Av Vassbrekke AS"
+    },
+    "filters": {
+      "aria": "Appkategorier",
+      "all": "Alle",
+      "messaging": "Meldinger",
+      "browser": "Nettlesere",
+      "vpn": "VPN",
+      "passwords": "Passord",
+      "email": "E-post",
+      "search": "Søk",
+      "storage": "Lagring",
+      "auth": "2FA / Auth",
+      "os": "OS / ROM",
+      "extra": "Flere verktøy",
+      "ours": "Vårt"
+    },
+    "life": {
+      "eyebrow": "Virkelig liv",
+      "title": "Personvern utenom apper",
+      "lead": "Den beste VPN-en fikser ikke overdeling, svake låser eller et kamera mot pulten. Personvern er et livsstilssystem.",
+      "1": {
+        "title": "Sosialt og identitet",
+        "1": "Gå gjennom offentlige profiler — fjern fødselsdato, hjemby, arbeidssted, familiebilder.",
+        "2": "Bruk ulike brukernavn per kontekst; slutt å gjenbruke ett handle overalt.",
+        "3": "Skru av ansiktsgjenkjenning og kontaktsynkronisering i sosiale apper.",
+        "4": "Tenk før du poster posisjon i sanntid (vent til du har dratt).",
+        "5": "Lag separate e-postaliaser for shopping, nyhetsbrev og bank."
+      },
+      "2": {
+        "title": "Hjem og fysisk",
+        "1": "Dekk til laptop-kamera; foretrekk mikrofoner du kan mute i maskinvare.",
+        "2": "Lås skjermer aggressivt; slå på full diskkryptering overalt.",
+        "3": "Makuler dokumenter med ID-numre — ikke bare resirkuler.",
+        "4": "Vær kritisk til smarthøyttalere i private rom; legg IoT på gjeste-Wi‑Fi.",
+        "5": "Vit hvem som har fysisk tilgang til enhetene dine når du reiser."
+      },
+      "3": {
+        "title": "Penger og shopping",
+        "1": "Bruk personvernvennlige betalingsmåter der det er lovlig og praktisk.",
+        "2": "Unngå lojalitetskort knyttet til ekte identitet når det er mulig.",
+        "3": "Ikke fotografer bankkort eller ID inn i sky-kameraruller.",
+        "4": "Meld deg ut av datameglere (varierer per land — gjør årlige runder).",
+        "5": "Hold finansiell 2FA på sikkerhetsnøkler eller authenticator, aldri bare SMS."
+      },
+      "4": {
+        "title": "Kommunikasjonsvaner",
+        "1": "Standard til Signal for alt du ikke ville skrevet på et postkort.",
+        "2": "Forsvinnende meldinger for midlertidige planer; skjermbilder finnes fortsatt.",
+        "3": "Verifiser sikkerhetsnumre for høyinnsats-kontakter.",
+        "4": "Ikke diskuter hemmeligheter på arbeidsgiverenheter eller jobbchat.",
+        "5": "Anta at gruppechatter utvider angrepsflaten med hvert nye medlem."
+      }
+    },
+    "phone": {
+      "eyebrow": "Mobil",
+      "title": "Telefonpersonvern — Android og iOS",
+      "lead": "Telefonen er en sporingssupermaskin du bærer overalt. Lås den ned per plattform.",
+      "tabs_aria": "Telefonplattformer",
+      "android": {
+        "title": "Android-herdingsjekkliste",
+        "stack": "Rask Android-stack",
+        "note": "GrapheneOS-brukere: sandkasse-Google Play er valgfritt — bare hvis du virkelig trenger det.",
+        "1": "Foretrekk moderne Pixel + GrapheneOS om du kan. Ellers hold stock OS oppdatert.",
+        "2": "Installer apper fra pålitelige kilder — Play Store forsiktig, eller F-Droid for FOSS.",
+        "3": "Tillatelsesdiett: nekt posisjon, mic, kamera, kontakter med mindre nødvendig.",
+        "4": "Deaktiver annonse-ID / personlig tilpasning av annonser.",
+        "5": "Skru av unødvendige sensorer: Bluetooth, NFC, nøyaktig posisjon når ledig.",
+        "6": "Bruk DNS-blokkering (Private DNS / RethinkDNS / NextDNS).",
+        "7": "Låseskjerm: sterk PIN/passordfrase, biometri OK med PIN-fallback.",
+        "8": "Sikkerhetskopi: krypterte kopier du kontrollerer — ikke bare Google One.",
+        "9": "Arbeidsprofil / sekundær bruker for å isolere tvilsomme apper.",
+        "10": "Unngå å sidelaste APK-er fra tilfeldige nettsteder."
+      },
+      "ios": {
+        "title": "iOS-herdingsjekkliste",
+        "stack": "Rask iOS-stack",
+        "note": "iOS er lukket kildekode — kompensér med sterk Apple ID-sikkerhet og minimal appflate.",
+        "1": "Oppdater iOS raskt — sandkassen er sterk; upatchet er det ikke.",
+        "2": "Aktiver Lockdown Mode ved målrettede angrep.",
+        "3": "Personvern og sikkerhet: gå gjennom tillatelser; nullstill sporing.",
+        "4": "Apple ID: unikt sterkt passord, sikkerhetsnøkkel eller passkeys, Skjul e-posten min.",
+        "5": "iCloud: vit hva som synces. Avansert databeskyttelse styrker E2EE.",
+        "6": "Begrens analyse og personlig tilpassede annonser.",
+        "7": "Safari: aktiver advarsel om svindelnettsteder; vurder Brave/Firefox Focus.",
+        "8": "App-sporing: avvis som standard.",
+        "9": "USB-tilbehør / beskyttelse mot stjålet enhet ved fysisk trussel.",
+        "10": "Unngå skumle konfigurasjonsprofiler og MDM du ikke forstår."
+      }
+    },
+    "desktop": {
+      "eyebrow": "Datamaskiner",
+      "title": "PC- og laptop-personvern",
+      "lead": "Laptopen holder livsverket ditt. Krypter disken, minimer telemetri, og slutt å behandle nettleseren som en søppeldunk.",
+      "windows": {
+        "1": "Bruk lokal konto når mulig; begrens Microsoft-kontosynk.",
+        "2": "Skru av annonse-ID, skreddersydde opplevelser og full telemetri.",
+        "3": "Aktiver BitLocker (eller enhetskryptering) + sterk innlogging.",
+        "4": "Bytt Edge-standard: Firefox + uBlock Origin.",
+        "5": "Avinstaller bloat; deaktiver oppstartsapper du ikke kjenner.",
+        "6": "Windows Sandbox / separat nettleserprofil for risikable nettsteder.",
+        "7": "Vurder Linux når du er klar for renere ark."
+      },
+      "macos": {
+        "1": "FileVault på. Brannmur på. Automatiske oppdateringer på.",
+        "2": "Gå gjennom Personvern og sikkerhet-tillatelser jevnlig.",
+        "3": "iCloud: Avansert databeskyttelse hvis gjenoppretting passer.",
+        "4": "Foretrekk App Store eller verifiserte utviklere; Gatekeeper på.",
+        "5": "Begrens Continuity-funksjoner som kringkaster tilstedeværelse ved behov.",
+        "6": "Bruk Firefox/Brave; skill jobb og privat browsing.",
+        "7": "Låseskjerm hot corners + kort idle-timeout."
+      },
+      "linux": {
+        "1": "Full diskkryptering ved installasjon (LUKS).",
+        "2": "Fedora, Debian eller openSUSE for fornuftige standarder.",
+        "3": "Flatpak med omhu; foretrekk distropakker for systemverktøy.",
+        "4": "Brannmur (firewalld/ufw); automatiske sikkerhetsoppdateringer.",
+        "5": "Qubes OS for sterk appisolasjon (brattere læringskurve).",
+        "6": "Hold firmware oppdatert (fwupd).",
+        "7": "Separat nettleser for bank vs. generell bruk."
+      },
+      "universal_title": "Universelle PC-regler",
+      "u1": {
+        "title": "Krypter eller mist",
+        "body": "Tapt laptop uten FDE = fullt databrudd. Krypter alltid disker."
+      },
+      "u2": {
+        "title": "Passordbehandler overalt",
+        "body": "Innebygd i nettleser er bedre enn ingenting; Bitwarden/KeePassXC er bedre."
+      },
+      "u3": {
+        "title": "Oppdateringer er sikkerhet",
+        "body": "Upatchet OS/nettleser er den enkleste kompromissveien."
+      },
+      "u4": {
+        "title": "Minste privilegium",
+        "body": "Ikke jobb daglig som admin/root. Ikke installer tilfeldige .exe/.dmg."
+      },
+      "u5": {
+        "title": "Offline sikkerhetskopi",
+        "body": "3-2-1-backup med minst én offline/kryptert kopi."
+      },
+      "u6": {
+        "title": "Offentlig Wi‑Fi = VPN",
+        "body": "Behandle kafeer og flyplasser som fiendtlige nettverk."
+      }
+    },
+    "checklist": {
+      "eyebrow": "Handlingsplan",
+      "title": "Personvern-sjekkliste",
+      "lead": "Kryss av etter hvert. Fremdrift lagres bare i denne nettleseren — ingenting lastes opp.",
+      "complete": "fullført",
+      "reset": "Nullstill",
+      "reset_confirm": "Nullstille all sjekklistefremdrift på denne enheten?",
+      "g1": "Uke 1 — Grunnlag",
+      "g2": "Uke 2–3 — Solid stack",
+      "g3": "Neste nivå — Sterkere trusselmodeller",
+      "items": {
+        "c1": "Installer passordbehandler og migrer kritiske kontoer",
+        "c2": "Slå på 2FA (authenticator) for e-post og bank",
+        "c3": "Installer Signal og flytt sensitive samtaler bort fra SMS",
+        "c4": "Installer PrivyDeck og herd nettleseren (Firefox + uBlock valgfritt)",
+        "c5": "Bytt søkemotor bort fra Google",
+        "c6": "Gå gjennom app-tillatelser (posisjon, mic, kamera)",
+        "c7": "Flytt primær e-post til Proton / Tuta (eller herd nåværende)",
+        "c8": "Sett opp no-logs VPN for reise og offentlig Wi‑Fi",
+        "c9": "Aktiver full diskkryptering på alle PC-er og telefoner",
+        "c10": "Lag e-postaliaser for shopping og nyhetsbrev",
+        "c11": "Kryptert sky eller Cryptomator-hvelv for sensitive filer",
+        "c12": "Revider personverninnstillinger og offentlige innlegg i sosiale medier",
+        "c13": "Maskinvaresikkerhetsnøkkel for kritiske kontoer",
+        "c14": "Separate enheter eller profiler for høyrisikoaktivitet",
+        "c15": "Vurder GrapheneOS / herdet mobil-OS",
+        "c16": "Utmelding fra datameglere og people-search",
+        "c17": "Offline / krypterte backups testet med gjenoppretting",
+        "c18": "Skriftlig personlig trusselmodell (hvem / hva / hvorfor)"
+      }
+    },
+    "principles": {
+      "eyebrow": "Tankesett",
+      "title": "Personvernprinsipper som aldri går ut på dato",
+      "p1": {
+        "title": "Trusselmodell først",
+        "body": "Beskytt mot risikoene du faktisk har — ikke en filmvillain. Ulike jobber trenger ulike stacker."
+      },
+      "p2": {
+        "title": "Minimer data",
+        "body": "Du kan ikke lekke det du aldri samler. Del mindre, behold mindre, slett det du ikke trenger."
+      },
+      "p3": {
+        "title": "Forsvar i dybden",
+        "body": "Ett verktøy svikter. Lag lag med passord, 2FA, kryptering, oppdateringer og gode vaner."
+      },
+      "p4": {
+        "title": "Foretrekk åpent og revidert",
+        "body": "Åpen kildekode er ikke magi, men hemmelighold er et dårligere bet for sikkerhetskritisk programvare."
+      },
+      "p5": {
+        "title": "Brukervennlighet vinner",
+        "body": "Det private verktøyet du forlater er verre enn det gode nok-verktøyet du bruker daglig."
+      },
+      "p6": {
+        "title": "Anta brudd",
+        "body": "Planlegg gjenoppretting: backups, nøkler du kontrollerer, og kontoer du fortsatt kan ta tilbake."
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Vanlige spørsmål",
+      "q1": "Trenger jeg VPN hver dag?",
+      "a1": "Ikke alltid. En VPN skjuler trafikken din for lokale nettverk og ISP, og kan redusere stedbasert sporing — men den gjør deg ikke anonym, og en dårlig VPN er verre enn ingen. Bruk en anerkjent no-logs-leverandør på fiendtlige nett; kombiner med HTTPS, gode nettlesere og kontohygiene.",
+      "q2": "Er Signal egentlig privat når det krever telefonnummer?",
+      "a2": "Signal krypterer meldingsinnholdet utmerket. Nummeret er en identifikator for oppdagelse — en tradeoff for brukervennlighet. Hvis det betyr noe for trusselmodellen din, se på Session. For de fleste er Signal fortsatt det beste valget folk faktisk installerer.",
+      "q3": "Hva er den enkeltendringen med størst effekt?",
+      "a3": "Passordbehandler + unike passord + authenticator-2FA på e-post. De fleste kontoovertakelser er gjenbrukte passord og SIM-swap, ikke nasjonalstats zero-days.",
+      "q4": "Bør jeg slette sosiale medier?",
+      "a4": "Hvis du kan, hjelper det mye. Hvis ikke: lås profiler, fjern persondata, stopp sanntidsposisjon, og bruk nettlesercontainere så sporere ikke følger deg overalt.",
+      "q5": "Sporer denne siden meg?",
+      "a5": "Ingen analyse, ingen annonsecookies, ingen tredjepartssporere for annonser. Sjekklistefremdrift ligger bare i nettleserens localStorage.",
+      "q6": "Hvor kan jeg gå dypere?",
+      "a6": "Les prosjektdokumentasjon for verktøyene du tar i bruk. Ressurser som privacyguides.org og offisielle sikkerhetspapirer slår tilfeldige VPN-topplister."
+    },
+    "cta": {
+      "title": "Start med én endring i dag",
+      "body": "Personvern er en praksis, ikke et produkt. Velg en sti, installer én bedre app, kryss av ett punkt — og fortsett.",
+      "paths": "Velg din sti",
+      "apps": "Utforsk apper"
+    },
+    "footer": {
+      "tag": "Det ultimate kartet for personvern — fra Vassbrekke AS. Apper, telefoner, PC-er og liv.",
+      "explore": "Utforsk",
+      "start": "Kom i gang",
+      "disclaimer_title": "Ansvarsfraskrivelse",
+      "disclaimer": "Opplæringsguide utgitt av Vassbrekke AS. Ikke juridisk eller profesjonell sikkerhetsrådgivning. Trusselmodeller varierer. Tredjepartsverktøy er uavhengige; verifiser programvare selv. PrivyDeck, PrivBeacon og andre merkede produkter er bygget av Vassbrekke / VassDev.",
+      "built": "Bygget for mennesker som vil ha livet sitt tilbake",
+      "privacy": "Ingen sporere · Ingen kontoer · Kun lokal sjekkliste",
+      "owned_by": "Denne siden eies og hostes av Vassbrekke AS."
+    },
+    "ours": {
+      "badge": "Vassbrekke AS · Våre produkter",
+      "title": "Bygget av oss — start med PrivyDeck",
+      "body": "PrivGuide eies og hostes av Vassbrekke AS (Norge). Nedenfor finner du først våre personvernprodukter — ledet av PrivyDeck — deretter det åpne økosystemet vi anbefaler. Se hele linjen på vassbrekke.no."
+    }
+  },
+  "es": {
+    "meta": {
+      "title": "PrivGuide — Mejores apps de privacidad y guía de privacidad personal",
+      "description": "Guía definitiva de privacidad: mejores apps (Signal, Bitwarden, Mullvad, Proton), endurece Android e iOS, protege Windows/macOS/Linux y tu vida cotidiana.",
+      "keywords": "PrivyDeck, PrivBeacon, Vassbrekke AS, apps de privacidad, mejores apps privacidad, privacidad personal, privacidad móvil, android, ios, gestor de contraseñas, vpn, signal, bitwarden, proton, guía de privacidad"
+    },
+    "a11y": {
+      "skip": "Saltar al contenido",
+      "menu_open": "Abrir menú",
+      "menu_close": "Cerrar menú"
+    },
+    "nav": {
+      "apps": "Apps",
+      "life": "Vida",
+      "phone": "Móvil",
+      "desktop": "PC",
+      "paths": "Empieza aquí",
+      "checklist": "Lista",
+      "language": "Idioma"
+    },
+    "hero": {
+      "eyebrow": "Abierto · Práctico · Actualizado",
+      "h1a": "Tu privacidad no es opcional.",
+      "h1b": "Este es tu mapa de referencia.",
+      "lead": "Encuentra las mejores apps de privacidad, endurece tu móvil y ordenadores, y crea hábitos reales sin necesitar un título en informática.",
+      "cta_apps": "Explorar apps de privacidad",
+      "cta_path": "Elige tu camino →",
+      "stat_tools": "herramientas seleccionadas",
+      "stat_levels": "niveles de amenaza",
+      "stat_trackers": "rastreadores en esta página",
+      "terminal_ok": "Vuelves a ser dueño de tus datos."
+    },
+    "trust": {
+      "aria": "Qué cubre esta guía",
+      "1": {
+        "title": "Apps que te respetan",
+        "body": "Código abierto primero, auditadas cuando importa, sin patrones oscuros."
+      },
+      "2": {
+        "title": "Móvil y escritorio",
+        "body": "Android, iOS, Windows, macOS y Linux — pasos prácticos."
+      },
+      "3": {
+        "title": "También fuera de línea",
+        "body": "Social, hogar, dinero y privacidad física que se mantiene."
+      }
+    },
+    "paths": {
+      "eyebrow": "Empieza aquí",
+      "title": "Elige tu camino de privacidad",
+      "lead": "No todo el mundo necesita una bolsa de Faraday. Elige un nivel según tu riesgo.",
+      "l1": {
+        "badge": "Nivel 1",
+        "title": "Privacidad cotidiana",
+        "body": "Para quien quiere menos rastreo, menos fugas y mejores valores predeterminados.",
+        "1": "Gestor de contraseñas + contraseñas únicas",
+        "2": "Signal para chats privados",
+        "3": "PrivyDeck (+ Firefox / uBlock)",
+        "4": "2FA en correo y banca",
+        "5": "Revisar permisos de apps del móvil",
+        "cta": "Empezar lista →"
+      },
+      "l2": {
+        "badge": "Nivel 2 · Recomendado",
+        "title": "Configuración sólida",
+        "body": "Para freelancers y quien quiere un stack privado de verdad.",
+        "1": "Correo Proton o Tuta",
+        "2": "VPN Mullvad / Proton en Wi‑Fi público",
+        "3": "Nube cifrada o copias locales",
+        "4": "Perfil de navegador endurecido",
+        "5": "Cuentas trabajo / personal separadas",
+        "cta": "Explorar el stack →"
+      },
+      "l3": {
+        "badge": "Nivel 3",
+        "title": "Alta amenaza",
+        "body": "Para activistas, denunciantes y objetivos de alto riesgo.",
+        "1": "GrapheneOS / Android sin Google",
+        "2": "Tor Browser para investigación",
+        "3": "Dispositivos y VMs compartimentados",
+        "4": "Llaves de seguridad hardware",
+        "5": "Disciplina de opsec",
+        "cta": "Endurecer el móvil →"
+      }
+    },
+    "apps": {
+      "eyebrow": "Directorio de apps",
+      "title": "Mejores apps de privacidad — por categoría",
+      "lead": "Herramientas seleccionadas — lideradas por PrivyDeck y la suite Vassbrekke, luego lo mejor de la comunidad.",
+      "note": "Los productos de Vassbrekke AS están marcados Nuestro. Verifica siempre las fuentes de descarga.",
+      "use_when": "Úsala cuando:",
+      "visit": "Sitio web",
+      "signal": {
+        "desc": "Estándar de oro del mensajero privado. Cifrado de extremo a extremo, mensajes que desaparecen, código abierto, sin anuncios.",
+        "why": "familia y amigos de verdad lo instalarán."
+      },
+      "session": {
+        "desc": "Sin número de teléfono. Resistencia a metadatos por enrutado cebolla. Modelo de anonimato más fuerte.",
+        "why": "quieres chat con poca identidad."
+      },
+      "element": {
+        "desc": "Salas E2EE federadas, puentes a otras redes. Puedes autoalojar e infra propia.",
+        "why": "importan grupos, orgs o autoalojamiento."
+      },
+      "firefox": {
+        "desc": "Mejor equilibrio entre usabilidad y control. Combínalo con PrivyDeck y/o uBlock Origin y protección estricta de rastreo.",
+        "why": "navegación diaria para la mayoría."
+      },
+      "brave": {
+        "desc": "Basado en Chromium con bloqueo agresivo de anuncios/rastreadores y ventanas privadas con Tor.",
+        "why": "quieres UX tipo Chrome con mejores defaults."
+      },
+      "tor": {
+        "desc": "Tráfico por la red Tor. Esencial para investigación de alto riesgo y eludir censura. No para logins cotidianos.",
+        "why": "el modelo de amenaza necesita anonimato, no solo privacidad."
+      },
+      "mullvad_browser": {
+        "desc": "Tecnología de Tor Browser sin la red Tor — Firefox endurecido anti-fingerprinting.",
+        "why": "lo combinas con una VPN de confianza."
+      },
+      "mullvad": {
+        "desc": "Cuentas anónimas (sin email), pago en efectivo/cripto, auditado, reputación no-logs.",
+        "why": "te importa más la privacidad que el streaming más rápido."
+      },
+      "protonvpn": {
+        "desc": "Buen plan gratuito, apps open source, Secure Core y ecosistema Proton. Ideal para principiantes.",
+        "why": "ya usas Proton Mail/Drive."
+      },
+      "ivpn": {
+        "desc": "Empresa transparente, sin email al registrarse, fuerte anti-rastreo.",
+        "why": "quieres valores tipo Mullvad con más funciones."
+      },
+      "bitwarden": {
+        "desc": "Open source, auditado, gratis para individuos. Autoaloja con Vaultwarden si quieres control total.",
+        "why": "aún reutilizas contraseñas (empieza hoy)."
+      },
+      "keepassxc": {
+        "desc": "Base de contraseñas local-first. Controlas archivo, copias y sincronización. Cero dependencia de nube.",
+        "why": "no quieres vault en la nube de terceros."
+      },
+      "protonpass": {
+        "desc": "Integrado con cuentas Proton. UX limpia, alias hide-my-email, apps open source.",
+        "why": "vives en la suite Proton."
+      },
+      "protonmail": {
+        "desc": "Correo cifrado con sede en Suiza. Onboarding fácil y ecosistema calendario/drive.",
+        "why": "dejas Gmail por primera vez."
+      },
+      "tuta": {
+        "desc": "Correo y calendario cifrados desde Alemania. Superficie de rastreo mínima.",
+        "why": "quieres una alternativa de correo enfocada en privacidad."
+      },
+      "thunderbird": {
+        "desc": "Cliente de escritorio con OpenPGP. Úsalo con cualquier proveedor, incluido dominio propio.",
+        "why": "quieres control del correo en el cliente."
+      },
+      "ddg": {
+        "desc": "Sin perfilado de historial de búsqueda para anuncios. Cambio simple desde Google.",
+        "why": "quieres privacidad sin fricción."
+      },
+      "bravesearch": {
+        "desc": "Índices independientes o proxies de privacidad sin perfil publicitario de consultas.",
+        "why": "los resultados de DDG no bastan."
+      },
+      "searxng": {
+        "desc": "Metabúsqueda autoalojable. Agrega motores sin entregar tu gráfica de curiosidad a una empresa.",
+        "why": "operas tus propios servicios."
+      },
+      "protondrive": {
+        "desc": "Almacenamiento en la nube con cifrado E2EE. Mejor que nubes de confianza ciega para documentos sensibles.",
+        "why": "los archivos deben sincronizarse cifrados."
+      },
+      "cryptomator": {
+        "desc": "Bóvedas del lado del cliente sobre Dropbox, Google Drive o cualquier carpeta. Cifra antes de subir.",
+        "why": "aún no puedes dejar tu nube actual."
+      },
+      "nextcloud": {
+        "desc": "Autoalojar archivos y calendarios (Nextcloud) o sincronización P2P sin servidor central (Syncthing).",
+        "why": "estás listo para dejar la gran nube."
+      },
+      "aegis": {
+        "desc": "App 2FA open source para Android con exportaciones cifradas. Prefiere TOTP al SMS.",
+        "why": "reemplazas Google Authenticator."
+      },
+      "enteauth": {
+        "desc": "Authenticator multiplataforma open source con sync cifrado opcional.",
+        "why": "necesitas 2FA en varios dispositivos."
+      },
+      "yubikey": {
+        "desc": "MFA resistente al phishing. Llaves para email, gestor de contraseñas y cuentas críticas.",
+        "why": "un robo de cuenta sería devastador."
+      },
+      "graphene": {
+        "desc": "Android endurecido para Pixel. Mejor postura de seguridad/privacidad móvil al consumidor hoy.",
+        "why": "la seguridad del teléfono es innegociable."
+      },
+      "linux": {
+        "desc": "Deja la telemetría de Windows. Fedora/Debian para el día a día; Qubes para compartimentación seria.",
+        "why": "la privacidad de escritorio es un objetivo a largo plazo."
+      },
+      "ios": {
+        "desc": "Sandbox fuerte de serie. Lockdown Mode, limita iCloud, desactiva ads tracking y revisa permisos.",
+        "why": "te quedas en el ecosistema Apple con cuidado."
+      },
+      "organicmaps": {
+        "desc": "Mapas offline con OpenStreetMap. Navega sin enviar tu ubicación a Google sin cesar.",
+        "why": "mapas sin impuesto de vigilancia."
+      },
+      "notes": {
+        "desc": "Notas cifradas con sync multi-dispositivo. Diarios y borradores fuera de notas en texto plano en la nube.",
+        "why": "Notas de Apple/Google se sienten expuestas."
+      },
+      "blockers": {
+        "desc": "Bloquea anuncios, rastreadores y dominios maliciosos. uBlock en escritorio; RethinkDNS en móvil.",
+        "why": "el día uno de cualquier viaje de privacidad."
+      },
+      "photos": {
+        "desc": "Backup de fotos cifrado (Ente) o alternativa autoalojada a Google Photos (Immich).",
+        "why": "dejas Google Photos."
+      },
+      "calling": {
+        "desc": "Prefiere voz/vídeo E2EE. Evita conversaciones sensibles en SMS o defaults sin cifrar.",
+        "why": "el contenido de la llamada importa."
+      },
+      "privydeck": {
+        "desc": "Nuestro panel de privacidad personal. Puntuación de privacidad, bloqueo de rastreadores en móvil y navegador con un toque, bóveda cifrada (con saneado de archivos y limpieza segura integrados) y solicitudes de datos — sin Raspberry Pi.",
+        "why": "quieres el bloqueador, bóveda y puntuación todo-en-uno más simple (empieza aquí)."
+      },
+      "privbeacon": {
+        "desc": "SaaS de cumplimiento de privacidad para sitios. Escanea rastreadores y huecos de consentimiento en 16 marcos legales y gana el sello Certified Private.",
+        "why": "gestionas un sitio o app y necesitas cumplimiento real."
+      },
+      "winprivacy": {
+        "desc": "Mejora la privacidad en Windows 10 y 11 con GUI y CLI — reduce telemetría (open source, VassDev).",
+        "why": "estás en Windows y quieres endurecer sin cambiar de SO aún."
+      },
+      "sechardening": {
+        "desc": "Scripts prácticos de hardening para una instalación limpia (open source, VassDev).",
+        "why": "montas Linux y quieres una base rápida y sensata."
+      },
+      "ublock": {
+        "desc": "El bloqueador clásico de código abierto para el navegador. Combínalo con Firefox en el escritorio.",
+        "why": "quieres una extensión FOSS junto a PrivyDeck."
+      },
+      "rethinkdns": {
+        "desc": "Protección tipo DNS + firewall en Android. Bloquea dominios de rastreo en todo el sistema.",
+        "why": "necesitas bloqueo a nivel de red en apps Android."
+      },
+      "ours_pill": "Nuestro",
+      "by_vassbrekke": "De Vassbrekke AS"
+    },
+    "filters": {
+      "aria": "Categorías de apps",
+      "all": "Todas",
+      "messaging": "Mensajería",
+      "browser": "Navegadores",
+      "vpn": "VPN",
+      "passwords": "Contraseñas",
+      "email": "Correo",
+      "search": "Búsqueda",
+      "storage": "Almacenamiento",
+      "auth": "2FA / Auth",
+      "os": "SO / ROM",
+      "extra": "Más herramientas",
+      "ours": "Nuestros"
+    },
+    "life": {
+      "eyebrow": "Vida real",
+      "title": "Privacidad personal más allá de las apps",
+      "lead": "La mejor VPN no arregla el exceso de publicación ni una cámara apuntando a tu mesa.",
+      "1": {
+        "title": "Social e identidad",
+        "1": "Audita perfiles públicos: quita fecha de nacimiento, ciudad, trabajo, fotos de familia.",
+        "2": "Usa distintos nombres de usuario por contexto.",
+        "3": "Desactiva reconocimiento facial y sincronización de contactos.",
+        "4": "No publiques ubicación en tiempo real.",
+        "5": "Crea alias de correo para compras, newsletters y banca."
+      },
+      "2": {
+        "title": "Hogar y físico",
+        "1": "Cubre cámaras del portátil; prefiere micrófonos con mute hardware.",
+        "2": "Bloquea pantallas; activa cifrado de disco completo.",
+        "3": "Destruye documentos con números de ID.",
+        "4": "Cuestiona altavoces inteligentes; segmenta IoT en Wi‑Fi de invitados.",
+        "5": "Controla el acceso físico al viajar."
+      },
+      "3": {
+        "title": "Dinero y compras",
+        "1": "Usa pagos amigables con la privacidad cuando sea legal y práctico.",
+        "2": "Evita tarjetas de fidelización con tu identidad real si puedes.",
+        "3": "No fotografíes tarjetas ni DNI en la nube.",
+        "4": "Date de baja de data brokers (varía por país).",
+        "5": "2FA financiero en llaves o authenticator, nunca solo SMS."
+      },
+      "4": {
+        "title": "Hábitos de comunicación",
+        "1": "Signal por defecto para lo que no pondrías en una postal.",
+        "2": "Mensajes que desaparecen; las capturas siguen existiendo.",
+        "3": "Verifica números de seguridad con contactos críticos.",
+        "4": "No hables secretos en dispositivos del trabajo.",
+        "5": "Cada miembro nuevo en un grupo amplía la superficie de riesgo."
+      }
+    },
+    "phone": {
+      "eyebrow": "Móvil",
+      "title": "Privacidad del teléfono — Android e iOS",
+      "lead": "Tu teléfono es un superordenador de rastreo. Asegúralo por plataforma.",
+      "tabs_aria": "Plataformas móviles",
+      "android": {
+        "title": "Lista de endurecimiento Android",
+        "stack": "Stack Android rápido",
+        "note": "GrapheneOS: Google Play aislado es opcional.",
+        "1": "Prefiere Pixel moderno + GrapheneOS si puedes. Si no, mantén el SO actualizado.",
+        "2": "Instala apps de fuentes de confianza — Play Store con cuidado o F-Droid.",
+        "3": "Dieta de permisos: niega ubicación, mic, cámara, contactos si no son necesarios.",
+        "4": "Desactiva ID de publicidad y personalización de anuncios.",
+        "5": "Apaga Bluetooth, NFC y ubicación precisa cuando no los uses.",
+        "6": "Usa bloqueo DNS (Private DNS / RethinkDNS / NextDNS).",
+        "7": "Pantalla de bloqueo: PIN/frase fuerte; biometría con respaldo PIN.",
+        "8": "Copias cifradas bajo tu control, no solo Google One.",
+        "9": "Perfil de trabajo / usuario secundario para apps dudosas.",
+        "10": "Evita APKs de sitios aleatorios."
+      },
+      "ios": {
+        "title": "Lista de endurecimiento iOS",
+        "stack": "Stack iOS rápido",
+        "note": "iOS es cerrado: compensa con Apple ID fuerte y pocas apps.",
+        "1": "Actualiza iOS pronto.",
+        "2": "Activa Lockdown Mode ante ataques dirigidos.",
+        "3": "Revisa cada permiso; restablece el rastreo.",
+        "4": "Apple ID: contraseña única, llave o passkeys, Ocultar mi correo.",
+        "5": "iCloud: conoce qué se sincroniza; Protección de datos avanzada.",
+        "6": "Limita analíticas y anuncios personalizados.",
+        "7": "Safari con avisos de fraude; considera Brave/Firefox Focus.",
+        "8": "Transparencia de seguimiento: denegar por defecto.",
+        "9": "Protección de dispositivo robado / accesorios USB.",
+        "10": "Evita perfiles de configuración sospechosos y MDM desconocidos."
+      }
+    },
+    "desktop": {
+      "eyebrow": "Ordenadores",
+      "title": "Privacidad en escritorio y portátil",
+      "lead": "Cifra el disco, minimiza la telemetría y deja de tratar el navegador como un basurero.",
+      "windows": {
+        "1": "Cuenta local si es posible; limita sincronización de Microsoft.",
+        "2": "Desactiva ID de publicidad y telemetría completa.",
+        "3": "BitLocker + inicio de sesión fuerte.",
+        "4": "Firefox + uBlock Origin en lugar de Edge por defecto.",
+        "5": "Desinstala bloat y apps de inicio desconocidas.",
+        "6": "Sandbox o perfil de navegador aparte para sitios de riesgo.",
+        "7": "Considera Linux cuando estés listo."
+      },
+      "macos": {
+        "1": "FileVault, firewall y actualizaciones automáticas activados.",
+        "2": "Revisa permisos de Privacidad y seguridad con regularidad.",
+        "3": "Protección de datos avanzada en iCloud si encaja.",
+        "4": "App Store o desarrolladores verificados; Gatekeeper activo.",
+        "5": "Limita Continuity si tu modelo de amenaza lo pide.",
+        "6": "Firefox/Brave; separa navegación personal y de trabajo.",
+        "7": "Bloqueo de pantalla rápido."
+      },
+      "linux": {
+        "1": "Cifrado de disco completo en la instalación (LUKS).",
+        "2": "Fedora, Debian u openSUSE con valores sensatos.",
+        "3": "Flatpak con cuidado; paquetes de la distro para herramientas del sistema.",
+        "4": "Firewall y actualizaciones de seguridad automáticas.",
+        "5": "Qubes OS para aislamiento fuerte.",
+        "6": "Firmware actualizado (fwupd).",
+        "7": "Navegador separado para banca."
+      },
+      "universal_title": "Reglas universales de escritorio",
+      "u1": {
+        "title": "Cifra o pierdes",
+        "body": "Portátil perdido sin cifrado = filtración total."
+      },
+      "u2": {
+        "title": "Gestor de contraseñas siempre",
+        "body": "Bitwarden/KeePassXC superan al del navegador solo."
+      },
+      "u3": {
+        "title": "Actualizar es seguridad",
+        "body": "SO/navegador sin parches es la vía fácil de compromiso."
+      },
+      "u4": {
+        "title": "Mínimo privilegio",
+        "body": "No trabajes como admin/root a diario."
+      },
+      "u5": {
+        "title": "Copia offline",
+        "body": "Backups 3-2-1 con al menos una copia cifrada offline."
+      },
+      "u6": {
+        "title": "Wi‑Fi público = VPN",
+        "body": "Cafés y aeropuertos son redes hostiles."
+      }
+    },
+    "checklist": {
+      "eyebrow": "Plan de acción",
+      "title": "Lista de privacidad",
+      "lead": "Marca al completar. El progreso se guarda solo en este navegador.",
+      "complete": "completado",
+      "reset": "Restablecer",
+      "reset_confirm": "¿Restablecer todo el progreso de la lista en este dispositivo?",
+      "g1": "Semana 1 — Fundamentos",
+      "g2": "Semanas 2–3 — Stack sólido",
+      "g3": "Subir de nivel — Amenazas más altas",
+      "items": {
+        "c1": "Instalar gestor de contraseñas y migrar cuentas críticas",
+        "c2": "Activar 2FA (authenticator) en correo y banca",
+        "c3": "Instalar Signal y sacar chats sensibles del SMS",
+        "c4": "Cambiar navegador predeterminado + uBlock Origin",
+        "c5": "Cambiar buscador lejos de Google",
+        "c6": "Revisar permisos del móvil (ubicación, mic, cámara)",
+        "c7": "Mover correo principal a Proton / Tuta (o endurecer el actual)",
+        "c8": "Configurar VPN sin logs para viajes y Wi‑Fi público",
+        "c9": "Cifrado de disco completo en todos los equipos y teléfonos",
+        "c10": "Crear alias de correo para compras y newsletters",
+        "c11": "Nube cifrada o bóveda Cryptomator para archivos sensibles",
+        "c12": "Auditar privacidad y publicaciones en redes sociales",
+        "c13": "Llave de seguridad hardware para cuentas críticas",
+        "c14": "Dispositivos o perfiles separados para actividad de alto riesgo",
+        "c15": "Evaluar GrapheneOS / SO móvil endurecido",
+        "c16": "Opt-outs de data brokers y buscadores de personas",
+        "c17": "Backups offline/cifrados probados con restauración",
+        "c18": "Modelo de amenaza personal por escrito (quién / qué / por qué)"
+      }
+    },
+    "principles": {
+      "eyebrow": "Mentalidad",
+      "title": "Principios de privacidad que no caducan",
+      "p1": {
+        "title": "Modelo de amenaza primero",
+        "body": "Protégete de los riesgos reales, no de un villano de cine."
+      },
+      "p2": {
+        "title": "Minimiza datos",
+        "body": "No puedes filtrar lo que nunca recoges."
+      },
+      "p3": {
+        "title": "Defensa en profundidad",
+        "body": "Una herramienta falla. Apila capas."
+      },
+      "p4": {
+        "title": "Prefiere abierto y auditado",
+        "body": "El código abierto no es magia, pero el secretismo es peor apuesta."
+      },
+      "p5": {
+        "title": "La usabilidad gana",
+        "body": "La herramienta privada que abandonas pierde ante la que usas cada día."
+      },
+      "p6": {
+        "title": "Asume la brecha",
+        "body": "Planifica recuperación: copias, llaves y cuentas recuperables."
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Preguntas frecuentes",
+      "q1": "¿Necesito VPN todos los días?",
+      "a1": "No siempre. Una VPN oculta tráfico a redes locales e ISP y reduce rastreo por ubicación, pero no te hace anónimo. Una mala VPN es peor que ninguna. Úsala en redes hostiles con un proveedor sin logs de reputación.",
+      "q2": "¿Signal es privado si pide mi número?",
+      "a2": "El contenido está muy bien cifrado. El número es un identificador de descubrimiento. Si eso importa, mira Session. Para la mayoría, Signal sigue siendo la mejor opción que la gente instalará.",
+      "q3": "¿Cuál es el cambio de mayor impacto?",
+      "a3": "Gestor de contraseñas + contraseñas únicas + 2FA con authenticator en el correo.",
+      "q4": "¿Debo borrar las redes sociales?",
+      "a4": "Si puedes, ayuda mucho. Si no, cierra perfiles, quita datos personales y evita ubicación en tiempo real.",
+      "q5": "¿Este sitio me rastrea?",
+      "a5": "Sin analítica, sin cookies publicitarias, sin rastreadores de terceros. La lista se guarda solo en localStorage.",
+      "q6": "¿Dónde profundizar?",
+      "a6": "Documentación oficial de las herramientas y recursos como privacyguides.org."
+    },
+    "cta": {
+      "title": "Empieza con un cambio hoy",
+      "body": "La privacidad es una práctica, no un producto. Elige un camino, instala una mejor app, marca un punto.",
+      "paths": "Elige tu camino",
+      "apps": "Explorar apps"
+    },
+    "footer": {
+      "tag": "El mapa de referencia de privacidad personal — de Vassbrekke AS.",
+      "explore": "Explorar",
+      "start": "Empezar",
+      "disclaimer_title": "Aviso",
+      "disclaimer": "Guía educativa publicada por Vassbrekke AS. No es asesoramiento legal ni de seguridad profesional. Los productos marcados (PrivyDeck, PrivBeacon, etc.) son de Vassbrekke / VassDev.",
+      "built": "Hecho para personas que quieren recuperar su vida",
+      "privacy": "Sin rastreadores · Sin cuentas · Lista solo local",
+      "owned_by": "Esta página está alojada y es propiedad de Vassbrekke AS."
+    },
+    "ours": {
+      "badge": "Vassbrekke AS · Nuestros productos",
+      "title": "Hecho por nosotros — empieza con PrivyDeck",
+      "body": "PrivGuide está alojado y es propiedad de Vassbrekke AS (Noruega). Primero nuestros productos de privacidad — liderados por PrivyDeck — y luego el ecosistema abierto que recomendamos. Ver todo en vassbrekke.no."
+    }
+  },
+  "de": {
+    "meta": {
+      "title": "PrivGuide — Beste Privacy-Apps & persönlicher Datenschutz-Guide",
+      "description": "Ultimativer Datenschutz-Guide: beste Privacy-Apps (Signal, Bitwarden, Mullvad, Proton), Android & iOS härten, Windows/macOS/Linux sichern, Alltagsschutz.",
+      "keywords": "PrivyDeck, PrivBeacon, Vassbrekke AS, privacy apps, datenschutz apps, persönlicher datenschutz, handy datenschutz, android privacy, passwortmanager, vpn, signal, bitwarden, proton, privacy guide"
+    },
+    "a11y": {
+      "skip": "Zum Inhalt springen",
+      "menu_open": "Menü öffnen",
+      "menu_close": "Menü schließen"
+    },
+    "nav": {
+      "apps": "Apps",
+      "life": "Leben",
+      "phone": "Handy",
+      "desktop": "Desktop",
+      "paths": "Start",
+      "checklist": "Checkliste",
+      "language": "Sprache"
+    },
+    "hero": {
+      "eyebrow": "Offen · Praktisch · Aktuell",
+      "h1a": "Deine Privatsphäre ist nicht optional.",
+      "h1b": "Das ist deine Karte.",
+      "lead": "Finde die besten Privacy-Apps, härte Handy und Computer und baue echte Gewohnheiten — ohne Informatikstudium.",
+      "cta_apps": "Privacy-Apps entdecken",
+      "cta_path": "Pfad wählen →",
+      "stat_tools": "kuratierte Tools",
+      "stat_levels": "Bedrohungsstufen",
+      "stat_trackers": "Tracker auf dieser Seite",
+      "terminal_ok": "Du besitzt deine Daten wieder."
+    },
+    "trust": {
+      "aria": "Was dieser Guide abdeckt",
+      "1": {
+        "title": "Apps, die dich respektieren",
+        "body": "Open Source zuerst, auditiert wenn es zählt, keine Dark Patterns."
+      },
+      "2": {
+        "title": "Handy & Desktop",
+        "body": "Android, iOS, Windows, macOS und Linux — praktische Schritte."
+      },
+      "3": {
+        "title": "Auch offline",
+        "body": "Sozial, Zuhause, Geld und physische Privatsphäre, die hält."
+      }
+    },
+    "paths": {
+      "eyebrow": "Hier starten",
+      "title": "Wähle deinen Privacy-Pfad",
+      "lead": "Nicht jeder braucht einen Faraday-Beutel. Wähle ein Level passend zu deinem Risiko.",
+      "l1": {
+        "badge": "Level 1",
+        "title": "Alltags-Privacy",
+        "body": "Für normale Menschen mit weniger Tracking und besseren Defaults.",
+        "1": "Passwortmanager + einzigartige Passwörter",
+        "2": "Signal für private Chats",
+        "3": "PrivyDeck (+ Firefox / uBlock)",
+        "4": "2FA für E-Mail & Banking",
+        "5": "App-Berechtigungen prüfen",
+        "cta": "Checkliste starten →"
+      },
+      "l2": {
+        "badge": "Level 2 · Empfohlen",
+        "title": "Solides Setup",
+        "body": "Für Freelancer und alle, die einen echten privaten Stack wollen.",
+        "1": "Proton- oder Tuta-Mail",
+        "2": "Mullvad / Proton VPN im öffentlichen WLAN",
+        "3": "Verschlüsselte Cloud oder lokale Backups",
+        "4": "Gehärtetes Browserprofil",
+        "5": "Getrennte Arbeits-/Privatkonten",
+        "cta": "Stack erkunden →"
+      },
+      "l3": {
+        "badge": "Level 3",
+        "title": "Hohe Bedrohung",
+        "body": "Für Aktivisten, Whistleblower und Hochrisiko-Ziele.",
+        "1": "GrapheneOS / de-Googletes Android",
+        "2": "Tor Browser für Recherche",
+        "3": "Kompartmentierte Geräte & VMs",
+        "4": "Hardware-Sicherheitsschlüssel",
+        "5": "Opsec-Disziplin",
+        "cta": "Handy härten →"
+      }
+    },
+    "apps": {
+      "eyebrow": "App-Verzeichnis",
+      "title": "Beste Privacy-Apps — nach Kategorie",
+      "lead": "Kuratierte Tools — angeführt von PrivyDeck und der Vassbrekke-Suite, danach die besten Community-Tools.",
+      "note": "Vassbrekke-AS-Produkte sind mit Unser markiert. Download-Quellen immer prüfen.",
+      "use_when": "Nutzen wenn:",
+      "visit": "Website",
+      "signal": {
+        "desc": "Goldstandard für private Nachrichten. Ende-zu-Ende-Verschlüsselung, verschwindende Nachrichten, Open Source, keine Werbung.",
+        "why": "Freunde/Familie es wirklich installieren."
+      },
+      "session": {
+        "desc": "Keine Telefonnummer nötig. Onion-Routing gegen Metadaten. Stärkeres Anonymitätsmodell.",
+        "why": "du identitätsarme Chats willst."
+      },
+      "element": {
+        "desc": "Föderierte E2EE-Räume, Bridges zu anderen Netzen. Self-Hosting möglich.",
+        "why": "Gruppen, Orgs oder Self-Hosting zählen."
+      },
+      "firefox": {
+        "desc": "Beste Balance aus Nutzbarkeit und Kontrolle. Mit PrivyDeck und/oder uBlock Origin und striktem Tracking-Schutz.",
+        "why": "tägliches Surfen für die meisten."
+      },
+      "brave": {
+        "desc": "Chromium-basiert mit aggressivem Ad-/Tracker-Block und privaten Fenstern mit Tor-Option.",
+        "why": "du Chrome-ähnliche UX mit besseren Defaults willst."
+      },
+      "tor": {
+        "desc": "Traffic über das Tor-Netz. Essenziell für Hochrisiko-Recherche und Zensurumgehung. Nicht für Alltag-Logins.",
+        "why": "das Bedrohungsmodell Anonymität braucht, nicht nur Privacy."
+      },
+      "mullvad_browser": {
+        "desc": "Tor-Browser-Technik ohne Tor-Netz — gehärteter Firefox gegen Fingerprinting.",
+        "why": "du ihn mit einem vertrauenswürdigen VPN koppelst."
+      },
+      "mullvad": {
+        "desc": "Anonyme Konten (keine E-Mail), Bar/Krypto-Zahlung, auditiert, No-Logs-Ruf.",
+        "why": "dir Privacy wichtiger ist als schnellstes Streaming."
+      },
+      "protonvpn": {
+        "desc": "Solider Free-Tier, Open-Source-Apps, Secure Core und Proton-Ökosystem. Gut für Einsteiger.",
+        "why": "du schon Proton Mail/Drive nutzt."
+      },
+      "ivpn": {
+        "desc": "Transparentes Privacy-Unternehmen, keine E-Mail-Anmeldung, starkes Anti-Tracking.",
+        "why": "du Mullvad-ähnliche Werte mit mehr Features willst."
+      },
+      "bitwarden": {
+        "desc": "Open Source, auditiert, kostenlos für Einzelpersonen. Self-Host mit Vaultwarden für volle Kontrolle.",
+        "why": "du noch Passwörter wiederverwendest (starte heute)."
+      },
+      "keepassxc": {
+        "desc": "Local-first Passwortdatenbank. Du kontrollierst Datei, Backups und Sync. Keine Cloud-Abhängigkeit.",
+        "why": "du keinen Drittanbieter-Cloud-Vault willst."
+      },
+      "protonpass": {
+        "desc": "Integriert in Proton-Konten. Klare UX, Hide-my-Email-Aliase, Open-Source-Apps.",
+        "why": "du im Proton-Ökosystem lebst."
+      },
+      "protonmail": {
+        "desc": "Verschlüsselte E-Mail aus der Schweiz. Einfaches Onboarding, Kalender/Drive-Ökosystem.",
+        "why": "du zum ersten Mal von Gmail wegwechselst."
+      },
+      "tuta": {
+        "desc": "Verschlüsselte E-Mail und Kalender aus Deutschland. Minimale Tracking-Oberfläche.",
+        "why": "du eine fokussierte Privacy-Mail-Alternative willst."
+      },
+      "thunderbird": {
+        "desc": "Desktop-Mailclient mit OpenPGP. Mit jedem Anbieter — inklusive eigener Domain.",
+        "why": "du clientseitige Kontrolle über Mail willst."
+      },
+      "ddg": {
+        "desc": "Kein Suchverlauf-Profiling für Werbung. Einfacher Wechsel von Google.",
+        "why": "du reibungslose Privacy willst."
+      },
+      "bravesearch": {
+        "desc": "Unabhängige Indizes oder Privacy-Proxys ohne Werbeprofil um deine Queries.",
+        "why": "DDG-Ergebnisse nicht reichen."
+      },
+      "searxng": {
+        "desc": "Self-hostbare Metasuche. Aggregiere Engines ohne einer Firma deine Neugier-Graphen zu geben.",
+        "why": "du eigene Dienste betreibst."
+      },
+      "protondrive": {
+        "desc": "Ende-zu-Ende-verschlüsselter Cloud-Speicher. Besser als Trust-us-Clouds für sensible Dokumente.",
+        "why": "Dateien syncen müssen, aber verschlüsselt bleiben."
+      },
+      "cryptomator": {
+        "desc": "Client-seitige Tresore über Dropbox, Google Drive oder Ordner. Vor dem Upload verschlüsseln.",
+        "why": "du die aktuelle Cloud noch nicht verlassen kannst."
+      },
+      "nextcloud": {
+        "desc": "Self-Host Dateien und Kalender (Nextcloud) oder P2P-Sync ohne zentralen Server (Syncthing).",
+        "why": "du die Big Cloud ganz verlassen willst."
+      },
+      "aegis": {
+        "desc": "Open-Source-Android-2FA mit verschlüsselten Exporten. TOTP statt SMS bevorzugen.",
+        "why": "du Google Authenticator ersetzt."
+      },
+      "enteauth": {
+        "desc": "Plattformübergreifender Open-Source-Authenticator mit optionalem verschlüsseltem Sync.",
+        "why": "du 2FA auf mehreren Geräten brauchst."
+      },
+      "yubikey": {
+        "desc": "Phishing-resistente MFA. Sicherheitsschlüssel für E-Mail, Passwortmanager und kritische Konten.",
+        "why": "Kontoübernahme verheerend wäre."
+      },
+      "graphene": {
+        "desc": "Gehärtetes Android für Pixel. Beste mobile Security/Privacy-Haltung für Verbraucher heute.",
+        "why": "Handy-Sicherheit nicht verhandelbar ist."
+      },
+      "linux": {
+        "desc": "Windows-Telemetrie hinter dir lassen. Fedora/Debian für den Alltag; Qubes für ernsthafte Kompartmentierung.",
+        "why": "Desktop-Privacy ein Langzeitziel ist."
+      },
+      "ios": {
+        "desc": "Starke Sandbox von Haus aus. Lockdown Mode, iCloud begrenzen, Ad-Tracking aus, Berechtigungen prüfen.",
+        "why": "du vorsichtig im Apple-Ökosystem bleibst."
+      },
+      "organicmaps": {
+        "desc": "Offline-Karten auf OpenStreetMap. Navigieren ohne ständiges Standort-Broadcast an Google.",
+        "why": "Karten ohne Überwachungssteuer."
+      },
+      "notes": {
+        "desc": "Verschlüsselte Notizen mit Cross-Device-Sync. Journale und Entwürfe aus Klartext-Cloud-Notizen heraus.",
+        "why": "Apple/Google Notes zu exponiert wirken."
+      },
+      "blockers": {
+        "desc": "Werbung, Tracker und Malware-Domains blocken. uBlock am Desktop; RethinkDNS mobil.",
+        "why": "Tag eins jeder Privacy-Reise."
+      },
+      "photos": {
+        "desc": "Verschlüsseltes Foto-Backup (Ente) oder selbst gehostete Google-Photos-Alternative (Immich).",
+        "why": "du Google Photos verlässt."
+      },
+      "calling": {
+        "desc": "E2EE-Sprache/Video bevorzugen. Keine sensiblen Gespräche über SMS oder unverschlüsselte Defaults.",
+        "why": "der Gesprächsinhalt zählt."
+      },
+      "privydeck": {
+        "desc": "Unser persönliches Privacy-Dashboard. Privacy-Score, Ein-Tipp-Tracker-Block auf Handy und Browser, verschlüsselter Tresor (inkl. Dateibereinigung und sicherer Cleanup) und Datenanfragen — ohne Raspberry Pi.",
+        "why": "du den einfachsten All-in-one-Blocker, Tresor und Score willst (hier starten)."
+      },
+      "privbeacon": {
+        "desc": "Privacy-Compliance-SaaS für Websites. Scannt Tracker und Consent-Lücken über 16 Rechtsrahmen und vergibt Certified Private.",
+        "why": "du eine Website/App betreibst und echte Compliance brauchst."
+      },
+      "winprivacy": {
+        "desc": "Privacy auf Windows 10/11 verbessern — GUI und CLI, weniger Telemetrie (Open Source, VassDev).",
+        "why": "du Windows nutzt und praktisch härten willst."
+      },
+      "sechardening": {
+        "desc": "Praktische Hardening-Skripte für frische Installationen (Open Source, VassDev).",
+        "why": "du Linux aufsetzt und eine schnelle Baseline willst."
+      },
+      "ublock": {
+        "desc": "Der klassische Open-Source-Browser-Blocker. Mit Firefox auf dem Desktop kombinieren.",
+        "why": "du eine FOSS-Extension neben PrivyDeck willst."
+      },
+      "rethinkdns": {
+        "desc": "DNS- und Firewall-artiger Schutz für Android. Tracker-Domains systemweit blocken.",
+        "why": "du Netzwerk-Blocking für Android-Apps brauchst."
+      },
+      "ours_pill": "Unser",
+      "by_vassbrekke": "Von Vassbrekke AS"
+    },
+    "filters": {
+      "aria": "App-Kategorien",
+      "all": "Alle",
+      "messaging": "Messaging",
+      "browser": "Browser",
+      "vpn": "VPN",
+      "passwords": "Passwörter",
+      "email": "E-Mail",
+      "search": "Suche",
+      "storage": "Speicher",
+      "auth": "2FA / Auth",
+      "os": "OS / ROM",
+      "extra": "Mehr Tools",
+      "ours": "Unsere"
+    },
+    "life": {
+      "eyebrow": "Echtes Leben",
+      "title": "Persönliche Privatsphäre jenseits von Apps",
+      "lead": "Das beste VPN repariert kein Oversharing und keine Kamera auf dem Schreibtisch.",
+      "1": {
+        "title": "Sozial & Identität",
+        "1": "Öffentliche Profile prüfen — Geburtsdatum, Stadt, Arbeit, Familienfotos entfernen.",
+        "2": "Unterschiedliche Nutzernamen pro Kontext.",
+        "3": "Gesichtserkennung und Kontaktsync in Social Apps aus.",
+        "4": "Keine Echtzeit-Standorte posten.",
+        "5": "E-Mail-Aliase für Shopping, Newsletter und Banking."
+      },
+      "2": {
+        "title": "Zuhause & physisch",
+        "1": "Laptop-Kameras abdecken; Hardware-Mute für Mikros.",
+        "2": "Bildschirme sperren; Vollverschlüsselung überall.",
+        "3": "Dokumente mit Ausweisnummern vernichten.",
+        "4": "Smart Speaker hinterfragen; IoT im Gäste-WLAN.",
+        "5": "Physischen Gerätezugriff auf Reisen kennen."
+      },
+      "3": {
+        "title": "Geld & Einkaufen",
+        "1": "Privacy-freundliche Zahlungen wo legal und praktisch.",
+        "2": "Kundenkarten mit echter Identität meiden wenn möglich.",
+        "3": "Keine Kreditkarten/IDs in Cloud-Fotos.",
+        "4": "Data-Broker-Opt-outs (länderspezifisch).",
+        "5": "Finanz-2FA per Hardware-Key oder Authenticator, nie nur SMS."
+      },
+      "4": {
+        "title": "Kommunikationsgewohnheiten",
+        "1": "Signal als Standard für alles, was nicht auf eine Postkarte gehört.",
+        "2": "Verschwindende Nachrichten; Screenshots existieren weiter.",
+        "3": "Sicherheitsnummern bei kritischen Kontakten prüfen.",
+        "4": "Keine Geheimnisse auf Arbeitgebergeräten.",
+        "5": "Gruppenchats vergrößern die Angriffsfläche."
+      }
+    },
+    "phone": {
+      "eyebrow": "Mobil",
+      "title": "Handy-Privacy — Android & iOS",
+      "lead": "Dein Handy ist ein Tracking-Supercomputer. Härte es plattformweise ab.",
+      "tabs_aria": "Handy-Plattformen",
+      "android": {
+        "title": "Android-Härtungscheckliste",
+        "stack": "Schneller Android-Stack",
+        "note": "GrapheneOS: sandboxiertes Google Play nur bei echtem Bedarf.",
+        "1": "Modernes Pixel + GrapheneOS bevorzugen, sonst Stock-OS aktuell halten.",
+        "2": "Apps nur aus vertrauenswürdigen Quellen — Play Store vorsichtig oder F-Droid.",
+        "3": "Berechtigungsdiät: Standort, Mikro, Kamera, Kontakte nur bei Bedarf.",
+        "4": "Werbe-ID / Anzeigenpersonalisierung deaktivieren.",
+        "5": "Unnötige Sensoren aus: Bluetooth, NFC, genauer Standort im Idle.",
+        "6": "DNS-Blocker (Private DNS / RethinkDNS / NextDNS).",
+        "7": "Sperrbildschirm: starke PIN/Passphrase, Biometrie mit PIN-Fallback.",
+        "8": "Verschlüsselte Backups unter deiner Kontrolle.",
+        "9": "Arbeitsprofil / Zweitnutzer für fragwürdige Apps.",
+        "10": "Keine APKs von zufälligen Websites sideloaden."
+      },
+      "ios": {
+        "title": "iOS-Härtungscheckliste",
+        "stack": "Schneller iOS-Stack",
+        "note": "iOS ist closed source — starke Apple-ID und wenig App-Fläche.",
+        "1": "iOS zügig aktualisieren.",
+        "2": "Lockdown-Modus bei gezielten Angriffen.",
+        "3": "Alle Berechtigungen prüfen; Tracking zurücksetzen.",
+        "4": "Apple-ID: starkes Passwort, Hardware-Key oder Passkeys.",
+        "5": "iCloud: wissen was synct; Erweiterter Datenschutz.",
+        "6": "Analysen und personalisierte Werbung begrenzen.",
+        "7": "Safari-Betrugswarnung; Brave/Firefox Focus erwägen.",
+        "8": "App-Tracking standardmäßig ablehnen.",
+        "9": "Schutz bei gestohlenem Gerät / USB-Zubehör.",
+        "10": "Keine dubiosen Konfigurationsprofile."
+      }
+    },
+    "desktop": {
+      "eyebrow": "Computer",
+      "title": "Desktop- & Laptop-Privacy",
+      "lead": "Verschlüssele die Platte, reduziere Telemetrie, behandle den Browser nicht wie eine Mülltonne.",
+      "windows": {
+        "1": "Lokales Konto wenn möglich; Microsoft-Sync begrenzen.",
+        "2": "Werbe-ID und volle Telemetrie aus.",
+        "3": "BitLocker + starker Login.",
+        "4": "Firefox + uBlock statt Edge-Defaults.",
+        "5": "Bloat deinstallieren; unbekannte Autostarts aus.",
+        "6": "Sandbox / separates Browserprofil für Risiko-Sites.",
+        "7": "Linux in Betracht ziehen, wenn du bereit bist."
+      },
+      "macos": {
+        "1": "FileVault, Firewall, Auto-Updates an.",
+        "2": "Datenschutz-Berechtigungen regelmäßig prüfen.",
+        "3": "Erweiterter Datenschutz in iCloud wenn passend.",
+        "4": "App Store / verifizierte Entwickler; Gatekeeper an.",
+        "5": "Continuity bei Bedarf einschränken.",
+        "6": "Firefox/Brave; Arbeit und Privat trennen.",
+        "7": "Kurzer Idle-Timeout."
+      },
+      "linux": {
+        "1": "Vollverschlüsselung bei Installation (LUKS).",
+        "2": "Fedora, Debian oder openSUSE.",
+        "3": "Flatpak mit Vorsicht; Distro-Pakete für Systemtools.",
+        "4": "Firewall und Auto-Security-Updates.",
+        "5": "Qubes OS für starke Isolation.",
+        "6": "Firmware aktuell (fwupd).",
+        "7": "Separater Browser für Banking."
+      },
+      "universal_title": "Universelle Desktop-Regeln",
+      "u1": {
+        "title": "Verschlüsseln oder verlieren",
+        "body": "Laptop ohne FDE verloren = Totalverlust der Daten."
+      },
+      "u2": {
+        "title": "Passwortmanager überall",
+        "body": "Bitwarden/KeePassXC schlagen nur den Browser-Manager."
+      },
+      "u3": {
+        "title": "Updates sind Sicherheit",
+        "body": "Ungepatchtes OS/Browser ist der einfache Weg."
+      },
+      "u4": {
+        "title": "Least Privilege",
+        "body": "Nicht täglich als Admin/root arbeiten."
+      },
+      "u5": {
+        "title": "Offline-Backup",
+        "body": "3-2-1 mit mindestens einer offline/verschlüsselten Kopie."
+      },
+      "u6": {
+        "title": "Öffentliches WLAN = VPN",
+        "body": "Cafés und Flughäfen sind feindliche Netze."
+      }
+    },
+    "checklist": {
+      "eyebrow": "Aktionsplan",
+      "title": "Privacy-Checkliste",
+      "lead": "Abhaken beim Erledigen. Fortschritt nur in diesem Browser — nichts wird hochgeladen.",
+      "complete": "erledigt",
+      "reset": "Zurücksetzen",
+      "reset_confirm": "Gesamten Checklisten-Fortschritt auf diesem Gerät zurücksetzen?",
+      "g1": "Woche 1 — Grundlagen",
+      "g2": "Woche 2–3 — Solider Stack",
+      "g3": "Level up — stärkere Bedrohungsmodelle",
+      "items": {
+        "c1": "Passwortmanager installieren und kritische Konten migrieren",
+        "c2": "2FA (Authenticator) für E-Mail und Banking aktivieren",
+        "c3": "Signal installieren und sensible Chats von SMS wegholen",
+        "c4": "Standardbrowser wechseln + uBlock Origin",
+        "c5": "Suchmaschine weg von Google ändern",
+        "c6": "Handy-Berechtigungen prüfen (Standort, Mikro, Kamera)",
+        "c7": "Primäre E-Mail zu Proton / Tuta (oder härten)",
+        "c8": "No-Logs-VPN für Reisen und öffentliches WLAN",
+        "c9": "Vollverschlüsselung auf allen Computern und Handys",
+        "c10": "E-Mail-Aliase für Shopping und Newsletter",
+        "c11": "Verschlüsselte Cloud oder Cryptomator-Tresor",
+        "c12": "Social-Media-Privatsphäre und öffentliche Posts prüfen",
+        "c13": "Hardware-Sicherheitsschlüssel für kritische Konten",
+        "c14": "Getrennte Geräte oder Profile für Hochrisiko-Aktivitäten",
+        "c15": "GrapheneOS / gehärtetes Mobile-OS evaluieren",
+        "c16": "Data-Broker-Opt-outs und People-Search-Entfernungen",
+        "c17": "Offline/verschlüsselte Backups mit Restore getestet",
+        "c18": "Schriftliches persönliches Bedrohungsmodell"
+      }
+    },
+    "principles": {
+      "eyebrow": "Mindset",
+      "title": "Privacy-Prinzipien, die nie veralten",
+      "p1": {
+        "title": "Bedrohungsmodell zuerst",
+        "body": "Schütze dich vor realen Risiken, nicht vor Film-Bösewichten."
+      },
+      "p2": {
+        "title": "Daten minimieren",
+        "body": "Was du nie sammelst, kann nicht leaken."
+      },
+      "p3": {
+        "title": "Defense in Depth",
+        "body": "Ein Tool versagt. Schichte Schutzmaßnahmen."
+      },
+      "p4": {
+        "title": "Offen und auditiert bevorzugen",
+        "body": "Open Source ist kein Zauber, Geheimhaltung ist die schlechtere Wette."
+      },
+      "p5": {
+        "title": "Usability gewinnt",
+        "body": "Das private Tool, das du aufgibst, verliert gegen das, das du täglich nutzt."
+      },
+      "p6": {
+        "title": "Breach annehmen",
+        "body": "Recovery planen: Backups, Schlüssel, wiederherstellbare Konten."
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Häufige Fragen",
+      "q1": "Brauche ich jeden Tag ein VPN?",
+      "a1": "Nicht immer. Ein VPN verbirgt Traffic vor lokalen Netzen und dem ISP und kann Standort-Tracking mindern — anonym macht es dich nicht. Schlechtes VPN ist schlimmer als keines. Seriösen No-Logs-Anbieter in feindlichen Netzen nutzen.",
+      "q2": "Ist Signal privat, obwohl es meine Nummer braucht?",
+      "a2": "Inhalte sind exzellent verschlüsselt. Die Nummer ist ein Discovery-Identifikator. Wenn das stört: Session. Für die meisten bleibt Signal die beste real genutzte Option.",
+      "q3": "Was bringt den größten Effekt?",
+      "a3": "Passwortmanager + einzigartige Passwörter + Authenticator-2FA auf der E-Mail.",
+      "q4": "Soll ich Social Media löschen?",
+      "a4": "Wenn möglich, hilft es enorm. Sonst: Profile schließen, Daten streichen, keine Live-Standorte.",
+      "q5": "Trackt diese Seite mich?",
+      "a5": "Keine Analytics, keine Werbe-Cookies, keine Drittanbieter-Tracker. Checkliste nur in localStorage.",
+      "q6": "Wo tiefer einsteigen?",
+      "a6": "Offizielle Docs der Tools und Ressourcen wie privacyguides.org."
+    },
+    "cta": {
+      "title": "Starte heute mit einer Änderung",
+      "body": "Privacy ist Praxis, kein Produkt. Wähle einen Pfad, installiere eine bessere App, hake einen Punkt ab.",
+      "paths": "Pfad wählen",
+      "apps": "Apps entdecken"
+    },
+    "footer": {
+      "tag": "Die ultimative Karte für persönliche Privatsphäre — von Vassbrekke AS.",
+      "explore": "Entdecken",
+      "start": "Loslegen",
+      "disclaimer_title": "Haftung",
+      "disclaimer": "Bildungsguide von Vassbrekke AS. Keine Rechts- oder Profi-Sicherheitsberatung. Markierte Produkte (PrivyDeck, PrivBeacon usw.) stammen von Vassbrekke / VassDev.",
+      "built": "Für Menschen, die ihr Leben zurückwollen",
+      "privacy": "Keine Tracker · Keine Konten · Nur lokale Checkliste",
+      "owned_by": "Diese Seite wird von Vassbrekke AS gehostet und gehört dem Unternehmen."
+    },
+    "ours": {
+      "badge": "Vassbrekke AS · Unsere Produkte",
+      "title": "Von uns gebaut — starte mit PrivyDeck",
+      "body": "PrivGuide wird von Vassbrekke AS (Norwegen) gehostet und gehört dem Unternehmen. Zuerst unsere Privacy-Produkte — angeführt von PrivyDeck — danach das offene Ökosystem. Gesamte Linie auf vassbrekke.no."
+    }
+  },
+  "fr": {
+    "meta": {
+      "title": "PrivGuide — Meilleures apps de confidentialité et guide de vie privée",
+      "description": "Guide ultime de confidentialité : meilleures apps (Signal, Bitwarden, Mullvad, Proton), sécuriser Android et iOS, Windows/macOS/Linux, et la vie quotidienne.",
+      "keywords": "PrivyDeck, PrivBeacon, Vassbrekke AS, apps confidentialité, meilleures apps privacy, vie privée, confidentialité téléphone, android, ios, gestionnaire mots de passe, vpn, signal, bitwarden, proton, guide privacy"
+    },
+    "a11y": {
+      "skip": "Aller au contenu",
+      "menu_open": "Ouvrir le menu",
+      "menu_close": "Fermer le menu"
+    },
+    "nav": {
+      "apps": "Apps",
+      "life": "Vie",
+      "phone": "Téléphone",
+      "desktop": "Ordi",
+      "paths": "Commencer",
+      "checklist": "Liste",
+      "language": "Langue"
+    },
+    "hero": {
+      "eyebrow": "Ouvert · Pratique · À jour",
+      "h1a": "Votre vie privée n'est pas optionnelle.",
+      "h1b": "Voici votre carte de référence.",
+      "lead": "Trouvez les meilleures apps de confidentialité, renforcez téléphone et ordinateurs, et adoptez des habitudes réelles — sans diplôme d'informatique.",
+      "cta_apps": "Parcourir les apps",
+      "cta_path": "Choisir mon chemin →",
+      "stat_tools": "outils sélectionnés",
+      "stat_levels": "niveaux de menace",
+      "stat_trackers": "trackers sur cette page",
+      "terminal_ok": "Vous reprenez le contrôle de vos données."
+    },
+    "trust": {
+      "aria": "Ce que couvre ce guide",
+      "1": {
+        "title": "Des apps qui vous respectent",
+        "body": "Open source d'abord, auditées quand c'est important, sans dark patterns."
+      },
+      "2": {
+        "title": "Téléphone et bureau",
+        "body": "Android, iOS, Windows, macOS et Linux — étapes concrètes."
+      },
+      "3": {
+        "title": "Aussi hors ligne",
+        "body": "Social, maison, argent et vie privée physique qui tiennent."
+      }
+    },
+    "paths": {
+      "eyebrow": "Commencer ici",
+      "title": "Choisissez votre chemin de confidentialité",
+      "lead": "Tout le monde n'a pas besoin d'une cage de Faraday. Choisissez un niveau selon votre risque.",
+      "l1": {
+        "badge": "Niveau 1",
+        "title": "Confidentialité du quotidien",
+        "body": "Pour moins de pistage, moins de fuites et de meilleurs défauts.",
+        "1": "Gestionnaire de mots de passe + mots de passe uniques",
+        "2": "Signal pour les chats privés",
+        "3": "PrivyDeck (+ Firefox / uBlock)",
+        "4": "2FA sur e-mail et banque",
+        "5": "Revoir les permissions des apps",
+        "cta": "Démarrer la liste →"
+      },
+      "l2": {
+        "badge": "Niveau 2 · Recommandé",
+        "title": "Configuration solide",
+        "body": "Pour freelances et quiconque veut un vrai stack privé.",
+        "1": "E-mail Proton ou Tuta",
+        "2": "VPN Mullvad / Proton sur Wi‑Fi public",
+        "3": "Cloud chiffré ou sauvegardes locales",
+        "4": "Profil navigateur renforcé",
+        "5": "Comptes pro / perso séparés",
+        "cta": "Explorer le stack →"
+      },
+      "l3": {
+        "badge": "Niveau 3",
+        "title": "Haute menace",
+        "body": "Pour activistes, lanceurs d'alerte et cibles à haut risque.",
+        "1": "GrapheneOS / Android sans Google",
+        "2": "Tor Browser pour la recherche",
+        "3": "Appareils et VMs compartimentés",
+        "4": "Clés de sécurité matérielles",
+        "5": "Discipline opsec",
+        "cta": "Renforcer le téléphone →"
+      }
+    },
+    "apps": {
+      "eyebrow": "Annuaire d'apps",
+      "title": "Meilleures apps de confidentialité — par catégorie",
+      "lead": "Outils sélectionnés — menés par PrivyDeck et la suite Vassbrekke, puis le meilleur de la communauté.",
+      "note": "Les produits Vassbrekke AS sont marqués Le nôtre. Vérifiez toujours les sources de téléchargement.",
+      "use_when": "À utiliser quand :",
+      "visit": "Site web",
+      "signal": {
+        "desc": "Étalon-or de la messagerie privée. Chiffrement de bout en bout, messages éphémères, open source, sans pubs.",
+        "why": "amis/famille l'installeront vraiment."
+      },
+      "session": {
+        "desc": "Pas de numéro de téléphone. Résistance aux métadonnées via routage en oignon. Anonymat plus fort.",
+        "why": "vous voulez un chat à faible identité."
+      },
+      "element": {
+        "desc": "Salles E2EE fédérées, ponts vers d'autres réseaux. Auto-hébergement possible.",
+        "why": "groupes, orgs ou auto-hébergement comptent."
+      },
+      "firefox": {
+        "desc": "Meilleur équilibre usage/contrôle. Couplez avec PrivyDeck et/ou uBlock Origin et une protection stricte.",
+        "why": "navigation quotidienne pour la plupart."
+      },
+      "brave": {
+        "desc": "Basé Chromium avec blocage agressif pubs/trackers et fenêtres privées avec option Tor.",
+        "why": "vous voulez une UX type Chrome avec de meilleurs défauts."
+      },
+      "tor": {
+        "desc": "Trafic via le réseau Tor. Essentiel pour la recherche à haut risque et le contournement de censure. Pas pour les logins du quotidien.",
+        "why": "le modèle de menace exige l'anonymat, pas seulement la confidentialité."
+      },
+      "mullvad_browser": {
+        "desc": "Tech Tor Browser sans le réseau Tor — Firefox renforcé anti-empreinte.",
+        "why": "vous le couplez à un VPN de confiance."
+      },
+      "mullvad": {
+        "desc": "Comptes anonymes (pas d'e-mail), paiement cash/crypto, audité, réputation no-logs.",
+        "why": "la confidentialité compte plus que le streaming le plus rapide."
+      },
+      "protonvpn": {
+        "desc": "Bon forfait gratuit, apps open source, Secure Core et écosystème Proton. Bien pour débuter.",
+        "why": "vous utilisez déjà Proton Mail/Drive."
+      },
+      "ivpn": {
+        "desc": "Entreprise transparente, pas d'e-mail à l'inscription, fort anti-pistage.",
+        "why": "vous voulez des valeurs type Mullvad avec plus de fonctions."
+      },
+      "bitwarden": {
+        "desc": "Open source, audité, gratuit pour particuliers. Auto-hébergez avec Vaultwarden pour le contrôle total.",
+        "why": "vous réutilisez encore des mots de passe (commencez aujourd'hui)."
+      },
+      "keepassxc": {
+        "desc": "Base de mots de passe local-first. Vous contrôlez fichier, sauvegardes et sync. Zéro dépendance cloud.",
+        "why": "vous ne voulez pas de coffre cloud tiers."
+      },
+      "protonpass": {
+        "desc": "Intégré aux comptes Proton. UX propre, alias hide-my-email, apps open source.",
+        "why": "vous vivez dans la suite Proton."
+      },
+      "protonmail": {
+        "desc": "E-mail chiffré basé en Suisse. Onboarding simple, écosystème calendrier/drive.",
+        "why": "vous quittez Gmail pour la première fois."
+      },
+      "tuta": {
+        "desc": "E-mail et calendrier chiffrés d'Allemagne. Surface de pistage minimale.",
+        "why": "vous voulez une alternative mail centrée privacy."
+      },
+      "thunderbird": {
+        "desc": "Client e-mail bureau avec OpenPGP. Avec tout fournisseur — y compris domaine personnel.",
+        "why": "vous voulez le contrôle côté client du mail."
+      },
+      "ddg": {
+        "desc": "Pas de profilage de l'historique de recherche pour la pub. Changement simple depuis Google.",
+        "why": "vous voulez la confidentialité sans friction."
+      },
+      "bravesearch": {
+        "desc": "Index indépendants ou proxys privacy sans profil pub autour de vos requêtes.",
+        "why": "les résultats DDG ne suffisent pas."
+      },
+      "searxng": {
+        "desc": "Méta-recherche auto-hébergeable. Agrégez des moteurs sans livrer votre graphe de curiosité.",
+        "why": "vous gérez vos propres services."
+      },
+      "protondrive": {
+        "desc": "Stockage cloud chiffré de bout en bout. Mieux que les clouds « faites-nous confiance » pour documents sensibles.",
+        "why": "les fichiers doivent se synchroniser chiffrés."
+      },
+      "cryptomator": {
+        "desc": "Coffres côté client sur Dropbox, Google Drive ou tout dossier. Chiffrez avant l'envoi.",
+        "why": "vous ne pouvez pas encore quitter le cloud actuel."
+      },
+      "nextcloud": {
+        "desc": "Auto-hébergez fichiers et calendriers (Nextcloud) ou sync P2P sans serveur central (Syncthing).",
+        "why": "vous êtes prêt à quitter le big cloud."
+      },
+      "aegis": {
+        "desc": "App 2FA open source Android avec exports chiffrés. Préférez TOTP au SMS.",
+        "why": "vous remplacez Google Authenticator."
+      },
+      "enteauth": {
+        "desc": "Authenticator multiplateforme open source avec sync chiffrée optionnelle.",
+        "why": "vous avez besoin de 2FA sur plusieurs appareils."
+      },
+      "yubikey": {
+        "desc": "MFA résistant au phishing. Clés pour e-mail, gestionnaire et comptes critiques.",
+        "why": "une prise de compte serait dévastatrice."
+      },
+      "graphene": {
+        "desc": "Android renforcé pour Pixel. Meilleure posture sécu/privacy mobile grand public aujourd'hui.",
+        "why": "la sécurité du téléphone est non négociable."
+      },
+      "linux": {
+        "desc": "Quittez la télémétrie Windows. Fedora/Debian au quotidien ; Qubes pour une compartimentation sérieuse.",
+        "why": "la confidentialité bureau est un objectif long terme."
+      },
+      "ios": {
+        "desc": "Sandbox fort d'usine. Mode Isolement, limitez iCloud, désactivez le suivi pub, revoyez les permissions.",
+        "why": "vous restez dans l'écosystème Apple avec prudence."
+      },
+      "organicmaps": {
+        "desc": "Cartes hors ligne OpenStreetMap. Naviguez sans diffuser sans cesse votre position à Google.",
+        "why": "des cartes sans taxe de surveillance."
+      },
+      "notes": {
+        "desc": "Notes chiffrées avec sync multi-appareils. Journaux et brouillons hors notes cloud en clair.",
+        "why": "Notes Apple/Google semblent trop exposées."
+      },
+      "blockers": {
+        "desc": "Bloquez pubs, trackers et domaines malveillants. uBlock sur bureau ; RethinkDNS sur mobile.",
+        "why": "le jour un de tout parcours privacy."
+      },
+      "photos": {
+        "desc": "Sauvegarde photos chiffrée (Ente) ou alternative auto-hébergée à Google Photos (Immich).",
+        "why": "vous quittez Google Photos."
+      },
+      "calling": {
+        "desc": "Préférez voix/vidéo E2EE. Évitez les conversations sensibles en SMS ou défauts non chiffrés.",
+        "why": "le contenu de l'appel compte."
+      },
+      "privydeck": {
+        "desc": "Notre tableau de bord de confidentialité. Score privacy, blocage des trackers en un tap sur téléphone et navigateur, coffre chiffré (assainissement de fichiers et nettoyage sécurisé intégrés) et demandes d'accès aux données — sans Raspberry Pi.",
+        "why": "vous voulez le bloqueur, coffre et score tout-en-un le plus simple (commencez ici)."
+      },
+      "privbeacon": {
+        "desc": "SaaS de conformité privacy pour sites. Scanne trackers et manques de consentement sur 16 cadres légaux et délivre Certified Private.",
+        "why": "vous gérez un site/app et avez besoin d'une vraie conformité."
+      },
+      "winprivacy": {
+        "desc": "Renforcez la confidentialité sur Windows 10/11 — GUI et CLI, moins de télémétrie (open source, VassDev).",
+        "why": "vous êtes sous Windows et voulez durcir sans changer d'OS encore."
+      },
+      "sechardening": {
+        "desc": "Scripts pratiques de durcissement pour installation neuve (open source, VassDev).",
+        "why": "vous installez Linux et voulez une base rapide."
+      },
+      "ublock": {
+        "desc": "Le bloqueur navigateur open source classique. À coupler avec Firefox sur le bureau.",
+        "why": "vous voulez une extension FOSS avec PrivyDeck."
+      },
+      "rethinkdns": {
+        "desc": "Protection type DNS + pare-feu pour Android. Bloquez les domaines trackers à l'échelle du système.",
+        "why": "vous avez besoin d'un blocage réseau pour les apps Android."
+      },
+      "ours_pill": "Le nôtre",
+      "by_vassbrekke": "Par Vassbrekke AS"
+    },
+    "filters": {
+      "aria": "Catégories d'apps",
+      "all": "Toutes",
+      "messaging": "Messagerie",
+      "browser": "Navigateurs",
+      "vpn": "VPN",
+      "passwords": "Mots de passe",
+      "email": "E-mail",
+      "search": "Recherche",
+      "storage": "Stockage",
+      "auth": "2FA / Auth",
+      "os": "OS / ROM",
+      "extra": "Plus d'outils",
+      "ours": "Les nôtres"
+    },
+    "life": {
+      "eyebrow": "Vie réelle",
+      "title": "Vie privée au-delà des apps",
+      "lead": "Le meilleur VPN ne corrige pas le surpartage ni une caméra pointée sur votre bureau.",
+      "1": {
+        "title": "Social et identité",
+        "1": "Auditez les profils publics — date de naissance, ville, travail, photos de famille.",
+        "2": "Noms d'utilisateur différents selon le contexte.",
+        "3": "Désactivez la reconnaissance faciale et la synchro des contacts.",
+        "4": "N'affichez pas la position en temps réel.",
+        "5": "Alias e-mail pour achats, newsletters et banque."
+      },
+      "2": {
+        "title": "Maison et physique",
+        "1": "Couvrez les caméras ; microphones avec mute matériel.",
+        "2": "Verrouillez les écrans ; chiffrement disque complet partout.",
+        "3": "Détruisez les documents avec numéros d'identité.",
+        "4": "Questionnez les enceintes connectées ; IoT sur Wi‑Fi invité.",
+        "5": "Contrôlez l'accès physique en voyage."
+      },
+      "3": {
+        "title": "Argent et achats",
+        "1": "Paiements respectueux de la vie privée quand c'est légal et pratique.",
+        "2": "Évitez les cartes de fidélité liées à votre identité réelle.",
+        "3": "Ne photographiez pas cartes/ID dans le cloud.",
+        "4": "Opt-out des data brokers (varie selon le pays).",
+        "5": "2FA financier sur clé ou authenticator, jamais SMS seul."
+      },
+      "4": {
+        "title": "Habitudes de communication",
+        "1": "Signal par défaut pour ce qui ne va pas sur une carte postale.",
+        "2": "Messages éphémères ; les captures existent encore.",
+        "3": "Vérifiez les numéros de sécurité pour les contacts critiques.",
+        "4": "Pas de secrets sur les appareils pro.",
+        "5": "Chaque membre d'un groupe élargit la surface d'attaque."
+      }
+    },
+    "phone": {
+      "eyebrow": "Mobile",
+      "title": "Confidentialité du téléphone — Android et iOS",
+      "lead": "Votre téléphone est un supercalculateur de pistage. Renforcez-le par plateforme.",
+      "tabs_aria": "Plateformes téléphone",
+      "android": {
+        "title": "Liste de renforcement Android",
+        "stack": "Stack Android rapide",
+        "note": "GrapheneOS : Play isolé seulement si vraiment nécessaire.",
+        "1": "Préférez Pixel moderne + GrapheneOS si possible. Sinon, OS à jour.",
+        "2": "Apps depuis sources de confiance — Play Store avec prudence ou F-Droid.",
+        "3": "Régime de permissions : refuser localisation, micro, caméra, contacts sauf besoin.",
+        "4": "Désactiver l'ID pub / personnalisation des pubs.",
+        "5": "Couper Bluetooth, NFC, localisation précise au repos.",
+        "6": "Bloqueur DNS (Private DNS / RethinkDNS / NextDNS).",
+        "7": "Écran de verrouillage : PIN/phrase fort, biométrie avec secours PIN.",
+        "8": "Sauvegardes chiffrées sous votre contrôle.",
+        "9": "Profil pro / utilisateur secondaire pour apps douteuses.",
+        "10": "Éviter les APK de sites aléatoires."
+      },
+      "ios": {
+        "title": "Liste de renforcement iOS",
+        "stack": "Stack iOS rapide",
+        "note": "iOS est fermé — compensez par un Apple ID fort et peu d'apps.",
+        "1": "Mettez iOS à jour rapidement.",
+        "2": "Mode Isolement face aux attaques ciblées.",
+        "3": "Revoir chaque permission ; réinitialiser le suivi.",
+        "4": "Apple ID : mot de passe unique, clé ou passkeys, Masquer mon e-mail.",
+        "5": "iCloud : savoir ce qui se synchronise ; protection avancée des données.",
+        "6": "Limiter analyses et pubs personnalisées.",
+        "7": "Safari avec alertes fraude ; Brave/Firefox Focus.",
+        "8": "Transparence du suivi : refuser par défaut.",
+        "9": "Protection appareil volé / accessoires USB.",
+        "10": "Éviter profils de configuration et MDM obscurs."
+      }
+    },
+    "desktop": {
+      "eyebrow": "Ordinateurs",
+      "title": "Confidentialité bureau et portable",
+      "lead": "Chiffrez le disque, minimisez la télémétrie, arrêtez de traiter le navigateur comme une poubelle.",
+      "windows": {
+        "1": "Compte local si possible ; limiter la synchro Microsoft.",
+        "2": "Désactiver ID pub et télémétrie complète.",
+        "3": "BitLocker + connexion forte.",
+        "4": "Firefox + uBlock au lieu d'Edge par défaut.",
+        "5": "Désinstaller le bloat ; démarrages inconnus off.",
+        "6": "Sandbox / profil navigateur séparé pour sites risqués.",
+        "7": "Envisager Linux quand vous êtes prêt."
+      },
+      "macos": {
+        "1": "FileVault, pare-feu, mises à jour auto.",
+        "2": "Revoir Confidentialité et sécurité régulièrement.",
+        "3": "Protection avancée des données iCloud si adapté.",
+        "4": "App Store / devs vérifiés ; Gatekeeper on.",
+        "5": "Limiter Continuity si le modèle de menace l'exige.",
+        "6": "Firefox/Brave ; séparer pro et perso.",
+        "7": "Verrouillage rapide."
+      },
+      "linux": {
+        "1": "Chiffrement disque à l'install (LUKS).",
+        "2": "Fedora, Debian ou openSUSE.",
+        "3": "Flatpak avec prudence ; paquets distro pour outils système.",
+        "4": "Pare-feu et mises à jour sécu auto.",
+        "5": "Qubes OS pour isolation forte.",
+        "6": "Firmware à jour (fwupd).",
+        "7": "Navigateur séparé pour la banque."
+      },
+      "universal_title": "Règles universelles bureau",
+      "u1": {
+        "title": "Chiffrer ou perdre",
+        "body": "Portable perdu sans FDE = fuite totale."
+      },
+      "u2": {
+        "title": "Gestionnaire partout",
+        "body": "Bitwarden/KeePassXC valent mieux que le seul navigateur."
+      },
+      "u3": {
+        "title": "Les mises à jour sont la sécu",
+        "body": "OS/navigateur non patché = voie facile de compromission."
+      },
+      "u4": {
+        "title": "Moindre privilège",
+        "body": "Ne travaillez pas en admin/root au quotidien."
+      },
+      "u5": {
+        "title": "Sauvegarde hors ligne",
+        "body": "3-2-1 avec au moins une copie chiffrée offline."
+      },
+      "u6": {
+        "title": "Wi‑Fi public = VPN",
+        "body": "Cafés et aéroports = réseaux hostiles."
+      }
+    },
+    "checklist": {
+      "eyebrow": "Plan d'action",
+      "title": "Liste de confidentialité",
+      "lead": "Cochez au fur et à mesure. Progression enregistrée uniquement dans ce navigateur.",
+      "complete": "terminé",
+      "reset": "Réinitialiser",
+      "reset_confirm": "Réinitialiser toute la progression de la liste sur cet appareil ?",
+      "g1": "Semaine 1 — Fondations",
+      "g2": "Semaines 2–3 — Stack solide",
+      "g3": "Niveau supérieur — Menaces plus fortes",
+      "items": {
+        "c1": "Installer un gestionnaire de mots de passe et migrer les comptes critiques",
+        "c2": "Activer la 2FA (authenticator) pour e-mail et banque",
+        "c3": "Installer Signal et sortir les chats sensibles du SMS",
+        "c4": "Changer de navigateur par défaut + uBlock Origin",
+        "c5": "Changer de moteur de recherche hors Google",
+        "c6": "Revoir les permissions téléphone (localisation, micro, caméra)",
+        "c7": "Passer l'e-mail principal à Proton / Tuta (ou le renforcer)",
+        "c8": "VPN sans logs pour voyages et Wi‑Fi public",
+        "c9": "Chiffrement disque complet sur tous les appareils",
+        "c10": "Créer des alias e-mail pour achats et newsletters",
+        "c11": "Cloud chiffré ou coffre Cryptomator pour fichiers sensibles",
+        "c12": "Auditer vie privée et posts publics des réseaux sociaux",
+        "c13": "Clé de sécurité matérielle pour comptes critiques",
+        "c14": "Appareils ou profils séparés pour activité à haut risque",
+        "c15": "Évaluer GrapheneOS / OS mobile renforcé",
+        "c16": "Opt-outs data brokers et suppressions people-search",
+        "c17": "Sauvegardes offline/chiffrées testées avec restauration",
+        "c18": "Modèle de menace personnel écrit (qui / quoi / pourquoi)"
+      }
+    },
+    "principles": {
+      "eyebrow": "État d'esprit",
+      "title": "Principes de confidentialité intemporels",
+      "p1": {
+        "title": "Modèle de menace d'abord",
+        "body": "Protégez-vous des risques réels, pas d'un méchant de film."
+      },
+      "p2": {
+        "title": "Minimiser les données",
+        "body": "On ne fuit pas ce qu'on ne collecte jamais."
+      },
+      "p3": {
+        "title": "Défense en profondeur",
+        "body": "Un outil échoue. Superposez les couches."
+      },
+      "p4": {
+        "title": "Préférer ouvert et audité",
+        "body": "L'open source n'est pas magique, le secret est un pire pari."
+      },
+      "p5": {
+        "title": "L'usage gagne",
+        "body": "L'outil privé abandonné perd face à celui utilisé chaque jour."
+      },
+      "p6": {
+        "title": "Supposer la faille",
+        "body": "Planifiez la reprise : sauvegardes, clés, comptes récupérables."
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Questions fréquentes",
+      "q1": "Ai-je besoin d'un VPN tous les jours ?",
+      "a1": "Pas toujours. Un VPN masque le trafic aux réseaux locaux et au FAI et peut réduire le pistage de localisation, mais ne vous rend pas anonyme. Un mauvais VPN est pire que rien. Utilisez un fournisseur no-logs réputé sur les réseaux hostiles.",
+      "q2": "Signal est-il privé s'il demande mon numéro ?",
+      "a2": "Le contenu est très bien chiffré. Le numéro sert à la découverte — un compromis d'usage. Si c'est un problème, regardez Session. Pour la plupart, Signal reste le meilleur choix réellement adopté.",
+      "q3": "Quel est le changement à plus fort impact ?",
+      "a3": "Gestionnaire de mots de passe + mots de passe uniques + 2FA authenticator sur l'e-mail.",
+      "q4": "Dois-je supprimer les réseaux sociaux ?",
+      "a4": "Si possible, cela aide beaucoup. Sinon, verrouillez les profils, retirez les données perso, évitez la géoloc en direct.",
+      "q5": "Ce site me piste-t-il ?",
+      "a5": "Pas d'analytics, pas de cookies pub, pas de trackers tiers. La liste reste dans le localStorage uniquement.",
+      "q6": "Où aller plus loin ?",
+      "a6": "Docs officielles des outils et ressources comme privacyguides.org."
+    },
+    "cta": {
+      "title": "Commencez par un changement aujourd'hui",
+      "body": "La confidentialité est une pratique, pas un produit. Choisissez un chemin, installez une meilleure app, cochez un point.",
+      "paths": "Choisir mon chemin",
+      "apps": "Parcourir les apps"
+    },
+    "footer": {
+      "tag": "La carte de référence pour la vie privée — par Vassbrekke AS.",
+      "explore": "Explorer",
+      "start": "Commencer",
+      "disclaimer_title": "Avertissement",
+      "disclaimer": "Guide éducatif publié par Vassbrekke AS. Pas un conseil juridique ou de sécurité professionnel. Les produits marqués (PrivyDeck, PrivBeacon, etc.) sont de Vassbrekke / VassDev.",
+      "built": "Fait pour les humains qui veulent récupérer leur vie",
+      "privacy": "Pas de trackers · Pas de comptes · Liste locale uniquement",
+      "owned_by": "Cette page est hébergée et détenue par Vassbrekke AS."
+    },
+    "ours": {
+      "badge": "Vassbrekke AS · Nos produits",
+      "title": "Construit par nous — commencez par PrivyDeck",
+      "body": "PrivGuide est hébergé et détenu par Vassbrekke AS (Norvège). D'abord nos produits privacy — menés par PrivyDeck — puis l'écosystème open que nous recommandons. Voir vassbrekke.no."
+    }
+  }
+}

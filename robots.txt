@@ -1,0 +1,5 @@
+# PrivGuide
+User-agent: *
+Allow: /
+
+Sitemap: https://privguide.example/sitemap.xml

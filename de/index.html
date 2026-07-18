@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrivGuide — Beste Privacy-Apps & persönlicher Datenschutz-Guide</title>
+  <meta name="description" content="Ultimativer Datenschutz-Guide: beste Privacy-Apps (Signal, Bitwarden, Mullvad, Proton), Android & iOS härten, Windows/macOS/Linux sichern, Alltagsschutz." />
+  <meta name="keywords" content="PrivyDeck, PrivBeacon, Vassbrekke AS, privacy apps, datenschutz apps, persönlicher datenschutz, handy datenschutz, android privacy, passwortmanager, vpn, signal, bitwarden, proton, privacy guide" />
+  <meta name="author" content="PrivGuide" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#05010d" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="canonical" href="https://privguide.example/de/" />
+  <link rel="alternate" hreflang="en" href="https://privguide.example/" />
+  <link rel="alternate" hreflang="no" href="https://privguide.example/no/" />
+  <link rel="alternate" hreflang="es" href="https://privguide.example/es/" />
+  <link rel="alternate" hreflang="de" href="https://privguide.example/de/" />
+  <link rel="alternate" hreflang="fr" href="https://privguide.example/fr/" />
+  <link rel="alternate" hreflang="x-default" href="https://privguide.example/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PrivGuide" />
+  <meta property="og:title" content="PrivGuide — Beste Privacy-Apps & persönlicher Datenschutz-Guide" />
+  <meta property="og:description" content="Ultimativer Datenschutz-Guide: beste Privacy-Apps (Signal, Bitwarden, Mullvad, Proton), Android & iOS härten, Windows/macOS/Linux sichern, Alltagsschutz." />
+  <meta property="og:url" content="https://privguide.example/de/" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:image" content="https://privguide.example/assets/og-cover.svg" />
+  <meta property="og:image:alt" content="PrivGuide — privacy apps and personal privacy guide" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PrivGuide — Beste Privacy-Apps & persönlicher Datenschutz-Guide" />
+  <meta name="twitter:description" content="Ultimativer Datenschutz-Guide: beste Privacy-Apps (Signal, Bitwarden, Mullvad, Proton), Android & iOS härten, Windows/macOS/Linux sichern, Alltagsschutz." />
+  <meta name="twitter:image" content="https://privguide.example/assets/og-cover.svg" />
+
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../assets/favicon.svg" />
+  <link rel="manifest" href="../site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "PrivGuide",
+  "url": "https://privguide.example/de/",
+  "description": "Ultimativer Datenschutz-Guide: beste Privacy-Apps (Signal, Bitwarden, Mullvad, Proton), Android & iOS härten, Windows/macOS/Linux sichern, Alltagsschutz.",
+  "inLanguage": "de",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://privguide.example/de/#apps",
+    "query-input": "required name=search_term_string"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "PrivGuide — Beste Privacy-Apps & persönlicher Datenschutz-Guide",
+  "description": "Ultimativer Datenschutz-Guide: beste Privacy-Apps (Signal, Bitwarden, Mullvad, Proton), Android & iOS härten, Windows/macOS/Linux sichern, Alltagsschutz.",
+  "url": "https://privguide.example/de/",
+  "inLanguage": "de",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "PrivGuide",
+    "url": "https://privguide.example"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Vassbrekke AS",
+    "url": "https://www.vassbrekke.no",
+    "sameAs": [
+      "https://www.vassbrekke.no",
+      "https://privydeck.com",
+      "https://www.privbeacon.com"
+    ]
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "Vassbrekke AS",
+    "url": "https://www.vassbrekke.no"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Digital privacy",
+    "description": "Personal privacy apps, phone hardening, desktop security, and everyday privacy habits"
+  },
+  "primaryImageOfPage": "https://privguide.example/assets/og-cover.svg"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Beste Privacy-Apps — nach Kategorie",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "PrivyDeck",
+        "url": "https://privydeck.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Unser persönliches Privacy-Dashboard. Privacy-Score, Ein-Tipp-Tracker-Block auf Handy und Browser, verschlüsselter Tresor (inkl. Dateibereinigung und sicherer Cleanup) und Datenanfragen — ohne Raspberry Pi."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "PrivBeacon",
+        "url": "https://www.privbeacon.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Privacy-Compliance-SaaS für Websites. Scannt Tracker und Consent-Lücken über 16 Rechtsrahmen und vergibt Certified Private."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Windows 11 Privacy Tool",
+        "url": "https://github.com/N0L0g1c/Windows-11-Privacy-Enhancing-tool-GUI-and-CLI",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Privacy auf Windows 10/11 verbessern — GUI und CLI, weniger Telemetrie (Open Source, VassDev)."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Security Hardening",
+        "url": "https://github.com/N0L0g1c/SecurityHardening",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Praktische Hardening-Skripte für frische Installationen (Open Source, VassDev)."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Signal",
+        "url": "https://signal.org",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Goldstandard für private Nachrichten. Ende-zu-Ende-Verschlüsselung, verschwindende Nachrichten, Open Source, keine Werbung."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Session",
+        "url": "https://getsession.org",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Keine Telefonnummer nötig. Onion-Routing gegen Metadaten. Stärkeres Anonymitätsmodell."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Element (Matrix)",
+        "url": "https://element.io",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Föderierte E2EE-Räume, Bridges zu anderen Netzen. Self-Hosting möglich."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Firefox",
+        "url": "https://www.mozilla.org/firefox/",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Beste Balance aus Nutzbarkeit und Kontrolle. Mit PrivyDeck und/oder uBlock Origin und striktem Tracking-Schutz."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Brave",
+        "url": "https://brave.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Chromium-basiert mit aggressivem Ad-/Tracker-Block und privaten Fenstern mit Tor-Option."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Tor Browser",
+        "url": "https://www.torproject.org",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Traffic über das Tor-Netz. Essenziell für Hochrisiko-Recherche und Zensurumgehung. Nicht für Alltag-Logins."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Mullvad Browser",
+        "url": "https://mullvad.net/browser",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Tor-Browser-Technik ohne Tor-Netz — gehärteter Firefox gegen Fingerprinting."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Mullvad VPN",
+        "url": "https://mullvad.net",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Anonyme Konten (keine E-Mail), Bar/Krypto-Zahlung, auditiert, No-Logs-Ruf."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Proton VPN",
+        "url": "https://protonvpn.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Solider Free-Tier, Open-Source-Apps, Secure Core und Proton-Ökosystem. Gut für Einsteiger."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "IVPN",
+        "url": "https://www.ivpn.net",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Transparentes Privacy-Unternehmen, keine E-Mail-Anmeldung, starkes Anti-Tracking."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Bitwarden",
+        "url": "https://bitwarden.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Open Source, auditiert, kostenlos für Einzelpersonen. Self-Host mit Vaultwarden für volle Kontrolle."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "KeePassXC",
+        "url": "https://keepassxc.org",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Local-first Passwortdatenbank. Du kontrollierst Datei, Backups und Sync. Keine Cloud-Abhängigkeit."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Proton Pass",
+        "url": "https://proton.me/pass",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Integriert in Proton-Konten. Klare UX, Hide-my-Email-Aliase, Open-Source-Apps."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Proton Mail",
+        "url": "https://proton.me/mail",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Verschlüsselte E-Mail aus der Schweiz. Einfaches Onboarding, Kalender/Drive-Ökosystem."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Tuta (Tutanota)",
+        "url": "https://tuta.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Verschlüsselte E-Mail und Kalender aus Deutschland. Minimale Tracking-Oberfläche."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Thunderbird",
+        "url": "https://www.thunderbird.net",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Desktop-Mailclient mit OpenPGP. Mit jedem Anbieter — inklusive eigener Domain."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "DuckDuckGo",
+        "url": "https://duckduckgo.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Kein Suchverlauf-Profiling für Werbung. Einfacher Wechsel von Google."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Brave Search / Startpage",
+        "url": "https://search.brave.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Unabhängige Indizes oder Privacy-Proxys ohne Werbeprofil um deine Queries."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "SearXNG",
+        "url": "https://searxng.org",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Self-hostbare Metasuche. Aggregiere Engines ohne einer Firma deine Neugier-Graphen zu geben."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Proton Drive / Tresorit",
+        "url": "https://proton.me/drive",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Ende-zu-Ende-verschlüsselter Cloud-Speicher. Besser als Trust-us-Clouds für sensible Dokumente."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Cryptomator",
+        "url": "https://cryptomator.org",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Client-seitige Tresore über Dropbox, Google Drive oder Ordner. Vor dem Upload verschlüsseln."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Nextcloud / Syncthing",
+        "url": "https://nextcloud.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Self-Host Dateien und Kalender (Nextcloud) oder P2P-Sync ohne zentralen Server (Syncthing)."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Aegis Authenticator",
+        "url": "https://getaegis.app",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Open-Source-Android-2FA mit verschlüsselten Exporten. TOTP statt SMS bevorzugen."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Ente Auth",
+        "url": "https://ente.io/auth",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Plattformübergreifender Open-Source-Authenticator mit optionalem verschlüsseltem Sync."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "YubiKey / hardware keys",
+        "url": "https://www.yubico.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Phishing-resistente MFA. Sicherheitsschlüssel für E-Mail, Passwortmanager und kritische Konten."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "GrapheneOS",
+        "url": "https://grapheneos.org",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Gehärtetes Android für Pixel. Beste mobile Security/Privacy-Haltung für Verbraucher heute."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Linux (Fedora / Debian / Qubes)",
+        "url": "https://fedoraproject.org",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Windows-Telemetrie hinter dir lassen. Fedora/Debian für den Alltag; Qubes für ernsthafte Kompartmentierung."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "iOS (hardened)",
+        "url": "https://support.apple.com/guide/iphone/protect-your-web-browsing-iph01f4a43a5/ios",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Starke Sandbox von Haus aus. Lockdown Mode, iCloud begrenzen, Ad-Tracking aus, Berechtigungen prüfen."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Organic Maps / OsmAnd",
+        "url": "https://organicmaps.app",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Offline-Karten auf OpenStreetMap. Navigieren ohne ständiges Standort-Broadcast an Google."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Standard Notes / Joplin",
+        "url": "https://standardnotes.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Verschlüsselte Notizen mit Cross-Device-Sync. Journale und Entwürfe aus Klartext-Cloud-Notizen heraus."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "uBlock Origin",
+        "url": "https://ublockorigin.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Der klassische Open-Source-Browser-Blocker. Mit Firefox auf dem Desktop kombinieren."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "RethinkDNS",
+        "url": "https://rethinkdns.com",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "DNS- und Firewall-artiger Schutz für Android. Tracker-Domains systemweit blocken."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Ente Photos / Immich",
+        "url": "https://ente.io",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "Verschlüsseltes Foto-Backup (Ente) oder selbst gehostete Google-Photos-Alternative (Immich)."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Signal calls · Jitsi",
+        "url": "https://signal.org",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+        "description": "E2EE-Sprache/Video bevorzugen. Keine sensiblen Gespräche über SMS oder unverschlüsselte Defaults."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Brauche ich jeden Tag ein VPN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nicht immer. Ein VPN verbirgt Traffic vor lokalen Netzen und dem ISP und kann Standort-Tracking mindern — anonym macht es dich nicht. Schlechtes VPN ist schlimmer als keines. Seriösen No-Logs-Anbieter in feindlichen Netzen nutzen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist Signal privat, obwohl es meine Nummer braucht?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inhalte sind exzellent verschlüsselt. Die Nummer ist ein Discovery-Identifikator. Wenn das stört: Session. Für die meisten bleibt Signal die beste real genutzte Option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was bringt den größten Effekt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Passwortmanager + einzigartige Passwörter + Authenticator-2FA auf der E-Mail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Soll ich Social Media löschen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wenn möglich, hilft es enorm. Sonst: Profile schließen, Daten streichen, keine Live-Standorte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Trackt diese Seite mich?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keine Analytics, keine Werbe-Cookies, keine Drittanbieter-Tracker. Checkliste nur in localStorage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wo tiefer einsteigen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Offizielle Docs der Tools und Ressourcen wie privacyguides.org."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Privacy-Checkliste",
+  "description": "Abhaken beim Erledigen. Fortschritt nur in diesem Browser — nichts wird hochgeladen.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Passwortmanager installieren und kritische Konten migrieren",
+      "text": "Passwortmanager installieren und kritische Konten migrieren"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "2FA (Authenticator) für E-Mail und Banking aktivieren",
+      "text": "2FA (Authenticator) für E-Mail und Banking aktivieren"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Signal installieren und sensible Chats von SMS wegholen",
+      "text": "Signal installieren und sensible Chats von SMS wegholen"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Standardbrowser wechseln + uBlock Origin",
+      "text": "Standardbrowser wechseln + uBlock Origin"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Suchmaschine weg von Google ändern",
+      "text": "Suchmaschine weg von Google ändern"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Handy-Berechtigungen prüfen (Standort, Mikro, Kamera)",
+      "text": "Handy-Berechtigungen prüfen (Standort, Mikro, Kamera)"
+    }
+  ]
+}
+  </script>
+</head>
+<body data-lang="de">
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-brand">PRIVGUIDE</div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <div class="loader-pct" id="loaderPct">0%</div>
+      <div class="loader-tag">jacking in…</div>
+    </div>
+  </div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <canvas id="fx-canvas" aria-hidden="true"></canvas>
+  <div class="spotlight" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <nav class="section-nav" aria-label="Sections">
+    <a href="#top" class="is-active"><span>Top</span></a>
+    <a href="#paths"><span>Paths</span></a>
+    <a href="#apps"><span>Apps</span></a>
+    <a href="#life"><span>Life</span></a>
+    <a href="#phone"><span>Phone</span></a>
+    <a href="#desktop"><span>Desktop</span></a>
+    <a href="#checklist"><span>List</span></a>
+  </nav>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 3L5 8v8c0 7.2 4.7 13.9 11 15.5C22.3 29.9 27 23.2 27 16V8L16 3z" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M12 16.5l2.5 2.5L20 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Priv<span>Guide</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#life">Leben</a></li>
+        <li><a href="#phone">Handy</a></li>
+        <li><a href="#desktop">Desktop</a></li>
+        <li><a href="#paths">Start</a></li>
+        <li><a href="#checklist" class="nav-cta">Checkliste</a></li>
+      </ul>
+      <div class="nav-right">
+      <div class="lang-switcher" role="navigation" aria-label="Sprache">
+        <button type="button" class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+          <span class="lang-globe" aria-hidden="true">🌐</span>
+          <span class="lang-btn-label">Deutsch</span>
+          <span class="lang-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-menu" id="langMenu" role="listbox" hidden>
+          <a href="../index.html" hreflang="en" lang="en" class="lang-option" data-lang="en" role="option" aria-selected="false">English</a><a href="../no/index.html" hreflang="no" lang="no" class="lang-option" data-lang="no" role="option" aria-selected="false">Norsk</a><a href="../es/index.html" hreflang="es" lang="es" class="lang-option" data-lang="es" role="option" aria-selected="false">Español</a><a href="../de/index.html" hreflang="de" lang="de" class="lang-option active" data-lang="de" role="option" aria-selected="true">Deutsch</a><a href="../fr/index.html" hreflang="fr" lang="fr" class="lang-option" data-lang="fr" role="option" aria-selected="false">Français</a>
+        </div>
+      </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal="left">
+          <p class="eyebrow">
+            <span class="pulse"></span>
+            Offen · Praktisch · Aktuell
+          </p>
+          <h1>
+            <span class="line">Deine Privatsphäre ist nicht optional.</span>
+            <span class="line gradient-text">Das ist deine Karte.</span>
+          </h1>
+          <p class="hero-lead">Finde die besten Privacy-Apps, härte Handy und Computer und baue echte Gewohnheiten — ohne Informatikstudium.</p>
+          <div class="hero-actions">
+            <a href="#apps" class="btn btn-primary">Privacy-Apps entdecken</a>
+            <a href="#paths" class="btn btn-ghost">Pfad wählen →</a>
+          </div>
+          <ul class="hero-stats" role="list">
+            <li><strong>40+</strong><span>kuratierte Tools</span></li>
+            <li><strong>3</strong><span>Bedrohungsstufen</span></li>
+            <li><strong>0</strong><span>Tracker auf dieser Seite</span></li>
+          </ul>
+        </div>
+        <div class="hero-card" aria-hidden="true" data-reveal="right">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+              <em>privacy-stack.sh</em>
+            </div>
+            <pre class="terminal-body"><code><span class="cmt"># Everyday privacy stack · Vassbrekke</span>
+<span class="cmd">blockers</span>   → PrivyDeck
+<span class="cmd">messenger</span>  → Signal / Session
+<span class="cmd">browser</span>    → Firefox (+ uBlock)
+<span class="cmd">search</span>     → DuckDuckGo / Brave
+<span class="cmd">passwords</span>  → Bitwarden
+<span class="cmd">email</span>      → Proton Mail
+<span class="cmd">vpn</span>        → Mullvad / Proton
+<span class="ok">✓</span> Du besitzt deine Daten wieder.</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Was dieser Guide abdeckt">
+      <div class="container trust-grid">
+        <div class="trust-item" data-reveal data-reveal-delay="1">
+          <span class="trust-icon">🛡️</span>
+          <div>
+            <strong>Apps, die dich respektieren</strong>
+            <p>Open Source zuerst, auditiert wenn es zählt, keine Dark Patterns.</p>
+          </div>
+        </div>
+        <div class="trust-item" data-reveal data-reveal-delay="2">
+          <span class="trust-icon">📱</span>
+          <div>
+            <strong>Handy & Desktop</strong>
+            <p>Android, iOS, Windows, macOS und Linux — praktische Schritte.</p>
+          </div>
+        </div>
+        <div class="trust-item" data-reveal data-reveal-delay="3">
+          <span class="trust-icon">🌍</span>
+          <div>
+            <strong>Auch offline</strong>
+            <p>Sozial, Zuhause, Geld und physische Privatsphäre, die hält.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="paths">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Hier starten</p>
+          <h2>Wähle deinen Privacy-Pfad</h2>
+          <p class="section-lead">Nicht jeder braucht einen Faraday-Beutel. Wähle ein Level passend zu deinem Risiko.</p>
+        </header>
+        <div class="path-grid">
+          <article class="path-card path-beginner" data-level="01" data-reveal data-reveal-delay="1">
+            <div class="path-badge">Level 1</div>
+            <h3>Alltags-Privacy</h3>
+            <p>Für normale Menschen mit weniger Tracking und besseren Defaults.</p>
+            <ul>
+              <li>Passwortmanager + einzigartige Passwörter</li>
+              <li>Signal für private Chats</li>
+              <li>PrivyDeck (+ Firefox / uBlock)</li>
+              <li>2FA für E-Mail & Banking</li>
+              <li>App-Berechtigungen prüfen</li>
+            </ul>
+            <a href="#checklist" class="path-link" data-level="beginner">Checkliste starten →</a>
+          </article>
+          <article class="path-card path-solid featured" data-level="02" data-reveal data-reveal-delay="2">
+            <div class="path-badge">Level 2 · Empfohlen</div>
+            <h3>Solides Setup</h3>
+            <p>Für Freelancer und alle, die einen echten privaten Stack wollen.</p>
+            <ul>
+              <li>Proton- oder Tuta-Mail</li>
+              <li>Mullvad / Proton VPN im öffentlichen WLAN</li>
+              <li>Verschlüsselte Cloud oder lokale Backups</li>
+              <li>Gehärtetes Browserprofil</li>
+              <li>Getrennte Arbeits-/Privatkonten</li>
+            </ul>
+            <a href="#apps" class="path-link" data-level="solid">Stack erkunden →</a>
+          </article>
+          <article class="path-card path-advanced" data-level="03" data-reveal data-reveal-delay="3">
+            <div class="path-badge">Level 3</div>
+            <h3>Hohe Bedrohung</h3>
+            <p>Für Aktivisten, Whistleblower und Hochrisiko-Ziele.</p>
+            <ul>
+              <li>GrapheneOS / de-Googletes Android</li>
+              <li>Tor Browser für Recherche</li>
+              <li>Kompartmentierte Geräte & VMs</li>
+              <li>Hardware-Sicherheitsschlüssel</li>
+              <li>Opsec-Disziplin</li>
+            </ul>
+            <a href="#phone" class="path-link" data-level="advanced">Handy härten →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="apps">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">App-Verzeichnis</p>
+          <h2>Beste Privacy-Apps — nach Kategorie</h2>
+          <p class="section-lead">Kuratierte Tools — angeführt von PrivyDeck und der Vassbrekke-Suite, danach die besten Community-Tools.</p>
+        </header>
+
+        <aside class="ours-banner" id="vassbrekke" data-reveal="scale">
+          <div class="ours-banner-copy">
+            <p class="ours-banner-label">Vassbrekke AS · Unsere Produkte</p>
+            <h3>Von uns gebaut — starte mit PrivyDeck</h3>
+            <p>PrivGuide wird von Vassbrekke AS (Norwegen) gehostet und gehört dem Unternehmen. Zuerst unsere Privacy-Produkte — angeführt von PrivyDeck — danach das offene Ökosystem. Gesamte Linie auf vassbrekke.no.</p>
+            <div class="ours-banner-links">
+              <a class="btn btn-primary btn-sm" href="https://privydeck.com" target="_blank" rel="noopener noreferrer">PrivyDeck ↗</a>
+              <a class="btn btn-ghost btn-sm" href="https://www.privbeacon.com" target="_blank" rel="noopener noreferrer">PrivBeacon ↗</a>
+              <a class="btn btn-ghost btn-sm" href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">vassbrekke.no ↗</a>
+            </div>
+          </div>
+        </aside>
+
+        <div class="filter-bar" role="tablist" aria-label="App-Kategorien">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Alle</button>
+          <button class="filter-btn" data-filter="ours" role="tab" aria-selected="false">Unsere</button>
+          <button class="filter-btn" data-filter="messaging" role="tab" aria-selected="false">Messaging</button>
+          <button class="filter-btn" data-filter="browser" role="tab" aria-selected="false">Browser</button>
+          <button class="filter-btn" data-filter="vpn" role="tab" aria-selected="false">VPN</button>
+          <button class="filter-btn" data-filter="passwords" role="tab" aria-selected="false">Passwörter</button>
+          <button class="filter-btn" data-filter="email" role="tab" aria-selected="false">E-Mail</button>
+          <button class="filter-btn" data-filter="search" role="tab" aria-selected="false">Suche</button>
+          <button class="filter-btn" data-filter="storage" role="tab" aria-selected="false">Speicher</button>
+          <button class="filter-btn" data-filter="auth" role="tab" aria-selected="false">2FA / Auth</button>
+          <button class="filter-btn" data-filter="os" role="tab" aria-selected="false">OS / ROM</button>
+          <button class="filter-btn" data-filter="extra" role="tab" aria-selected="false">Mehr Tools</button>
+        </div>
+
+        <div class="app-grid" id="appGrid">
+          <article class="app-card app-card-ours" data-cat="ours" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🛡️</span>
+              <span class="app-tag">Vassbrekke</span>
+            </div>
+            <h3 itemprop="name">PrivyDeck</h3>
+            <p class="app-publisher">Von Vassbrekke AS · <a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">vassbrekke.no</a></p>
+            <p itemprop="description">Unser persönliches Privacy-Dashboard. Privacy-Score, Ein-Tipp-Tracker-Block auf Handy und Browser, verschlüsselter Tresor (inkl. Dateibereinigung und sicherer Cleanup) und Datenanfragen — ohne Raspberry Pi.</p>
+            <div class="app-meta"><span class="pill pill-ours">Unser</span><span class="pill pill-good">Top pick</span><span class="pill">Browser · Phone · Vault</span></div>
+            <div class="app-links"><a class="app-site" href="https://privydeck.com" target="_blank" rel="noopener noreferrer" title="PrivyDeck">privydeck.com ↗</a></div>
+            <meta itemprop="url" content="https://privydeck.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            <meta itemprop="author" content="Vassbrekke AS" />
+            <p class="app-why"><strong>Nutzen wenn:</strong> du den einfachsten All-in-one-Blocker, Tresor und Score willst (hier starten).</p>
+          </article>
+
+          <article class="app-card app-card-ours" data-cat="ours" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">📡</span>
+              <span class="app-tag">Vassbrekke</span>
+            </div>
+            <h3 itemprop="name">PrivBeacon</h3>
+            <p class="app-publisher">Von Vassbrekke AS · <a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">vassbrekke.no</a></p>
+            <p itemprop="description">Privacy-Compliance-SaaS für Websites. Scannt Tracker und Consent-Lücken über 16 Rechtsrahmen und vergibt Certified Private.</p>
+            <div class="app-meta"><span class="pill pill-ours">Unser</span><span class="pill pill-good">Compliance</span><span class="pill">16 law frameworks</span></div>
+            <div class="app-links"><a class="app-site" href="https://www.privbeacon.com" target="_blank" rel="noopener noreferrer" title="PrivBeacon">privbeacon.com ↗</a></div>
+            <meta itemprop="url" content="https://www.privbeacon.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            <meta itemprop="author" content="Vassbrekke AS" />
+            <p class="app-why"><strong>Nutzen wenn:</strong> du eine Website/App betreibst und echte Compliance brauchst.</p>
+          </article>
+
+          <article class="app-card app-card-ours" data-cat="ours" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🪟</span>
+              <span class="app-tag">Vassbrekke</span>
+            </div>
+            <h3 itemprop="name">Windows 11 Privacy Tool</h3>
+            <p class="app-publisher">Von Vassbrekke AS · <a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">vassbrekke.no</a></p>
+            <p itemprop="description">Privacy auf Windows 10/11 verbessern — GUI und CLI, weniger Telemetrie (Open Source, VassDev).</p>
+            <div class="app-meta"><span class="pill pill-ours">Unser</span><span class="pill pill-good">Open source</span><span class="pill">Windows 10/11 · GUI + CLI</span></div>
+            <div class="app-links"><a class="app-site" href="https://github.com/N0L0g1c/Windows-11-Privacy-Enhancing-tool-GUI-and-CLI" target="_blank" rel="noopener noreferrer" title="Windows 11 Privacy Tool">github.com · Windows Privacy Tool ↗</a></div>
+            <meta itemprop="url" content="https://github.com/N0L0g1c/Windows-11-Privacy-Enhancing-tool-GUI-and-CLI" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            <meta itemprop="author" content="Vassbrekke AS" />
+            <p class="app-why"><strong>Nutzen wenn:</strong> du Windows nutzt und praktisch härten willst.</p>
+          </article>
+
+          <article class="app-card app-card-ours" data-cat="ours" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🔐</span>
+              <span class="app-tag">Vassbrekke</span>
+            </div>
+            <h3 itemprop="name">Security Hardening</h3>
+            <p class="app-publisher">Von Vassbrekke AS · <a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">vassbrekke.no</a></p>
+            <p itemprop="description">Praktische Hardening-Skripte für frische Installationen (Open Source, VassDev).</p>
+            <div class="app-meta"><span class="pill pill-ours">Unser</span><span class="pill">Linux · Fresh install</span></div>
+            <div class="app-links"><a class="app-site" href="https://github.com/N0L0g1c/SecurityHardening" target="_blank" rel="noopener noreferrer" title="Security Hardening">github.com/N0L0g1c/SecurityHardening ↗</a></div>
+            <meta itemprop="url" content="https://github.com/N0L0g1c/SecurityHardening" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            <meta itemprop="author" content="Vassbrekke AS" />
+            <p class="app-why"><strong>Nutzen wenn:</strong> du Linux aufsetzt und eine schnelle Baseline willst.</p>
+          </article>
+
+          <article class="app-card" data-cat="messaging" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">💬</span>
+              <span class="app-tag">Messaging</span>
+            </div>
+            <h3 itemprop="name">Signal</h3>
+            
+            <p itemprop="description">Goldstandard für private Nachrichten. Ende-zu-Ende-Verschlüsselung, verschwindende Nachrichten, Open Source, keine Werbung.</p>
+            <div class="app-meta"><span class="pill pill-good">E2EE</span><span class="pill">iOS · Android · Desktop</span></div>
+            <div class="app-links"><a class="app-site" href="https://signal.org" target="_blank" rel="noopener noreferrer" title="Signal">signal.org ↗</a></div>
+            <meta itemprop="url" content="https://signal.org" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> Freunde/Familie es wirklich installieren.</p>
+          </article>
+
+          <article class="app-card" data-cat="messaging" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🌑</span>
+              <span class="app-tag">Messaging</span>
+            </div>
+            <h3 itemprop="name">Session</h3>
+            
+            <p itemprop="description">Keine Telefonnummer nötig. Onion-Routing gegen Metadaten. Stärkeres Anonymitätsmodell.</p>
+            <div class="app-meta"><span class="pill pill-good">No phone #</span><span class="pill">Cross-platform</span></div>
+            <div class="app-links"><a class="app-site" href="https://getsession.org" target="_blank" rel="noopener noreferrer" title="Session">getsession.org ↗</a></div>
+            <meta itemprop="url" content="https://getsession.org" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du identitätsarme Chats willst.</p>
+          </article>
+
+          <article class="app-card" data-cat="messaging" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">⬡</span>
+              <span class="app-tag">Messaging</span>
+            </div>
+            <h3 itemprop="name">Element (Matrix)</h3>
+            
+            <p itemprop="description">Föderierte E2EE-Räume, Bridges zu anderen Netzen. Self-Hosting möglich.</p>
+            <div class="app-meta"><span class="pill pill-good">Self-hostable</span><span class="pill">Teams · Communities</span></div>
+            <div class="app-links"><a class="app-site" href="https://element.io" target="_blank" rel="noopener noreferrer" title="Element (Matrix)">element.io ↗</a></div>
+            <meta itemprop="url" content="https://element.io" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> Gruppen, Orgs oder Self-Hosting zählen.</p>
+          </article>
+
+          <article class="app-card" data-cat="browser" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🦊</span>
+              <span class="app-tag">Browser</span>
+            </div>
+            <h3 itemprop="name">Firefox</h3>
+            
+            <p itemprop="description">Beste Balance aus Nutzbarkeit und Kontrolle. Mit PrivyDeck und/oder uBlock Origin und striktem Tracking-Schutz.</p>
+            <div class="app-meta"><span class="pill pill-good">Recommended</span><span class="pill">Desktop · Mobile</span></div>
+            <div class="app-links"><a class="app-site" href="https://www.mozilla.org/firefox/" target="_blank" rel="noopener noreferrer" title="Firefox">mozilla.org/firefox ↗</a></div>
+            <meta itemprop="url" content="https://www.mozilla.org/firefox/" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> tägliches Surfen für die meisten.</p>
+          </article>
+
+          <article class="app-card" data-cat="browser" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🦁</span>
+              <span class="app-tag">Browser</span>
+            </div>
+            <h3 itemprop="name">Brave</h3>
+            
+            <p itemprop="description">Chromium-basiert mit aggressivem Ad-/Tracker-Block und privaten Fenstern mit Tor-Option.</p>
+            <div class="app-meta"><span class="pill">Easy switch</span><span class="pill">Desktop · Mobile</span></div>
+            <div class="app-links"><a class="app-site" href="https://brave.com" target="_blank" rel="noopener noreferrer" title="Brave">brave.com ↗</a></div>
+            <meta itemprop="url" content="https://brave.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du Chrome-ähnliche UX mit besseren Defaults willst.</p>
+          </article>
+
+          <article class="app-card" data-cat="browser" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🧅</span>
+              <span class="app-tag">Browser</span>
+            </div>
+            <h3 itemprop="name">Tor Browser</h3>
+            
+            <p itemprop="description">Traffic über das Tor-Netz. Essenziell für Hochrisiko-Recherche und Zensurumgehung. Nicht für Alltag-Logins.</p>
+            <div class="app-meta"><span class="pill pill-good">Anonymity</span><span class="pill">Desktop · Android</span></div>
+            <div class="app-links"><a class="app-site" href="https://www.torproject.org" target="_blank" rel="noopener noreferrer" title="Tor Browser">torproject.org ↗</a></div>
+            <meta itemprop="url" content="https://www.torproject.org" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> das Bedrohungsmodell Anonymität braucht, nicht nur Privacy.</p>
+          </article>
+
+          <article class="app-card" data-cat="browser" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🔒</span>
+              <span class="app-tag">Browser</span>
+            </div>
+            <h3 itemprop="name">Mullvad Browser</h3>
+            
+            <p itemprop="description">Tor-Browser-Technik ohne Tor-Netz — gehärteter Firefox gegen Fingerprinting.</p>
+            <div class="app-meta"><span class="pill">Anti-fingerprint</span><span class="pill">Desktop</span></div>
+            <div class="app-links"><a class="app-site" href="https://mullvad.net/browser" target="_blank" rel="noopener noreferrer" title="Mullvad Browser">mullvad.net/browser ↗</a></div>
+            <meta itemprop="url" content="https://mullvad.net/browser" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du ihn mit einem vertrauenswürdigen VPN koppelst.</p>
+          </article>
+
+          <article class="app-card" data-cat="vpn" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🇸🇪</span>
+              <span class="app-tag">VPN</span>
+            </div>
+            <h3 itemprop="name">Mullvad VPN</h3>
+            
+            <p itemprop="description">Anonyme Konten (keine E-Mail), Bar/Krypto-Zahlung, auditiert, No-Logs-Ruf.</p>
+            <div class="app-meta"><span class="pill pill-good">Top pick</span><span class="pill">All platforms</span></div>
+            <div class="app-links"><a class="app-site" href="https://mullvad.net" target="_blank" rel="noopener noreferrer" title="Mullvad VPN">mullvad.net ↗</a></div>
+            <meta itemprop="url" content="https://mullvad.net" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> dir Privacy wichtiger ist als schnellstes Streaming.</p>
+          </article>
+
+          <article class="app-card" data-cat="vpn" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🟣</span>
+              <span class="app-tag">VPN</span>
+            </div>
+            <h3 itemprop="name">Proton VPN</h3>
+            
+            <p itemprop="description">Solider Free-Tier, Open-Source-Apps, Secure Core und Proton-Ökosystem. Gut für Einsteiger.</p>
+            <div class="app-meta"><span class="pill">Free tier</span><span class="pill">All platforms</span></div>
+            <div class="app-links"><a class="app-site" href="https://protonvpn.com" target="_blank" rel="noopener noreferrer" title="Proton VPN">protonvpn.com ↗</a></div>
+            <meta itemprop="url" content="https://protonvpn.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du schon Proton Mail/Drive nutzt.</p>
+          </article>
+
+          <article class="app-card" data-cat="vpn" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🛡️</span>
+              <span class="app-tag">VPN</span>
+            </div>
+            <h3 itemprop="name">IVPN</h3>
+            
+            <p itemprop="description">Transparentes Privacy-Unternehmen, keine E-Mail-Anmeldung, starkes Anti-Tracking.</p>
+            <div class="app-meta"><span class="pill">No-logs</span><span class="pill">Desktop · Mobile</span></div>
+            <div class="app-links"><a class="app-site" href="https://www.ivpn.net" target="_blank" rel="noopener noreferrer" title="IVPN">ivpn.net ↗</a></div>
+            <meta itemprop="url" content="https://www.ivpn.net" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du Mullvad-ähnliche Werte mit mehr Features willst.</p>
+          </article>
+
+          <article class="app-card" data-cat="passwords" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🔑</span>
+              <span class="app-tag">Passwords</span>
+            </div>
+            <h3 itemprop="name">Bitwarden</h3>
+            
+            <p itemprop="description">Open Source, auditiert, kostenlos für Einzelpersonen. Self-Host mit Vaultwarden für volle Kontrolle.</p>
+            <div class="app-meta"><span class="pill pill-good">Best default</span><span class="pill">All platforms</span></div>
+            <div class="app-links"><a class="app-site" href="https://bitwarden.com" target="_blank" rel="noopener noreferrer" title="Bitwarden">bitwarden.com ↗</a></div>
+            <meta itemprop="url" content="https://bitwarden.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du noch Passwörter wiederverwendest (starte heute).</p>
+          </article>
+
+          <article class="app-card" data-cat="passwords" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🗄️</span>
+              <span class="app-tag">Passwords</span>
+            </div>
+            <h3 itemprop="name">KeePassXC</h3>
+            
+            <p itemprop="description">Local-first Passwortdatenbank. Du kontrollierst Datei, Backups und Sync. Keine Cloud-Abhängigkeit.</p>
+            <div class="app-meta"><span class="pill pill-good">Local-first</span><span class="pill">Desktop (+ mobile ports)</span></div>
+            <div class="app-links"><a class="app-site" href="https://keepassxc.org" target="_blank" rel="noopener noreferrer" title="KeePassXC">keepassxc.org ↗</a></div>
+            <meta itemprop="url" content="https://keepassxc.org" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du keinen Drittanbieter-Cloud-Vault willst.</p>
+          </article>
+
+          <article class="app-card" data-cat="passwords" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🔐</span>
+              <span class="app-tag">Passwords</span>
+            </div>
+            <h3 itemprop="name">Proton Pass</h3>
+            
+            <p itemprop="description">Integriert in Proton-Konten. Klare UX, Hide-my-Email-Aliase, Open-Source-Apps.</p>
+            <div class="app-meta"><span class="pill">Ecosystem</span><span class="pill">All platforms</span></div>
+            <div class="app-links"><a class="app-site" href="https://proton.me/pass" target="_blank" rel="noopener noreferrer" title="Proton Pass">proton.me/pass ↗</a></div>
+            <meta itemprop="url" content="https://proton.me/pass" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du im Proton-Ökosystem lebst.</p>
+          </article>
+
+          <article class="app-card" data-cat="email" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">✉️</span>
+              <span class="app-tag">Email</span>
+            </div>
+            <h3 itemprop="name">Proton Mail</h3>
+            
+            <p itemprop="description">Verschlüsselte E-Mail aus der Schweiz. Einfaches Onboarding, Kalender/Drive-Ökosystem.</p>
+            <div class="app-meta"><span class="pill pill-good">Popular</span><span class="pill">Web · Apps</span></div>
+            <div class="app-links"><a class="app-site" href="https://proton.me/mail" target="_blank" rel="noopener noreferrer" title="Proton Mail">proton.me/mail ↗</a></div>
+            <meta itemprop="url" content="https://proton.me/mail" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du zum ersten Mal von Gmail wegwechselst.</p>
+          </article>
+
+          <article class="app-card" data-cat="email" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🟢</span>
+              <span class="app-tag">Email</span>
+            </div>
+            <h3 itemprop="name">Tuta (Tutanota)</h3>
+            
+            <p itemprop="description">Verschlüsselte E-Mail und Kalender aus Deutschland. Minimale Tracking-Oberfläche.</p>
+            <div class="app-meta"><span class="pill">Encrypted calendar</span><span class="pill">Web · Apps</span></div>
+            <div class="app-links"><a class="app-site" href="https://tuta.com" target="_blank" rel="noopener noreferrer" title="Tuta (Tutanota)">tuta.com ↗</a></div>
+            <meta itemprop="url" content="https://tuta.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du eine fokussierte Privacy-Mail-Alternative willst.</p>
+          </article>
+
+          <article class="app-card" data-cat="email" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🦅</span>
+              <span class="app-tag">Email</span>
+            </div>
+            <h3 itemprop="name">Thunderbird</h3>
+            
+            <p itemprop="description">Desktop-Mailclient mit OpenPGP. Mit jedem Anbieter — inklusive eigener Domain.</p>
+            <div class="app-meta"><span class="pill">OpenPGP</span><span class="pill">Desktop</span></div>
+            <div class="app-links"><a class="app-site" href="https://www.thunderbird.net" target="_blank" rel="noopener noreferrer" title="Thunderbird">thunderbird.net ↗</a></div>
+            <meta itemprop="url" content="https://www.thunderbird.net" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du clientseitige Kontrolle über Mail willst.</p>
+          </article>
+
+          <article class="app-card" data-cat="search" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🦆</span>
+              <span class="app-tag">Search</span>
+            </div>
+            <h3 itemprop="name">DuckDuckGo</h3>
+            
+            <p itemprop="description">Kein Suchverlauf-Profiling für Werbung. Einfacher Wechsel von Google.</p>
+            <div class="app-meta"><span class="pill">Easy win</span><span class="pill">Web · Apps</span></div>
+            <div class="app-links"><a class="app-site" href="https://duckduckgo.com" target="_blank" rel="noopener noreferrer" title="DuckDuckGo">duckduckgo.com ↗</a></div>
+            <meta itemprop="url" content="https://duckduckgo.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du reibungslose Privacy willst.</p>
+          </article>
+
+          <article class="app-card" data-cat="search" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🔍</span>
+              <span class="app-tag">Search</span>
+            </div>
+            <h3 itemprop="name">Brave Search / Startpage</h3>
+            
+            <p itemprop="description">Unabhängige Indizes oder Privacy-Proxys ohne Werbeprofil um deine Queries.</p>
+            <div class="app-meta"><span class="pill">Google-quality options</span><span class="pill">Web</span></div>
+            <div class="app-links"><a class="app-site" href="https://search.brave.com" target="_blank" rel="noopener noreferrer" title="Brave Search / Startpage">search.brave.com ↗</a><a class="app-site app-site-secondary" href="https://www.startpage.com" target="_blank" rel="noopener noreferrer">startpage.com ↗</a></div>
+            <meta itemprop="url" content="https://search.brave.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> DDG-Ergebnisse nicht reichen.</p>
+          </article>
+
+          <article class="app-card" data-cat="search" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🧩</span>
+              <span class="app-tag">Search</span>
+            </div>
+            <h3 itemprop="name">SearXNG</h3>
+            
+            <p itemprop="description">Self-hostbare Metasuche. Aggregiere Engines ohne einer Firma deine Neugier-Graphen zu geben.</p>
+            <div class="app-meta"><span class="pill pill-good">Self-host</span><span class="pill">Web</span></div>
+            <div class="app-links"><a class="app-site" href="https://searxng.org" target="_blank" rel="noopener noreferrer" title="SearXNG">searxng.org ↗</a></div>
+            <meta itemprop="url" content="https://searxng.org" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du eigene Dienste betreibst.</p>
+          </article>
+
+          <article class="app-card" data-cat="storage" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">☁️</span>
+              <span class="app-tag">Storage</span>
+            </div>
+            <h3 itemprop="name">Proton Drive / Tresorit</h3>
+            
+            <p itemprop="description">Ende-zu-Ende-verschlüsselter Cloud-Speicher. Besser als Trust-us-Clouds für sensible Dokumente.</p>
+            <div class="app-meta"><span class="pill">E2EE cloud</span><span class="pill">Cross-platform</span></div>
+            <div class="app-links"><a class="app-site" href="https://proton.me/drive" target="_blank" rel="noopener noreferrer" title="Proton Drive / Tresorit">proton.me/drive ↗</a><a class="app-site app-site-secondary" href="https://tresorit.com" target="_blank" rel="noopener noreferrer">tresorit.com ↗</a></div>
+            <meta itemprop="url" content="https://proton.me/drive" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> Dateien syncen müssen, aber verschlüsselt bleiben.</p>
+          </article>
+
+          <article class="app-card" data-cat="storage" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🧊</span>
+              <span class="app-tag">Storage</span>
+            </div>
+            <h3 itemprop="name">Cryptomator</h3>
+            
+            <p itemprop="description">Client-seitige Tresore über Dropbox, Google Drive oder Ordner. Vor dem Upload verschlüsseln.</p>
+            <div class="app-meta"><span class="pill pill-good">Works with any cloud</span><span class="pill">Desktop · Mobile</span></div>
+            <div class="app-links"><a class="app-site" href="https://cryptomator.org" target="_blank" rel="noopener noreferrer" title="Cryptomator">cryptomator.org ↗</a></div>
+            <meta itemprop="url" content="https://cryptomator.org" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du die aktuelle Cloud noch nicht verlassen kannst.</p>
+          </article>
+
+          <article class="app-card" data-cat="storage" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🏠</span>
+              <span class="app-tag">Storage</span>
+            </div>
+            <h3 itemprop="name">Nextcloud / Syncthing</h3>
+            
+            <p itemprop="description">Self-Host Dateien und Kalender (Nextcloud) oder P2P-Sync ohne zentralen Server (Syncthing).</p>
+            <div class="app-meta"><span class="pill">Own the iron</span><span class="pill">Self-host · P2P</span></div>
+            <div class="app-links"><a class="app-site" href="https://nextcloud.com" target="_blank" rel="noopener noreferrer" title="Nextcloud / Syncthing">nextcloud.com ↗</a><a class="app-site app-site-secondary" href="https://syncthing.net" target="_blank" rel="noopener noreferrer">syncthing.net ↗</a></div>
+            <meta itemprop="url" content="https://nextcloud.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du die Big Cloud ganz verlassen willst.</p>
+          </article>
+
+          <article class="app-card" data-cat="auth" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">📲</span>
+              <span class="app-tag">2FA</span>
+            </div>
+            <h3 itemprop="name">Aegis Authenticator</h3>
+            
+            <p itemprop="description">Open-Source-Android-2FA mit verschlüsselten Exporten. TOTP statt SMS bevorzugen.</p>
+            <div class="app-meta"><span class="pill pill-good">Android</span><span class="pill">Offline</span></div>
+            <div class="app-links"><a class="app-site" href="https://getaegis.app" target="_blank" rel="noopener noreferrer" title="Aegis Authenticator">getaegis.app ↗</a></div>
+            <meta itemprop="url" content="https://getaegis.app" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du Google Authenticator ersetzt.</p>
+          </article>
+
+          <article class="app-card" data-cat="auth" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🧬</span>
+              <span class="app-tag">2FA</span>
+            </div>
+            <h3 itemprop="name">Ente Auth</h3>
+            
+            <p itemprop="description">Plattformübergreifender Open-Source-Authenticator mit optionalem verschlüsseltem Sync.</p>
+            <div class="app-meta"><span class="pill">Cross-platform</span><span class="pill">Encrypted sync</span></div>
+            <div class="app-links"><a class="app-site" href="https://ente.io/auth" target="_blank" rel="noopener noreferrer" title="Ente Auth">ente.io/auth ↗</a></div>
+            <meta itemprop="url" content="https://ente.io/auth" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du 2FA auf mehreren Geräten brauchst.</p>
+          </article>
+
+          <article class="app-card" data-cat="auth" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🔑</span>
+              <span class="app-tag">Auth</span>
+            </div>
+            <h3 itemprop="name">YubiKey / hardware keys</h3>
+            
+            <p itemprop="description">Phishing-resistente MFA. Sicherheitsschlüssel für E-Mail, Passwortmanager und kritische Konten.</p>
+            <div class="app-meta"><span class="pill pill-good">Phishing-resistant</span><span class="pill">Hardware</span></div>
+            <div class="app-links"><a class="app-site" href="https://www.yubico.com" target="_blank" rel="noopener noreferrer" title="YubiKey / hardware keys">yubico.com ↗</a></div>
+            <meta itemprop="url" content="https://www.yubico.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> Kontoübernahme verheerend wäre.</p>
+          </article>
+
+          <article class="app-card" data-cat="os" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🟩</span>
+              <span class="app-tag">Mobile OS</span>
+            </div>
+            <h3 itemprop="name">GrapheneOS</h3>
+            
+            <p itemprop="description">Gehärtetes Android für Pixel. Beste mobile Security/Privacy-Haltung für Verbraucher heute.</p>
+            <div class="app-meta"><span class="pill pill-good">Highest bar</span><span class="pill">Pixel only</span></div>
+            <div class="app-links"><a class="app-site" href="https://grapheneos.org" target="_blank" rel="noopener noreferrer" title="GrapheneOS">grapheneos.org ↗</a></div>
+            <meta itemprop="url" content="https://grapheneos.org" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> Handy-Sicherheit nicht verhandelbar ist.</p>
+          </article>
+
+          <article class="app-card" data-cat="os" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🐧</span>
+              <span class="app-tag">Desktop OS</span>
+            </div>
+            <h3 itemprop="name">Linux (Fedora / Debian / Qubes)</h3>
+            
+            <p itemprop="description">Windows-Telemetrie hinter dir lassen. Fedora/Debian für den Alltag; Qubes für ernsthafte Kompartmentierung.</p>
+            <div class="app-meta"><span class="pill">Own your OS</span><span class="pill">Desktop</span></div>
+            <div class="app-links"><a class="app-site" href="https://fedoraproject.org" target="_blank" rel="noopener noreferrer" title="Linux (Fedora / Debian / Qubes)">fedoraproject.org ↗</a><a class="app-site app-site-secondary" href="https://www.qubes-os.org" target="_blank" rel="noopener noreferrer">qubes-os.org ↗</a></div>
+            <meta itemprop="url" content="https://fedoraproject.org" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> Desktop-Privacy ein Langzeitziel ist.</p>
+          </article>
+
+          <article class="app-card" data-cat="os" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🔵</span>
+              <span class="app-tag">Mobile OS</span>
+            </div>
+            <h3 itemprop="name">iOS (hardened)</h3>
+            
+            <p itemprop="description">Starke Sandbox von Haus aus. Lockdown Mode, iCloud begrenzen, Ad-Tracking aus, Berechtigungen prüfen.</p>
+            <div class="app-meta"><span class="pill">Good baseline</span><span class="pill">iPhone · iPad</span></div>
+            <div class="app-links"><a class="app-site" href="https://support.apple.com/guide/iphone/protect-your-web-browsing-iph01f4a43a5/ios" target="_blank" rel="noopener noreferrer" title="iOS (hardened)">support.apple.com ↗</a></div>
+            <meta itemprop="url" content="https://support.apple.com/guide/iphone/protect-your-web-browsing-iph01f4a43a5/ios" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du vorsichtig im Apple-Ökosystem bleibst.</p>
+          </article>
+
+          <article class="app-card" data-cat="extra" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🗺️</span>
+              <span class="app-tag">Maps</span>
+            </div>
+            <h3 itemprop="name">Organic Maps / OsmAnd</h3>
+            
+            <p itemprop="description">Offline-Karten auf OpenStreetMap. Navigieren ohne ständiges Standort-Broadcast an Google.</p>
+            <div class="app-meta"><span class="pill">Offline</span><span class="pill">Mobile</span></div>
+            <div class="app-links"><a class="app-site" href="https://organicmaps.app" target="_blank" rel="noopener noreferrer" title="Organic Maps / OsmAnd">organicmaps.app ↗</a><a class="app-site app-site-secondary" href="https://osmand.net" target="_blank" rel="noopener noreferrer">osmand.net ↗</a></div>
+            <meta itemprop="url" content="https://organicmaps.app" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> Karten ohne Überwachungssteuer.</p>
+          </article>
+
+          <article class="app-card" data-cat="extra" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">📝</span>
+              <span class="app-tag">Notes</span>
+            </div>
+            <h3 itemprop="name">Standard Notes / Joplin</h3>
+            
+            <p itemprop="description">Verschlüsselte Notizen mit Cross-Device-Sync. Journale und Entwürfe aus Klartext-Cloud-Notizen heraus.</p>
+            <div class="app-meta"><span class="pill">E2EE notes</span><span class="pill">Cross-platform</span></div>
+            <div class="app-links"><a class="app-site" href="https://standardnotes.com" target="_blank" rel="noopener noreferrer" title="Standard Notes / Joplin">standardnotes.com ↗</a><a class="app-site app-site-secondary" href="https://joplinapp.org" target="_blank" rel="noopener noreferrer">joplinapp.org ↗</a></div>
+            <meta itemprop="url" content="https://standardnotes.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> Apple/Google Notes zu exponiert wirken.</p>
+          </article>
+
+          <article class="app-card" data-cat="extra" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🚫</span>
+              <span class="app-tag">Blockers</span>
+            </div>
+            <h3 itemprop="name">uBlock Origin</h3>
+            
+            <p itemprop="description">Der klassische Open-Source-Browser-Blocker. Mit Firefox auf dem Desktop kombinieren.</p>
+            <div class="app-meta"><span class="pill pill-good">FOSS classic</span><span class="pill">Browser extension</span></div>
+            <div class="app-links"><a class="app-site" href="https://ublockorigin.com" target="_blank" rel="noopener noreferrer" title="uBlock Origin">ublockorigin.com ↗</a></div>
+            <meta itemprop="url" content="https://ublockorigin.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du eine FOSS-Extension neben PrivyDeck willst.</p>
+          </article>
+
+          <article class="app-card" data-cat="extra" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">🌐</span>
+              <span class="app-tag">Blockers</span>
+            </div>
+            <h3 itemprop="name">RethinkDNS</h3>
+            
+            <p itemprop="description">DNS- und Firewall-artiger Schutz für Android. Tracker-Domains systemweit blocken.</p>
+            <div class="app-meta"><span class="pill">DNS + firewall</span><span class="pill">Android</span></div>
+            <div class="app-links"><a class="app-site" href="https://rethinkdns.com" target="_blank" rel="noopener noreferrer" title="RethinkDNS">rethinkdns.com ↗</a></div>
+            <meta itemprop="url" content="https://rethinkdns.com" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du Netzwerk-Blocking für Android-Apps brauchst.</p>
+          </article>
+
+          <article class="app-card" data-cat="extra" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">📸</span>
+              <span class="app-tag">Photos</span>
+            </div>
+            <h3 itemprop="name">Ente Photos / Immich</h3>
+            
+            <p itemprop="description">Verschlüsseltes Foto-Backup (Ente) oder selbst gehostete Google-Photos-Alternative (Immich).</p>
+            <div class="app-meta"><span class="pill">E2EE or self-host</span><span class="pill">Mobile · Server</span></div>
+            <div class="app-links"><a class="app-site" href="https://ente.io" target="_blank" rel="noopener noreferrer" title="Ente Photos / Immich">ente.io ↗</a><a class="app-site app-site-secondary" href="https://immich.app" target="_blank" rel="noopener noreferrer">immich.app ↗</a></div>
+            <meta itemprop="url" content="https://ente.io" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> du Google Photos verlässt.</p>
+          </article>
+
+          <article class="app-card" data-cat="extra" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <div class="app-top">
+              <span class="app-icon" aria-hidden="true">📞</span>
+              <span class="app-tag">Calling</span>
+            </div>
+            <h3 itemprop="name">Signal calls · Jitsi</h3>
+            
+            <p itemprop="description">E2EE-Sprache/Video bevorzugen. Keine sensiblen Gespräche über SMS oder unverschlüsselte Defaults.</p>
+            <div class="app-meta"><span class="pill">E2EE options</span><span class="pill">Mobile · Desktop</span></div>
+            <div class="app-links"><a class="app-site" href="https://signal.org" target="_blank" rel="noopener noreferrer" title="Signal calls · Jitsi">signal.org ↗</a><a class="app-site app-site-secondary" href="https://jitsi.org" target="_blank" rel="noopener noreferrer">jitsi.org ↗</a></div>
+            <meta itemprop="url" content="https://signal.org" />
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            
+            <p class="app-why"><strong>Nutzen wenn:</strong> der Gesprächsinhalt zählt.</p>
+          </article>
+        </div>
+
+        <p class="apps-note">Vassbrekke-AS-Produkte sind mit Unser markiert. Download-Quellen immer prüfen.</p>
+      </div>
+    </section>
+
+    <section class="section" id="life">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Echtes Leben</p>
+          <h2>Persönliche Privatsphäre jenseits von Apps</h2>
+          <p class="section-lead">Das beste VPN repariert kein Oversharing und keine Kamera auf dem Schreibtisch.</p>
+        </header>
+        <div class="life-grid">
+          <article class="life-card" data-reveal data-reveal-delay="1">
+            <div class="life-num">01</div>
+            <h3>Sozial & Identität</h3>
+            <ul>
+              <li>Öffentliche Profile prüfen — Geburtsdatum, Stadt, Arbeit, Familienfotos entfernen.</li>
+              <li>Unterschiedliche Nutzernamen pro Kontext.</li>
+              <li>Gesichtserkennung und Kontaktsync in Social Apps aus.</li>
+              <li>Keine Echtzeit-Standorte posten.</li>
+              <li>E-Mail-Aliase für Shopping, Newsletter und Banking.</li>
+            </ul>
+          </article>
+          <article class="life-card" data-reveal data-reveal-delay="2">
+            <div class="life-num">02</div>
+            <h3>Zuhause & physisch</h3>
+            <ul>
+              <li>Laptop-Kameras abdecken; Hardware-Mute für Mikros.</li>
+              <li>Bildschirme sperren; Vollverschlüsselung überall.</li>
+              <li>Dokumente mit Ausweisnummern vernichten.</li>
+              <li>Smart Speaker hinterfragen; IoT im Gäste-WLAN.</li>
+              <li>Physischen Gerätezugriff auf Reisen kennen.</li>
+            </ul>
+          </article>
+          <article class="life-card" data-reveal data-reveal-delay="3">
+            <div class="life-num">03</div>
+            <h3>Geld & Einkaufen</h3>
+            <ul>
+              <li>Privacy-freundliche Zahlungen wo legal und praktisch.</li>
+              <li>Kundenkarten mit echter Identität meiden wenn möglich.</li>
+              <li>Keine Kreditkarten/IDs in Cloud-Fotos.</li>
+              <li>Data-Broker-Opt-outs (länderspezifisch).</li>
+              <li>Finanz-2FA per Hardware-Key oder Authenticator, nie nur SMS.</li>
+            </ul>
+          </article>
+          <article class="life-card" data-reveal data-reveal-delay="4">
+            <div class="life-num">04</div>
+            <h3>Kommunikationsgewohnheiten</h3>
+            <ul>
+              <li>Signal als Standard für alles, was nicht auf eine Postkarte gehört.</li>
+              <li>Verschwindende Nachrichten; Screenshots existieren weiter.</li>
+              <li>Sicherheitsnummern bei kritischen Kontakten prüfen.</li>
+              <li>Keine Geheimnisse auf Arbeitgebergeräten.</li>
+              <li>Gruppenchats vergrößern die Angriffsfläche.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="phone">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Mobil</p>
+          <h2>Handy-Privacy — Android & iOS</h2>
+          <p class="section-lead">Dein Handy ist ein Tracking-Supercomputer. Härte es plattformweise ab.</p>
+        </header>
+
+        <div class="platform-tabs" role="tablist" aria-label="Handy-Plattformen">
+          <button class="platform-tab active" data-platform="android" role="tab" aria-selected="true">Android</button>
+          <button class="platform-tab" data-platform="ios" role="tab" aria-selected="false">iOS</button>
+        </div>
+
+        <div class="platform-panels">
+          <div class="platform-panel active" id="panel-android" role="tabpanel">
+            <div class="split">
+              <div>
+                <h3>Android-Härtungscheckliste</h3>
+                <ol class="step-list">
+                  <li>Modernes Pixel + GrapheneOS bevorzugen, sonst Stock-OS aktuell halten.</li>
+                  <li>Apps nur aus vertrauenswürdigen Quellen — Play Store vorsichtig oder F-Droid.</li>
+                  <li><strong>Berechtigungsdiät:</strong> Standort, Mikro, Kamera, Kontakte nur bei Bedarf.</li>
+                  <li>Werbe-ID / Anzeigenpersonalisierung deaktivieren.</li>
+                  <li><strong>Unnötige Sensoren aus:</strong> Bluetooth, NFC, genauer Standort im Idle.</li>
+                  <li>DNS-Blocker (Private DNS / RethinkDNS / NextDNS).</li>
+                  <li><strong>Sperrbildschirm:</strong> starke PIN/Passphrase, Biometrie mit PIN-Fallback.</li>
+                  <li>Verschlüsselte Backups unter deiner Kontrolle.</li>
+                  <li>Arbeitsprofil / Zweitnutzer für fragwürdige Apps.</li>
+                  <li>Keine APKs von zufälligen Websites sideloaden.</li>
+                </ol>
+              </div>
+              <aside class="callout">
+                <h4>Schneller Android-Stack</h4>
+                <ul>
+                  <li>PrivyDeck · Signal · Bitwarden</li>
+                  <li>Aegis · Firefox / Vanadium</li>
+                  <li>Organic Maps · Proton Mail</li>
+                  <li>Mullvad / Proton VPN</li>
+                  <li>NewPipe / LibreTube</li>
+                </ul>
+                <p class="callout-note">GrapheneOS: sandboxiertes Google Play nur bei echtem Bedarf.</p>
+              </aside>
+            </div>
+          </div>
+
+          <div class="platform-panel" id="panel-ios" role="tabpanel" hidden>
+            <div class="split">
+              <div>
+                <h3>iOS-Härtungscheckliste</h3>
+                <ol class="step-list">
+                  <li>iOS zügig aktualisieren.</li>
+                  <li>Lockdown-Modus bei gezielten Angriffen.</li>
+                  <li>Alle Berechtigungen prüfen; Tracking zurücksetzen.</li>
+                  <li><strong>Apple-ID:</strong> starkes Passwort, Hardware-Key oder Passkeys.</li>
+                  <li><strong>iCloud:</strong> wissen was synct; Erweiterter Datenschutz.</li>
+                  <li>Analysen und personalisierte Werbung begrenzen.</li>
+                  <li>Safari-Betrugswarnung; Brave/Firefox Focus erwägen.</li>
+                  <li>App-Tracking standardmäßig ablehnen.</li>
+                  <li>Schutz bei gestohlenem Gerät / USB-Zubehör.</li>
+                  <li>Keine dubiosen Konfigurationsprofile.</li>
+                </ol>
+              </div>
+              <aside class="callout">
+                <h4>Schneller iOS-Stack</h4>
+                <ul>
+                  <li>PrivyDeck · Signal · Bitwarden</li>
+                  <li>Ente Auth · Firefox / Brave</li>
+                  <li>Proton Mail · Organic Maps</li>
+                  <li>Mullvad / Proton VPN</li>
+                  <li>Lockdown Mode when needed</li>
+                </ul>
+                <p class="callout-note">iOS ist closed source — starke Apple-ID und wenig App-Fläche.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="desktop">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Computer</p>
+          <h2>Desktop- & Laptop-Privacy</h2>
+          <p class="section-lead">Verschlüssele die Platte, reduziere Telemetrie, behandle den Browser nicht wie eine Mülltonne.</p>
+        </header>
+
+        <div class="desktop-grid">
+          <article class="desk-card">
+            <h3><span>🪟</span> Windows</h3>
+            <ul>
+              <li>Lokales Konto wenn möglich; Microsoft-Sync begrenzen.</li>
+              <li>Werbe-ID und volle Telemetrie aus.</li>
+              <li>BitLocker + starker Login.</li>
+              <li>Firefox + uBlock statt Edge-Defaults.</li>
+              <li>Bloat deinstallieren; unbekannte Autostarts aus.</li>
+              <li>Sandbox / separates Browserprofil für Risiko-Sites.</li>
+              <li>Linux in Betracht ziehen, wenn du bereit bist.</li>
+            </ul>
+          </article>
+          <article class="desk-card">
+            <h3><span></span> macOS</h3>
+            <ul>
+              <li>FileVault, Firewall, Auto-Updates an.</li>
+              <li>Datenschutz-Berechtigungen regelmäßig prüfen.</li>
+              <li>Erweiterter Datenschutz in iCloud wenn passend.</li>
+              <li>App Store / verifizierte Entwickler; Gatekeeper an.</li>
+              <li>Continuity bei Bedarf einschränken.</li>
+              <li>Firefox/Brave; Arbeit und Privat trennen.</li>
+              <li>Kurzer Idle-Timeout.</li>
+            </ul>
+          </article>
+          <article class="desk-card">
+            <h3><span>🐧</span> Linux</h3>
+            <ul>
+              <li>Vollverschlüsselung bei Installation (LUKS).</li>
+              <li>Fedora, Debian oder openSUSE.</li>
+              <li>Flatpak mit Vorsicht; Distro-Pakete für Systemtools.</li>
+              <li>Firewall und Auto-Security-Updates.</li>
+              <li>Qubes OS für starke Isolation.</li>
+              <li>Firmware aktuell (fwupd).</li>
+              <li>Separater Browser für Banking.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="desk-universal">
+          <h3>Universelle Desktop-Regeln</h3>
+          <div class="universal-grid">
+            <div class="u-item"><strong>Verschlüsseln oder verlieren</strong><p>Laptop ohne FDE verloren = Totalverlust der Daten.</p></div>
+            <div class="u-item"><strong>Passwortmanager überall</strong><p>Bitwarden/KeePassXC schlagen nur den Browser-Manager.</p></div>
+            <div class="u-item"><strong>Updates sind Sicherheit</strong><p>Ungepatchtes OS/Browser ist der einfache Weg.</p></div>
+            <div class="u-item"><strong>Least Privilege</strong><p>Nicht täglich als Admin/root arbeiten.</p></div>
+            <div class="u-item"><strong>Offline-Backup</strong><p>3-2-1 mit mindestens einer offline/verschlüsselten Kopie.</p></div>
+            <div class="u-item"><strong>Öffentliches WLAN = VPN</strong><p>Cafés und Flughäfen sind feindliche Netze.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="checklist">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Aktionsplan</p>
+          <h2>Privacy-Checkliste</h2>
+          <p class="section-lead">Abhaken beim Erledigen. Fortschritt nur in diesem Browser — nichts wird hochgeladen.</p>
+        </header>
+
+        <div class="checklist-toolbar">
+          <div class="progress-wrap">
+            <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+          </div>
+          <p class="progress-label"><span id="progressText">0</span>% erledigt · <span id="progressCount">0 / 0</span></p>
+          <button type="button" class="btn btn-ghost btn-sm" id="resetChecklist" data-confirm="Gesamten Checklisten-Fortschritt auf diesem Gerät zurücksetzen?">Zurücksetzen</button>
+        </div>
+
+        <div class="checklist-groups" id="checklist">
+          <div class="check-group" data-level="beginner">
+            <h3>Woche 1 — Grundlagen</h3>
+            <label class="check-item"><input type="checkbox" data-id="c1" /> Passwortmanager installieren und kritische Konten migrieren</label>
+            <label class="check-item"><input type="checkbox" data-id="c2" /> 2FA (Authenticator) für E-Mail und Banking aktivieren</label>
+            <label class="check-item"><input type="checkbox" data-id="c3" /> Signal installieren und sensible Chats von SMS wegholen</label>
+            <label class="check-item"><input type="checkbox" data-id="c4" /> Standardbrowser wechseln + uBlock Origin</label>
+            <label class="check-item"><input type="checkbox" data-id="c5" /> Suchmaschine weg von Google ändern</label>
+            <label class="check-item"><input type="checkbox" data-id="c6" /> Handy-Berechtigungen prüfen (Standort, Mikro, Kamera)</label>
+          </div>
+          <div class="check-group" data-level="solid">
+            <h3>Woche 2–3 — Solider Stack</h3>
+            <label class="check-item"><input type="checkbox" data-id="c7" /> Primäre E-Mail zu Proton / Tuta (oder härten)</label>
+            <label class="check-item"><input type="checkbox" data-id="c8" /> No-Logs-VPN für Reisen und öffentliches WLAN</label>
+            <label class="check-item"><input type="checkbox" data-id="c9" /> Vollverschlüsselung auf allen Computern und Handys</label>
+            <label class="check-item"><input type="checkbox" data-id="c10" /> E-Mail-Aliase für Shopping und Newsletter</label>
+            <label class="check-item"><input type="checkbox" data-id="c11" /> Verschlüsselte Cloud oder Cryptomator-Tresor</label>
+            <label class="check-item"><input type="checkbox" data-id="c12" /> Social-Media-Privatsphäre und öffentliche Posts prüfen</label>
+          </div>
+          <div class="check-group" data-level="advanced">
+            <h3>Level up — stärkere Bedrohungsmodelle</h3>
+            <label class="check-item"><input type="checkbox" data-id="c13" /> Hardware-Sicherheitsschlüssel für kritische Konten</label>
+            <label class="check-item"><input type="checkbox" data-id="c14" /> Getrennte Geräte oder Profile für Hochrisiko-Aktivitäten</label>
+            <label class="check-item"><input type="checkbox" data-id="c15" /> GrapheneOS / gehärtetes Mobile-OS evaluieren</label>
+            <label class="check-item"><input type="checkbox" data-id="c16" /> Data-Broker-Opt-outs und People-Search-Entfernungen</label>
+            <label class="check-item"><input type="checkbox" data-id="c17" /> Offline/verschlüsselte Backups mit Restore getestet</label>
+            <label class="check-item"><input type="checkbox" data-id="c18" /> Schriftliches persönliches Bedrohungsmodell</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="principles">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Mindset</p>
+          <h2>Privacy-Prinzipien, die nie veralten</h2>
+        </header>
+        <div class="principles-grid">
+          <article class="principle">
+            <h3>Bedrohungsmodell zuerst</h3>
+            <p>Schütze dich vor realen Risiken, nicht vor Film-Bösewichten.</p>
+          </article>
+          <article class="principle">
+            <h3>Daten minimieren</h3>
+            <p>Was du nie sammelst, kann nicht leaken.</p>
+          </article>
+          <article class="principle">
+            <h3>Defense in Depth</h3>
+            <p>Ein Tool versagt. Schichte Schutzmaßnahmen.</p>
+          </article>
+          <article class="principle">
+            <h3>Offen und auditiert bevorzugen</h3>
+            <p>Open Source ist kein Zauber, Geheimhaltung ist die schlechtere Wette.</p>
+          </article>
+          <article class="principle">
+            <h3>Usability gewinnt</h3>
+            <p>Das private Tool, das du aufgibst, verliert gegen das, das du täglich nutzt.</p>
+          </article>
+          <article class="principle">
+            <h3>Breach annehmen</h3>
+            <p>Recovery planen: Backups, Schlüssel, wiederherstellbare Konten.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq">
+      <div class="container narrow">
+        <header class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Häufige Fragen</h2>
+        </header>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Brauche ich jeden Tag ein VPN?</summary>
+            <p>Nicht immer. Ein VPN verbirgt Traffic vor lokalen Netzen und dem ISP und kann Standort-Tracking mindern — anonym macht es dich nicht. Schlechtes VPN ist schlimmer als keines. Seriösen No-Logs-Anbieter in feindlichen Netzen nutzen.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Ist Signal privat, obwohl es meine Nummer braucht?</summary>
+            <p>Inhalte sind exzellent verschlüsselt. Die Nummer ist ein Discovery-Identifikator. Wenn das stört: Session. Für die meisten bleibt Signal die beste real genutzte Option.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Was bringt den größten Effekt?</summary>
+            <p>Passwortmanager + einzigartige Passwörter + Authenticator-2FA auf der E-Mail.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Soll ich Social Media löschen?</summary>
+            <p>Wenn möglich, hilft es enorm. Sonst: Profile schließen, Daten streichen, keine Live-Standorte.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Trackt diese Seite mich?</summary>
+            <p>Keine Analytics, keine Werbe-Cookies, keine Drittanbieter-Tracker. Checkliste nur in localStorage.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Wo tiefer einsteigen?</summary>
+            <p>Offizielle Docs der Tools und Ressourcen wie privacyguides.org.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-inner" data-reveal="scale">
+        <h2>Starte heute mit einer Änderung</h2>
+        <p>Privacy ist Praxis, kein Produkt. Wähle einen Pfad, installiere eine bessere App, hake einen Punkt ab.</p>
+        <div class="hero-actions">
+          <a href="#paths" class="btn btn-primary">Pfad wählen</a>
+          <a href="#apps" class="btn btn-ghost">Apps entdecken</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-owner">
+      <p>
+        <strong>Diese Seite wird von Vassbrekke AS gehostet und gehört dem Unternehmen.</strong>
+        <a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">www.vassbrekke.no</a>
+        · <a href="https://privydeck.com" target="_blank" rel="noopener noreferrer">privydeck.com</a>
+        · <a href="https://www.privbeacon.com" target="_blank" rel="noopener noreferrer">privbeacon.com</a>
+      </p>
+    </div>
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <path d="M16 3L5 8v8c0 7.2 4.7 13.9 11 15.5C22.3 29.9 27 23.2 27 16V8L16 3z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M12 16.5l2.5 2.5L20 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="logo-text">Priv<span>Guide</span></span>
+        </a>
+        <p class="footer-tag">Die ultimative Karte für persönliche Privatsphäre — von Vassbrekke AS.</p>
+      </div>
+      <div>
+        <h4>Entdecken</h4>
+        <ul>
+          <li><a href="#apps">Apps</a></li>
+          <li><a href="#vassbrekke">Unsere</a></li>
+          <li><a href="#life">Leben</a></li>
+          <li><a href="#phone">Handy</a></li>
+          <li><a href="#desktop">Desktop</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Loslegen</h4>
+        <ul>
+          <li><a href="#paths">Start</a></li>
+          <li><a href="#checklist">Checkliste</a></li>
+          <li><a href="#faq">Häufige Fragen</a></li>
+          <li><a href="#principles">Mindset</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Haftung</h4>
+        <p class="footer-fine">Bildungsguide von Vassbrekke AS. Keine Rechts- oder Profi-Sicherheitsberatung. Markierte Produkte (PrivyDeck, PrivBeacon usw.) stammen von Vassbrekke / VassDev.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> <a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">Vassbrekke AS</a> · PrivGuide · Für Menschen, die ihr Leben zurückwollen</p>
+      <p class="footer-privacy">Keine Tracker · Keine Konten · Nur lokale Checkliste</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
