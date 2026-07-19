@@ -4,12 +4,16 @@
 from __future__ import annotations
 
 import json
-import re
+import sys
 from html import escape as esc
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE_URL = "https://privguide.example"  # replace with real domain when deploying
+sys.path.insert(0, str(ROOT / "scripts"))
+from trust_page import render_trust_page  # noqa: E402
+SITE_URL = "https://www.privguide.com"
+DEFAULT_REVIEWED = "2026-07-18"
+CORRECTIONS_URL = "https://github.com/N0L0g1c/PrivGuide/issues"
 LANGS = ["en", "no", "es", "de", "fr"]
 LANG_NAMES = {
     "en": "English",
@@ -44,54 +48,9 @@ DONATIONS = [
     },
 ]
 
-# Official websites for every recommended app
-# Vassbrekke AS first-party products are listed first and tagged ours=True
+# Official websites for every recommended app.
+# Independent tools first; Vassbrekke products (ours=True) are listed last and clearly labeled.
 APPS = [
-    # —— Vassbrekke AS / VassDev (featured first) ——
-    {
-        "id": "privydeck",
-        "cat": "ours",
-        "icon": "🛡️",
-        "tag": "Vassbrekke",
-        "name": "PrivyDeck",
-        "url": "https://privydeck.com",
-        "host": "privydeck.com",
-        "ours": True,
-        "pills": [("ours", "Ours"), ("good", "Top pick"), ("", "Browser · Phone · Vault")],
-    },
-    {
-        "id": "privbeacon",
-        "cat": "ours",
-        "icon": "📡",
-        "tag": "Vassbrekke",
-        "name": "PrivBeacon",
-        "url": "https://www.privbeacon.com",
-        "host": "privbeacon.com",
-        "ours": True,
-        "pills": [("ours", "Ours"), ("good", "Compliance"), ("", "16 law frameworks")],
-    },
-    {
-        "id": "winprivacy",
-        "cat": "ours",
-        "icon": "🪟",
-        "tag": "Vassbrekke",
-        "name": "Windows 11 Privacy Tool",
-        "url": "https://github.com/N0L0g1c/Windows-11-Privacy-Enhancing-tool-GUI-and-CLI",
-        "host": "github.com · Windows Privacy Tool",
-        "ours": True,
-        "pills": [("ours", "Ours"), ("good", "Open source"), ("", "Windows 10/11 · GUI + CLI")],
-    },
-    {
-        "id": "sechardening",
-        "cat": "ours",
-        "icon": "🔐",
-        "tag": "Vassbrekke",
-        "name": "Security Hardening",
-        "url": "https://github.com/N0L0g1c/SecurityHardening",
-        "host": "github.com/N0L0g1c/SecurityHardening",
-        "ours": True,
-        "pills": [("ours", "Ours"), ("", "Linux · Fresh install")],
-    },
     # —— Community & third-party recommendations ——
     {
         "id": "signal",
@@ -449,6 +408,55 @@ APPS = [
         "host2": "jitsi.org",
         "pills": [("", "E2EE options"), ("", "Mobile · Desktop")],
     },
+    # —— Vassbrekke AS / VassDev (disclosed; listed after independent tools) ——
+    {
+        "id": "privydeck",
+        "cat": "extra",
+        "icon": "🛡️",
+        "tag": "Vassbrekke",
+        "name": "PrivyDeck",
+        "url": "https://privydeck.com",
+        "host": "privydeck.com",
+        "ours": True,
+        "reviewed": DEFAULT_REVIEWED,
+        "pills": [("ours", "Ours"), ("", "Personal dashboard"), ("", "Browser · Phone · Vault")],
+    },
+    {
+        "id": "privbeacon",
+        "cat": "extra",
+        "icon": "📡",
+        "tag": "Vassbrekke",
+        "name": "PrivBeacon",
+        "url": "https://www.privbeacon.com",
+        "host": "privbeacon.com",
+        "ours": True,
+        "reviewed": DEFAULT_REVIEWED,
+        "pills": [("ours", "Ours"), ("", "Org compliance"), ("", "16 law frameworks")],
+    },
+    {
+        "id": "winprivacy",
+        "cat": "os",
+        "icon": "🪟",
+        "tag": "Vassbrekke",
+        "name": "Windows 11 Privacy Tool",
+        "url": "https://github.com/N0L0g1c/Windows-11-Privacy-Enhancing-tool-GUI-and-CLI",
+        "host": "github.com · Windows Privacy Tool",
+        "ours": True,
+        "reviewed": DEFAULT_REVIEWED,
+        "pills": [("ours", "Ours"), ("good", "Open source"), ("", "Windows 10/11 · GUI + CLI")],
+    },
+    {
+        "id": "sechardening",
+        "cat": "os",
+        "icon": "🔐",
+        "tag": "Vassbrekke",
+        "name": "Security Hardening",
+        "url": "https://github.com/N0L0g1c/SecurityHardening",
+        "host": "github.com/N0L0g1c/SecurityHardening",
+        "ours": True,
+        "reviewed": DEFAULT_REVIEWED,
+        "pills": [("ours", "Ours"), ("good", "Open source"), ("", "Linux · Fresh install")],
+    },
 ]
 
 
@@ -542,6 +550,7 @@ def app_card_html(app: dict, tr: dict, lang: str) -> str:
             f'rel="noopener noreferrer">{app["host2"]} ↗</a>'
         )
     ours_class = " app-card-ours" if app.get("ours") else ""
+    ours_attr = ' data-ours="1"' if app.get("ours") else ""
     publisher = ""
     author_meta = ""
     if app.get("ours"):
@@ -550,7 +559,12 @@ def app_card_html(app: dict, tr: dict, lang: str) -> str:
             f'<a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">vassbrekke.no</a></p>'
         )
         author_meta = '<meta itemprop="author" content="Vassbrekke AS" />'
-    return f'''          <article class="app-card{ours_class}" data-cat="{app["cat"]}" itemscope itemtype="https://schema.org/SoftwareApplication">
+    reviewed = app.get("reviewed", DEFAULT_REVIEWED)
+    reviewed_html = (
+        f'<p class="app-reviewed"><time datetime="{reviewed}">{t(tr, lang, "apps.reviewed")} '
+        f"{reviewed}</time></p>"
+    )
+    return f'''          <article class="app-card{ours_class}" data-cat="{app["cat"]}"{ours_attr} itemscope itemtype="https://schema.org/SoftwareApplication">
             <div class="app-top">
               <span class="app-icon" aria-hidden="true">{app["icon"]}</span>
               <span class="app-tag">{app["tag"]}</span>
@@ -564,6 +578,7 @@ def app_card_html(app: dict, tr: dict, lang: str) -> str:
             <meta itemprop="applicationCategory" content="SecurityApplication" />
             {author_meta}
             <p class="app-why"><strong>{use_when}</strong> {why}</p>
+            {reviewed_html}
           </article>'''
 
 
@@ -638,10 +653,9 @@ def render_page(lang: str, tr: dict) -> str:
     # Build app cards
     cards = "\n\n".join(app_card_html(a, tr, lang) for a in APPS)
 
-    # Filters
+    # Filters — Ours last so the default browse path emphasizes independent tools
     filters = [
         ("all", t(tr, lang, "filters.all")),
-        ("ours", t(tr, lang, "filters.ours")),
         ("messaging", t(tr, lang, "filters.messaging")),
         ("browser", t(tr, lang, "filters.browser")),
         ("vpn", t(tr, lang, "filters.vpn")),
@@ -652,7 +666,13 @@ def render_page(lang: str, tr: dict) -> str:
         ("auth", t(tr, lang, "filters.auth")),
         ("os", t(tr, lang, "filters.os")),
         ("extra", t(tr, lang, "filters.extra")),
+        ("ours", t(tr, lang, "filters.ours")),
     ]
+
+    if lang == "en":
+        trust_href = "trust/"
+    else:
+        trust_href = "trust/"
     filter_btns = []
     for i, (fid, label) in enumerate(filters):
         active = " active" if i == 0 else ""
@@ -663,7 +683,7 @@ def render_page(lang: str, tr: dict) -> str:
 
     # FAQ JSON-LD
     faq_entities = []
-    for i in range(1, 7):
+    for i in range(1, 9):
         faq_entities.append(
             {
                 "@type": "Question",
@@ -807,7 +827,7 @@ def render_page(lang: str, tr: dict) -> str:
         return "\n".join(out)
 
     faq_html = []
-    for i in range(1, 7):
+    for i in range(1, 9):
         faq_html.append(
             f'''          <details class="faq-item">
             <summary>{t(tr, lang, f"faq.q{i}")}</summary>
@@ -862,9 +882,7 @@ def render_page(lang: str, tr: dict) -> str:
   <link rel="apple-touch-icon" href="{prefix}/assets/favicon.svg" />
   <link rel="manifest" href="{prefix}/site.webmanifest" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <!-- Fonts: system/UI stacks only — no Google Fonts or other third-party font CDNs -->
   <link rel="stylesheet" href="{css}" />
 
   <script type="application/ld+json">
@@ -926,10 +944,12 @@ def render_page(lang: str, tr: dict) -> str:
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#apps">{t(tr, lang, "nav.apps")}</a></li>
+        <li><a href="{trust_href}">{t(tr, lang, "nav.trust")}</a></li>
         <li><a href="#life">{t(tr, lang, "nav.life")}</a></li>
         <li><a href="#phone">{t(tr, lang, "nav.phone")}</a></li>
         <li><a href="#desktop">{t(tr, lang, "nav.desktop")}</a></li>
         <li><a href="#paths">{t(tr, lang, "nav.paths")}</a></li>
+        <li><a href="#donate">{t(tr, lang, "donate.nav")}</a></li>
         <li><a href="#checklist" class="nav-cta">{t(tr, lang, "nav.checklist")}</a></li>
       </ul>
       <div class="nav-right">
@@ -957,6 +977,7 @@ def render_page(lang: str, tr: dict) -> str:
           <div class="hero-actions">
             <a href="#apps" class="btn btn-primary">{t(tr, lang, "hero.cta_apps")}</a>
             <a href="#paths" class="btn btn-ghost">{t(tr, lang, "hero.cta_path")}</a>
+            <a href="{trust_href}" class="btn btn-ghost">{t(tr, lang, "hero.cta_trust")}</a>
           </div>
           <ul class="hero-stats" role="list">
             <li><strong>40+</strong><span>{t(tr, lang, "hero.stat_tools")}</span></li>
@@ -970,19 +991,27 @@ def render_page(lang: str, tr: dict) -> str:
               <span></span><span></span><span></span>
               <em>privacy-stack.sh</em>
             </div>
-            <pre class="terminal-body"><code><span class="cmt"># Everyday privacy stack · Vassbrekke</span>
-<span class="cmd">blockers</span>   → PrivyDeck
+            <pre class="terminal-body"><code><span class="cmt"># Everyday privacy stack · independent-first</span>
 <span class="cmd">messenger</span>  → Signal / Session
 <span class="cmd">browser</span>    → Firefox (+ uBlock)
 <span class="cmd">search</span>     → DuckDuckGo / Brave
 <span class="cmd">passwords</span>  → Bitwarden
 <span class="cmd">email</span>      → Proton Mail
 <span class="cmd">vpn</span>        → Mullvad / Proton
+<span class="cmd">optional</span>   → PrivyDeck <span class="cmt">(Ours)</span>
 <span class="ok">✓</span> {t(tr, lang, "hero.terminal_ok")}</code></pre>
           </div>
         </div>
       </div>
     </section>
+
+    <aside class="ownership-banner container" data-reveal aria-label="{t(tr, lang, "disclosure.aria")}">
+      <div class="ownership-banner-inner">
+        <p class="ownership-banner-title">{t(tr, lang, "disclosure.title")}</p>
+        <p>{t(tr, lang, "disclosure.body")}</p>
+        <a class="ownership-banner-link" href="{trust_href}">{t(tr, lang, "disclosure.link")} →</a>
+      </div>
+    </aside>
 
     <section class="trust-strip" aria-label="{t(tr, lang, "trust.aria")}">
       <div class="container trust-grid">
@@ -1063,9 +1092,11 @@ def render_page(lang: str, tr: dict) -> str:
             <h3>{t(tr, lang, "ours.title")}</h3>
             <p>{t(tr, lang, "ours.body")}</p>
             <div class="ours-banner-links">
-              <a class="btn btn-primary btn-sm" href="https://privydeck.com" target="_blank" rel="noopener noreferrer">PrivyDeck ↗</a>
+              <a class="btn btn-ghost btn-sm" href="{trust_href}">{t(tr, lang, "ours.trust_link")}</a>
+              <a class="btn btn-ghost btn-sm" href="https://privydeck.com" target="_blank" rel="noopener noreferrer">PrivyDeck ↗</a>
               <a class="btn btn-ghost btn-sm" href="https://www.privbeacon.com" target="_blank" rel="noopener noreferrer">PrivBeacon ↗</a>
               <a class="btn btn-ghost btn-sm" href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">vassbrekke.no ↗</a>
+              <a class="btn btn-ghost btn-sm" href="{CORRECTIONS_URL}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
             </div>
           </div>
         </aside>
@@ -1335,7 +1366,7 @@ def render_page(lang: str, tr: dict) -> str:
         <h4>{t(tr, lang, "footer.explore")}</h4>
         <ul>
           <li><a href="#apps">{t(tr, lang, "nav.apps")}</a></li>
-          <li><a href="#vassbrekke">{t(tr, lang, "filters.ours")}</a></li>
+          <li><a href="{trust_href}">{t(tr, lang, "footer.trust")}</a></li>
           <li><a href="#life">{t(tr, lang, "nav.life")}</a></li>
           <li><a href="#phone">{t(tr, lang, "nav.phone")}</a></li>
           <li><a href="#desktop">{t(tr, lang, "nav.desktop")}</a></li>
@@ -1347,7 +1378,7 @@ def render_page(lang: str, tr: dict) -> str:
           <li><a href="#paths">{t(tr, lang, "nav.paths")}</a></li>
           <li><a href="#checklist">{t(tr, lang, "nav.checklist")}</a></li>
           <li><a href="#faq">{t(tr, lang, "faq.title")}</a></li>
-          <li><a href="#principles">{t(tr, lang, "principles.eyebrow")}</a></li>
+          <li><a href="{CORRECTIONS_URL}" target="_blank" rel="noopener noreferrer">GitHub issues</a></li>
           <li><a href="#donate">{t(tr, lang, "donate.nav")}</a></li>
         </ul>
       </div>
@@ -1382,21 +1413,26 @@ def render_page(lang: str, tr: dict) -> str:
 
 def write_sitemap() -> None:
     urls = []
-    for lang in LANGS:
-        loc = f"{SITE_URL}{path_for(lang)}"
-        alts = "\n".join(
-            f'      <xhtml:link rel="alternate" hreflang="{l}" href="{SITE_URL}{path_for(l)}"/>'
-            for l in LANGS
-        )
-        alts += f'\n      <xhtml:link rel="alternate" hreflang="x-default" href="{SITE_URL}/"/>'
-        urls.append(
-            f"""  <url>
+    pages = [
+        ("", "1.0", "0.9"),
+        ("trust/", "0.9", "0.8"),
+    ]
+    for suffix, pri_en, pri_other in pages:
+        for lang in LANGS:
+            loc = f"{SITE_URL}{path_for(lang)}{suffix}"
+            alts = "\n".join(
+                f'      <xhtml:link rel="alternate" hreflang="{l}" href="{SITE_URL}{path_for(l)}{suffix}"/>'
+                for l in LANGS
+            )
+            alts += f'\n      <xhtml:link rel="alternate" hreflang="x-default" href="{SITE_URL}/{suffix}"/>'
+            urls.append(
+                f"""  <url>
     <loc>{loc}</loc>
     <changefreq>weekly</changefreq>
-    <priority>{"1.0" if lang == "en" else "0.9"}</priority>
+    <priority>{pri_en if lang == "en" else pri_other}</priority>
 {alts}
   </url>"""
-        )
+            )
     xml = f'''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -1475,12 +1511,29 @@ def main() -> None:
         html = render_page(lang, tr)
         if lang == "en":
             out = ROOT / "index.html"
+            trust_out = ROOT / "trust" / "index.html"
         else:
             out_dir = ROOT / lang
             out_dir.mkdir(parents=True, exist_ok=True)
             out = out_dir / "index.html"
+            trust_out = out_dir / "trust" / "index.html"
         out.write_text(html, encoding="utf-8")
         print(f"Wrote {out.relative_to(ROOT)}")
+
+        trust_out.parent.mkdir(parents=True, exist_ok=True)
+        trust_html = render_trust_page(
+            lang,
+            tr,
+            site_url=SITE_URL,
+            t=t,
+            path_for=path_for,
+            hreflang_links=hreflang_links,
+            asset_prefix=asset_prefix,
+            langs=LANGS,
+            lang_names=LANG_NAMES,
+        )
+        trust_out.write_text(trust_html, encoding="utf-8")
+        print(f"Wrote {trust_out.relative_to(ROOT)}")
 
     write_sitemap()
     write_robots()

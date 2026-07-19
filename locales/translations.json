@@ -17,19 +17,21 @@
       "desktop": "Desktop",
       "paths": "Start here",
       "checklist": "Checklist",
-      "language": "Language"
+      "language": "Language",
+      "trust": "Trust"
     },
     "hero": {
-      "eyebrow": "Open · Practical · Up to date",
+      "eyebrow": "Owned by Vassbrekke AS · Mostly not our apps",
       "h1a": "Your privacy is not optional.",
       "h1b": "This is your go-to map.",
-      "lead": "Find the best privacy apps, harden your phone and computers, and build real-world habits that keep your personal life yours — without needing a CS degree.",
+      "lead": "We build privacy tools. This guide exists so you’re not stuck with only ours — find the best apps, harden phone and desktop, and build habits that keep your life yours.",
       "cta_apps": "Browse privacy apps",
       "cta_path": "Pick your path →",
       "stat_tools": "curated tools",
       "stat_levels": "threat levels",
       "stat_trackers": "trackers on this page",
-      "terminal_ok": "You own your data again."
+      "terminal_ok": "You own your data again.",
+      "cta_trust": "How we stay honest →"
     },
     "trust": {
       "aria": "What this guide covers",
@@ -56,7 +58,7 @@
         "body": "For normal people who want less tracking, fewer leaks, and better defaults.",
         "1": "Password manager + unique passwords",
         "2": "Signal for private chats",
-        "3": "PrivyDeck (+ Firefox / uBlock)",
+        "3": "Firefox + uBlock (PrivyDeck optional)",
         "4": "2FA on email & banking",
         "5": "Review phone app permissions",
         "cta": "Start checklist →"
@@ -87,8 +89,8 @@
     "apps": {
       "eyebrow": "App directory",
       "title": "Best privacy apps — by category",
-      "lead": "Curated tools that put you first — led by PrivyDeck and our Vassbrekke privacy suite, then the best open community tools. Filter by need and open official websites.",
-      "note": "Vassbrekke AS products are marked Ours. Third-party recommendations prioritize open source, audits, and usability. Always verify download sources (official sites, F-Droid, App Store, Play Store).",
+      "lead": "Independent tools first. Ours are labeled and listed after the open ecosystem — filter Ours if you want our stack.",
+      "note": "Vassbrekke AS products are marked Ours and show a publisher line. We do not take payment for rankings. Suggest corrections on GitHub. Always verify download sources (official sites, F-Droid, App Store, Play Store).",
       "use_when": "Use when:",
       "visit": "Website",
       "signal": {
@@ -244,7 +246,8 @@
         "why": "you need network-level blocking on Android apps."
       },
       "ours_pill": "Ours",
-      "by_vassbrekke": "By Vassbrekke AS"
+      "by_vassbrekke": "By Vassbrekke AS",
+      "reviewed": "Reviewed"
     },
     "filters": {
       "aria": "App categories",
@@ -464,7 +467,11 @@
       "q5": "Is this site tracking me?",
       "a5": "No analytics, no cookies for advertising, no third-party trackers for ads. Checklist progress stays in your browser's local storage only. Verify with your own blocker if you like — that's the point.",
       "q6": "Where should I go deeper?",
-      "a6": "Read project docs for tools you adopt (Signal, Bitwarden, GrapheneOS, Mullvad). Community resources like privacyguides.org and official security whitepapers beat random top-10 VPN lists."
+      "a6": "Read project docs for tools you adopt (Signal, Bitwarden, GrapheneOS, Mullvad). Community resources like privacyguides.org and official security whitepapers beat random top-10 VPN lists.",
+      "q7": "Is PrivGuide just marketing for PrivyDeck and PrivBeacon?",
+      "a7": "No. The guide is owned by the same company, which we disclose upfront. Independent tools are listed first; Ours are labeled. We publish conflicts and methodology on the Trust page. If a listing feels unfair, open a GitHub issue.",
+      "q8": "Do you get paid when I click an app link?",
+      "a8": "No. PrivGuide does not use affiliate links. Tips via crypto donations are optional and do not buy rankings."
     },
     "cta": {
       "title": "Start with one change today",
@@ -492,19 +499,119 @@
       }
     },
     "footer": {
-      "tag": "The ultimate go-to map for personal privacy — from Vassbrekke AS. Apps, phones, desktops, and life.",
+      "tag": "A practical privacy map from Vassbrekke AS — mostly tools we did not build.",
       "explore": "Explore",
       "start": "Get started",
       "disclaimer_title": "Disclaimer",
-      "disclaimer": "Educational guide published by Vassbrekke AS. Not legal or professional security advice. Threat models differ. Third-party tools are independent; verify software yourself. PrivyDeck, PrivBeacon and other marked products are built by Vassbrekke / VassDev.",
+      "disclaimer": "Educational guide by Vassbrekke AS. Not legal or professional security advice. Threat models differ. Third-party tools are independent; verify software yourself. Products marked Ours are built by Vassbrekke / VassDev. No paid placements on this guide.",
       "built": "Built for humans who want their lives back",
-      "privacy": "No trackers · No accounts · Local checklist only",
-      "owned_by": "This page is hosted and owned by Vassbrekke AS."
+      "privacy": "No trackers · No accounts · No Google Fonts · Local checklist only",
+      "owned_by": "Hosted and owned by Vassbrekke AS.",
+      "trust": "Trust & conflicts"
     },
     "ours": {
-      "badge": "Vassbrekke AS · Our products",
-      "title": "Built by us — start with PrivyDeck",
-      "body": "PrivGuide is hosted and owned by Vassbrekke AS (Norway). Below you'll find our privacy products first — led by PrivyDeck — then the wider open ecosystem we recommend alongside them. See the full company lineup at vassbrekke.no."
+      "badge": "Conflict of interest — disclosed",
+      "title": "Our products (optional)",
+      "body": "We build these. They are not required to follow this guide. Use them if they fit your threat model; otherwise pick the independent tools above. Full conflict policy on the Trust page.",
+      "trust_link": "Trust & methodology"
+    },
+    "disclosure": {
+      "aria": "Ownership disclosure",
+      "title": "Built by Vassbrekke AS — this guide is not a catalog of only our products.",
+      "body": "PrivyDeck, PrivBeacon and other VassDev tools are labeled Ours. Everything else is independent. Same criteria for everyone. No paid placements. No affiliate links.",
+      "link": "Read ownership, conflicts & methodology"
+    },
+    "trust_page": {
+      "meta_title": "Trust, conflicts & methodology — PrivGuide",
+      "meta_description": "Who owns PrivGuide, how we handle conflicts of interest, how we choose apps, what we collect, and how to suggest corrections. Owned by Vassbrekke AS.",
+      "eyebrow": "Transparency",
+      "title": "Trust & editorial standards",
+      "lead": "We build privacy tools. This guide exists so you are not stuck with only ours. Below: ownership, conflicts, methodology, what this site collects, and how to challenge a listing.",
+      "toc_aria": "On this page",
+      "ownership_title": "Who owns PrivGuide",
+      "ownership": {
+        "1": "PrivGuide is hosted and owned by Vassbrekke AS, a Norwegian company. The same company builds PrivyDeck, PrivBeacon, and other VassDev tools.",
+        "2": "That ownership is a conflict of interest for any listing of our own products. We disclose it everywhere — not only in the footer.",
+        "3": "Editorial intent: recommend the best practical tools for each job. When a third-party tool is clearly better for most people, it stays ahead of ours."
+      },
+      "org_label": "Publisher",
+      "orgnr_label": "Org. no.",
+      "roles": {
+        "1": "vassbrekke.no — company identity, legal entity, contact.",
+        "2": "PrivGuide — how to get private (mostly tools we did not build).",
+        "3": "PrivyDeck — personal privacy dashboard for individuals.",
+        "4": "PrivBeacon — website privacy compliance for organizations."
+      },
+      "conflicts_title": "Conflicts of interest",
+      "conflicts": {
+        "1": "Products marked Ours are built by Vassbrekke AS / VassDev. They are never unlabeled.",
+        "2": "We do not accept payment for placement, ranking, or a Recommended badge on PrivGuide.",
+        "3": "We do not use affiliate links on PrivGuide. Official website links go to the vendor’s own site.",
+        "4": "Crypto donations support hosting and maintenance. Donors cannot buy a listing or a higher rank."
+      },
+      "conflict_rules": {
+        "1": "Ours cards always show an Ours badge and publisher line.",
+        "2": "Default app order puts independent tools first; Ours appear after community recommendations (or under the Ours filter).",
+        "3": "Ours never outrank a clearly better tool in the same job without a written reason on the card.",
+        "4": "Path checklists may mention our products as optional — never as the only option.",
+        "5": "If you believe a listing is unfair, open a correction issue — we publish material changes in the changelog."
+      },
+      "methodology_title": "How we choose apps",
+      "methodology": {
+        "1": "Recommendations are practical, not maximalist. Usability counts: a private tool you abandon is worse than a good-enough tool you use daily.",
+        "2": "We review listings on a rolling schedule. Each card shows a last-reviewed date. Criteria below apply to first-party and third-party tools alike."
+      },
+      "criteria": {
+        "1": "Threat-model fit — clear who it protects against, and who it does not.",
+        "2": "Security posture — encryption, open source or auditable claims, update cadence, history of incidents.",
+        "3": "Privacy business model — how the vendor makes money; avoid predatory free tiers that sell attention.",
+        "4": "Jurisdiction & governance — where the org is based and what legal pressure looks like.",
+        "5": "Usability — will non-experts actually switch and stick with it?",
+        "6": "Official distribution — we link only to official sites or well-known trusted repos (e.g. project GitHub)."
+      },
+      "transparency_title": "What this site collects",
+      "transparency": {
+        "1": "PrivGuide is a static site. There is no account system and no advertising.",
+        "2": "Checklist progress is stored in your browser’s local storage only. Clearing site data clears progress. Nothing is uploaded to us.",
+        "3": "We do not load third-party analytics, ad pixels, or social trackers. Fonts are local/system — not Google Fonts."
+      },
+      "collect": {
+        "1": "No cookies for advertising or cross-site tracking.",
+        "2": "No third-party analytics scripts.",
+        "3": "Server access logs (if any) are handled by the host — we do not run a marketing pixel layer on top.",
+        "4": "Outbound links use rel=noopener noreferrer; we do not append affiliate parameters.",
+        "5": "Verify with your own blocker — empty network requests beyond the page and assets is the point."
+      },
+      "changelog_title": "Changelog",
+      "changelog": {
+        "e1": {
+          "date": "2026-07-18",
+          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
+        },
+        "e2": {
+          "date": "2026-07-18",
+          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+        },
+        "e3": {
+          "date": "2026-07-01",
+          "text": "Multi-language guide launch with curated apps and hardening paths."
+        },
+        "e4": {
+          "date": "2026-06-15",
+          "text": "Added Vassbrekke product disclosures and Ours badges."
+        },
+        "e5": {
+          "date": "2026-06-01",
+          "text": "Initial PrivGuide public draft."
+        }
+      },
+      "corrections_title": "Suggest a correction",
+      "corrections": {
+        "1": "Disagree with a ranking, spot a dead link, or think an Ours card is unfair? File a public issue. Material changes are noted in the changelog.",
+        "2": "Security-sensitive reports about our products should go to the product’s security contact; listing mistakes belong in the PrivGuide issue tracker."
+      },
+      "corrections_cta": "Open a GitHub issue",
+      "back": "Back to PrivGuide"
     }
   },
   "no": {
@@ -525,19 +632,21 @@
       "desktop": "PC",
       "paths": "Start her",
       "checklist": "Sjekkliste",
-      "language": "Språk"
+      "language": "Språk",
+      "trust": "Tillit"
     },
     "hero": {
-      "eyebrow": "Åpen · Praktisk · Oppdatert",
+      "eyebrow": "Eies av Vassbrekke AS · Mest ikke våre apper",
       "h1a": "Personvernet ditt er ikke valgfritt.",
       "h1b": "Dette er kartet ditt.",
-      "lead": "Finn de beste personvernappene, sikre telefon og PC, og bygg vaner som holder privatlivet ditt privat — uten datavitenskapsgrad.",
+      "lead": "Vi bygger personvernverktøy. Denne guiden finnes slik at du ikke sitter fast med bare våre — finn de beste appene, sikre telefon og PC, og bygg vaner som holder livet ditt ditt.",
       "cta_apps": "Utforsk personvernapper",
       "cta_path": "Velg din sti →",
       "stat_tools": "utvalgte verktøy",
       "stat_levels": "trusselnivåer",
       "stat_trackers": "sporere på denne siden",
-      "terminal_ok": "Du eier dataene dine igjen."
+      "terminal_ok": "Du eier dataene dine igjen.",
+      "cta_trust": "Hvordan vi er ærlige →"
     },
     "trust": {
       "aria": "Hva denne guiden dekker",
@@ -564,7 +673,7 @@
         "body": "For vanlige folk som vil ha mindre sporing, færre lekkasjer og bedre standarder.",
         "1": "Passordbehandler + unike passord",
         "2": "Signal for private samtaler",
-        "3": "PrivyDeck (+ Firefox / uBlock)",
+        "3": "Firefox + uBlock (PrivyDeck valgfritt)",
         "4": "2FA på e-post og bank",
         "5": "Gå gjennom app-tillatelser på telefonen",
         "cta": "Start sjekkliste →"
@@ -595,8 +704,8 @@
     "apps": {
       "eyebrow": "Appkatalog",
       "title": "Beste personvernapper — etter kategori",
-      "lead": "Utvalgte verktøy som setter deg først — ledet av PrivyDeck og Vassbrekke-suiten, deretter de beste fellesskapsverktøyene.",
-      "note": "Vassbrekke AS-produkter er merket Vårt. Tredjepartsanbefalinger prioriterer åpen kildekode, revisjoner og brukervennlighet. Verifiser alltid nedlastingskilder.",
+      "lead": "Uavhengige verktøy først. Vårt er merket og listet etter det åpne økosystemet — filtrer Vårt hvis du vil se stabelen vår.",
+      "note": "Vassbrekke AS-produkter er merket Vårt og viser utgiverlinje. Vi tar ikke betalt for rangeringer. Foreslå rettelser på GitHub. Verifiser alltid nedlastingskilder.",
       "use_when": "Bruk når:",
       "visit": "Nettsted",
       "signal": {
@@ -756,7 +865,8 @@
         "why": "du trenger nettverksnivå-blokkering for Android-apper."
       },
       "ours_pill": "Vårt",
-      "by_vassbrekke": "Av Vassbrekke AS"
+      "by_vassbrekke": "Av Vassbrekke AS",
+      "reviewed": "Gjennomgått"
     },
     "filters": {
       "aria": "Appkategorier",
@@ -976,7 +1086,11 @@
       "q5": "Sporer denne siden meg?",
       "a5": "Ingen analyse, ingen annonsecookies, ingen tredjepartssporere for annonser. Sjekklistefremdrift ligger bare i nettleserens localStorage.",
       "q6": "Hvor kan jeg gå dypere?",
-      "a6": "Les prosjektdokumentasjon for verktøyene du tar i bruk. Ressurser som privacyguides.org og offisielle sikkerhetspapirer slår tilfeldige VPN-topplister."
+      "a6": "Les prosjektdokumentasjon for verktøyene du tar i bruk. Ressurser som privacyguides.org og offisielle sikkerhetspapirer slår tilfeldige VPN-topplister.",
+      "q7": "Er PrivGuide bare markedsføring for PrivyDeck og PrivBeacon?",
+      "a7": "Nei. Guiden eies av samme selskap, noe vi opplyser først. Uavhengige verktøy listes først; Vårt er merket. Interessekonflikter og metode står på Tillit-siden. Opplever du urettferdighet, åpne en GitHub-sak.",
+      "q8": "Får dere betalt når jeg klikker en app-lenke?",
+      "a8": "Nei. PrivGuide bruker ikke affiliate-lenker. Krypto-tips er valgfritt og kjøper ikke rangering."
     },
     "cta": {
       "title": "Start med én endring i dag",
@@ -1004,19 +1118,119 @@
       }
     },
     "footer": {
-      "tag": "Det ultimate kartet for personvern — fra Vassbrekke AS. Apper, telefoner, PC-er og liv.",
+      "tag": "Et praktisk personvernkart fra Vassbrekke AS — mest verktøy vi ikke har bygget.",
       "explore": "Utforsk",
       "start": "Kom i gang",
       "disclaimer_title": "Ansvarsfraskrivelse",
-      "disclaimer": "Opplæringsguide utgitt av Vassbrekke AS. Ikke juridisk eller profesjonell sikkerhetsrådgivning. Trusselmodeller varierer. Tredjepartsverktøy er uavhengige; verifiser programvare selv. PrivyDeck, PrivBeacon og andre merkede produkter er bygget av Vassbrekke / VassDev.",
+      "disclaimer": "Veiledning fra Vassbrekke AS. Ikke juridisk eller profesjonell sikkerhetsrådgivning. Trusselmodeller varierer. Tredjepartsverktøy er uavhengige. Produkter merket Vårt er bygget av Vassbrekke / VassDev. Ingen betalte plasseringer.",
       "built": "Bygget for mennesker som vil ha livet sitt tilbake",
-      "privacy": "Ingen sporere · Ingen kontoer · Kun lokal sjekkliste",
-      "owned_by": "Denne siden eies og hostes av Vassbrekke AS."
+      "privacy": "Ingen sporere · Ingen kontoer · Ingen Google Fonts · Kun lokal sjekkliste",
+      "owned_by": "Hostes og eies av Vassbrekke AS.",
+      "trust": "Tillit og interessekonflikter"
     },
     "ours": {
-      "badge": "Vassbrekke AS · Våre produkter",
-      "title": "Bygget av oss — start med PrivyDeck",
-      "body": "PrivGuide eies og hostes av Vassbrekke AS (Norge). Nedenfor finner du først våre personvernprodukter — ledet av PrivyDeck — deretter det åpne økosystemet vi anbefaler. Se hele linjen på vassbrekke.no."
+      "badge": "Interessekonflikt — opplyst",
+      "title": "Våre produkter (valgfritt)",
+      "body": "Vi bygger disse. De er ikke påkrevd for å følge guiden. Bruk dem hvis de passer trusselmodellen din; ellers velg uavhengige verktøy over. Full policy på Tillit-siden.",
+      "trust_link": "Tillit og metode"
+    },
+    "disclosure": {
+      "aria": "Eierskapserklæring",
+      "title": "Bygget av Vassbrekke AS — denne guiden er ikke bare en katalog over våre produkter.",
+      "body": "PrivyDeck, PrivBeacon og andre VassDev-verktøy er merket Vårt. Alt annet er uavhengig. Samme kriterier for alle. Ingen betalte plasseringer. Ingen affiliate-lenker.",
+      "link": "Les eierskap, interessekonflikter og metode"
+    },
+    "trust_page": {
+      "meta_title": "Tillit, interessekonflikter og metode — PrivGuide",
+      "meta_description": "Hvem eier PrivGuide, hvordan vi håndterer interessekonflikter, hvordan vi velger apper, hva vi samler inn, og hvordan du foreslår rettelser. Eies av Vassbrekke AS.",
+      "eyebrow": "Åpenhet",
+      "title": "Tillit og redaksjonelle standarder",
+      "lead": "Vi bygger personvernverktøy. Denne guiden finnes slik at du ikke sitter fast med bare våre. Under: eierskap, interessekonflikter, metode, hva siden samler inn, og hvordan du utfordrer en oppføring.",
+      "toc_aria": "På denne siden",
+      "ownership_title": "Hvem eier PrivGuide",
+      "ownership": {
+        "1": "PrivGuide hostes og eies av Vassbrekke AS, et norsk selskap. Samme selskap bygger PrivyDeck, PrivBeacon og andre VassDev-verktøy.",
+        "2": "Det eierskapet er en interessekonflikt for oppføringer av våre egne produkter. Vi opplyser om det overalt — ikke bare i bunnteksten.",
+        "3": "Redaksjonell intensjon: anbefale de beste praktiske verktøyene for hver jobb. Når et tredjepartsverktøy klart er bedre for de fleste, står det foran våre."
+      },
+      "org_label": "Utgiver",
+      "orgnr_label": "Org.nr.",
+      "roles": {
+        "1": "vassbrekke.no — selskapsidentitet, juridisk enhet, kontakt.",
+        "2": "PrivGuide — hvordan bli mer privat (mest verktøy vi ikke har bygget).",
+        "3": "PrivyDeck — personlig personvern-dashboard for privatpersoner.",
+        "4": "PrivBeacon — personvern-compliance for nettsteder og organisasjoner."
+      },
+      "conflicts_title": "Interessekonflikter",
+      "conflicts": {
+        "1": "Produkter merket Vårt er bygget av Vassbrekke AS / VassDev. De er aldri umerket.",
+        "2": "Vi tar ikke betalt for plassering, rangering eller et Anbefalt-merke på PrivGuide.",
+        "3": "Vi bruker ikke affiliate-lenker på PrivGuide. Offisielle lenker går til leverandørens eget nettsted.",
+        "4": "Krypto-donasjoner støtter hosting og vedlikehold. Givere kan ikke kjøpe en oppføring eller høyere rangering."
+      },
+      "conflict_rules": {
+        "1": "Vårt-kort viser alltid Vårt-merke og utgiverlinje.",
+        "2": "Standard rekkefølge setter uavhengige verktøy først; Vårt kommer etter fellesskapsanbefalinger (eller under Vårt-filteret).",
+        "3": "Vårt rangerer aldri over et klart bedre verktøy i samme jobb uten skriftlig begrunnelse på kortet.",
+        "4": "Sti-sjekklister kan nevne produktene våre som valgfrie — aldri som eneste alternativ.",
+        "5": "Mener du en oppføring er urettferdig? Åpne en rettelsessak — vesentlige endringer publiseres i endringsloggen."
+      },
+      "methodology_title": "Hvordan vi velger apper",
+      "methodology": {
+        "1": "Anbefalinger er praktiske, ikke maksimalistiske. Brukervennlighet teller: et privat verktøy du dropper er verre enn et godt nok verktøy du bruker daglig.",
+        "2": "Vi gjennomgår oppføringer løpende. Hvert kort viser sist gjennomgått-dato. Kriteriene under gjelder både egne og andres verktøy."
+      },
+      "criteria": {
+        "1": "Trusselmodell — tydelig hvem det beskytter mot, og hvem det ikke gjør.",
+        "2": "Sikkerhetsstilling — kryptering, åpen kildekode eller reviderbare påstander, oppdateringstakt, historikk.",
+        "3": "Forretningsmodell — hvordan leverandøren tjener penger; unngå «gratis» som selger oppmerksomhet.",
+        "4": "Jurisdiksjon og styring — hvor organisasjonen er basert og hvilket juridisk press som er realistisk.",
+        "5": "Brukervennlighet — vil ikke-eksperter faktisk bytte og bli værende?",
+        "6": "Offisiell distribusjon — vi lenker bare til offisielle nettsteder eller kjente betrodde repoer."
+      },
+      "transparency_title": "Hva denne siden samler inn",
+      "transparency": {
+        "1": "PrivGuide er en statisk side. Ingen kontoer og ingen reklame.",
+        "2": "Sjekkliste-fremdrift lagres kun i nettleserens lokale lagring. Sletter du sidens data, slettes fremdriften. Ingenting lastes opp til oss.",
+        "3": "Vi laster ikke tredjepartsanalyse, annonsepiksler eller sosiale sporere. Skrifter er lokale/system — ikke Google Fonts."
+      },
+      "collect": {
+        "1": "Ingen informasjonskapsler for reklame eller sporing på tvers av nettsteder.",
+        "2": "Ingen tredjepartsanalysescripts.",
+        "3": "Serverlogger (hvis noen) håndteres av verten — vi kjører ikke et markedsføringspiksel-lag oppå.",
+        "4": "Utgående lenker bruker rel=noopener noreferrer; vi legger ikke til affiliate-parametere.",
+        "5": "Verifiser med din egen blocker — tomme nettverksforespørsler utover siden og eiendeler er poenget."
+      },
+      "changelog_title": "Endringslogg",
+      "changelog": {
+        "e1": {
+          "date": "2026-07-18",
+          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
+        },
+        "e2": {
+          "date": "2026-07-18",
+          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+        },
+        "e3": {
+          "date": "2026-07-01",
+          "text": "Multi-language guide launch with curated apps and hardening paths."
+        },
+        "e4": {
+          "date": "2026-06-15",
+          "text": "Added Vassbrekke product disclosures and Ours badges."
+        },
+        "e5": {
+          "date": "2026-06-01",
+          "text": "Initial PrivGuide public draft."
+        }
+      },
+      "corrections_title": "Foreslå en rettelse",
+      "corrections": {
+        "1": "Uenig i en rangering, funnet en død lenke, eller synes et Vårt-kort er urettferdig? Opprett en offentlig sak. Vesentlige endringer noteres i endringsloggen.",
+        "2": "Sikkerhetsrapporter om produktene våre går til produktets sikkerhetskontakt; feil i oppføringer hører hjemme i PrivGuide-sakssporet."
+      },
+      "corrections_cta": "Åpne GitHub-sak",
+      "back": "Tilbake til PrivGuide"
     }
   },
   "es": {
@@ -1037,19 +1251,21 @@
       "desktop": "PC",
       "paths": "Empieza aquí",
       "checklist": "Lista",
-      "language": "Idioma"
+      "language": "Idioma",
+      "trust": "Confianza"
     },
     "hero": {
-      "eyebrow": "Abierto · Práctico · Actualizado",
+      "eyebrow": "De Vassbrekke AS · En su mayoría no nuestras apps",
       "h1a": "Tu privacidad no es opcional.",
       "h1b": "Este es tu mapa de referencia.",
-      "lead": "Encuentra las mejores apps de privacidad, endurece tu móvil y ordenadores, y crea hábitos reales sin necesitar un título en informática.",
+      "lead": "Creamos herramientas de privacidad. Esta guía existe para que no dependas solo de las nuestras.",
       "cta_apps": "Explorar apps de privacidad",
       "cta_path": "Elige tu camino →",
       "stat_tools": "herramientas seleccionadas",
       "stat_levels": "niveles de amenaza",
       "stat_trackers": "rastreadores en esta página",
-      "terminal_ok": "Vuelves a ser dueño de tus datos."
+      "terminal_ok": "Vuelves a ser dueño de tus datos.",
+      "cta_trust": "Cómo somos transparentes →"
     },
     "trust": {
       "aria": "Qué cubre esta guía",
@@ -1076,7 +1292,7 @@
         "body": "Para quien quiere menos rastreo, menos fugas y mejores valores predeterminados.",
         "1": "Gestor de contraseñas + contraseñas únicas",
         "2": "Signal para chats privados",
-        "3": "PrivyDeck (+ Firefox / uBlock)",
+        "3": "Firefox + uBlock (PrivyDeck opcional)",
         "4": "2FA en correo y banca",
         "5": "Revisar permisos de apps del móvil",
         "cta": "Empezar lista →"
@@ -1107,8 +1323,8 @@
     "apps": {
       "eyebrow": "Directorio de apps",
       "title": "Mejores apps de privacidad — por categoría",
-      "lead": "Herramientas seleccionadas — lideradas por PrivyDeck y la suite Vassbrekke, luego lo mejor de la comunidad.",
-      "note": "Los productos de Vassbrekke AS están marcados Nuestro. Verifica siempre las fuentes de descarga.",
+      "lead": "Primero herramientas independientes. Las nuestras van etiquetadas y después del ecosistema abierto.",
+      "note": "Los productos de Vassbrekke AS están marcados Ours. No aceptamos pago por rankings. Sugiere correcciones en GitHub.",
       "use_when": "Úsala cuando:",
       "visit": "Sitio web",
       "signal": {
@@ -1268,7 +1484,8 @@
         "why": "necesitas bloqueo a nivel de red en apps Android."
       },
       "ours_pill": "Nuestro",
-      "by_vassbrekke": "De Vassbrekke AS"
+      "by_vassbrekke": "De Vassbrekke AS",
+      "reviewed": "Revisado"
     },
     "filters": {
       "aria": "Categorías de apps",
@@ -1488,7 +1705,11 @@
       "q5": "¿Este sitio me rastrea?",
       "a5": "Sin analítica, sin cookies publicitarias, sin rastreadores de terceros. La lista se guarda solo en localStorage.",
       "q6": "¿Dónde profundizar?",
-      "a6": "Documentación oficial de las herramientas y recursos como privacyguides.org."
+      "a6": "Documentación oficial de las herramientas y recursos como privacyguides.org.",
+      "q7": "¿PrivGuide es solo marketing de PrivyDeck y PrivBeacon?",
+      "a7": "No. La misma empresa es dueña de la guía — lo declaramos. Las herramientas independientes van primero; Ours están etiquetadas. Detalles en la página Trust.",
+      "q8": "¿Ganáis dinero cuando hago clic en un enlace?",
+      "a8": "No. No usamos enlaces de afiliados."
     },
     "cta": {
       "title": "Empieza con un cambio hoy",
@@ -1522,13 +1743,113 @@
       "disclaimer_title": "Aviso",
       "disclaimer": "Guía educativa publicada por Vassbrekke AS. No es asesoramiento legal ni de seguridad profesional. Los productos marcados (PrivyDeck, PrivBeacon, etc.) son de Vassbrekke / VassDev.",
       "built": "Hecho para personas que quieren recuperar su vida",
-      "privacy": "Sin rastreadores · Sin cuentas · Lista solo local",
-      "owned_by": "Esta página está alojada y es propiedad de Vassbrekke AS."
+      "privacy": "Sin rastreadores · Sin cuentas · Sin Google Fonts · Lista solo local",
+      "owned_by": "Alojado y propiedad de Vassbrekke AS.",
+      "trust": "Confianza y conflictos"
     },
     "ours": {
-      "badge": "Vassbrekke AS · Nuestros productos",
-      "title": "Hecho por nosotros — empieza con PrivyDeck",
-      "body": "PrivGuide está alojado y es propiedad de Vassbrekke AS (Noruega). Primero nuestros productos de privacidad — liderados por PrivyDeck — y luego el ecosistema abierto que recomendamos. Ver todo en vassbrekke.no."
+      "badge": "Conflicto de interés — declarado",
+      "title": "Nuestros productos (opcionales)",
+      "body": "Los construimos nosotros. No son obligatorios. Si encajan en tu modelo de amenaza, úsalos; si no, elige las herramientas independientes de arriba.",
+      "trust_link": "Confianza y metodología"
+    },
+    "disclosure": {
+      "aria": "Divulgación de propiedad",
+      "title": "Hecho por Vassbrekke AS — esta guía no es solo un catálogo de nuestros productos.",
+      "body": "PrivyDeck, PrivBeacon y otras herramientas VassDev están marcadas Ours. El resto es independiente. Sin pagos por posición. Sin afiliados.",
+      "link": "Leer propiedad, conflictos y metodología"
+    },
+    "trust_page": {
+      "meta_title": "Trust, conflicts & methodology — PrivGuide",
+      "meta_description": "Who owns PrivGuide, how we handle conflicts of interest, how we choose apps, what we collect, and how to suggest corrections. Owned by Vassbrekke AS.",
+      "eyebrow": "Transparency",
+      "title": "Trust & editorial standards",
+      "lead": "We build privacy tools. This guide exists so you are not stuck with only ours. Below: ownership, conflicts, methodology, what this site collects, and how to challenge a listing.",
+      "toc_aria": "On this page",
+      "ownership_title": "Who owns PrivGuide",
+      "ownership": {
+        "1": "PrivGuide is hosted and owned by Vassbrekke AS, a Norwegian company. The same company builds PrivyDeck, PrivBeacon, and other VassDev tools.",
+        "2": "That ownership is a conflict of interest for any listing of our own products. We disclose it everywhere — not only in the footer.",
+        "3": "Editorial intent: recommend the best practical tools for each job. When a third-party tool is clearly better for most people, it stays ahead of ours."
+      },
+      "org_label": "Publisher",
+      "orgnr_label": "Org. no.",
+      "roles": {
+        "1": "vassbrekke.no — company identity, legal entity, contact.",
+        "2": "PrivGuide — how to get private (mostly tools we did not build).",
+        "3": "PrivyDeck — personal privacy dashboard for individuals.",
+        "4": "PrivBeacon — website privacy compliance for organizations."
+      },
+      "conflicts_title": "Conflicts of interest",
+      "conflicts": {
+        "1": "Products marked Ours are built by Vassbrekke AS / VassDev. They are never unlabeled.",
+        "2": "We do not accept payment for placement, ranking, or a Recommended badge on PrivGuide.",
+        "3": "We do not use affiliate links on PrivGuide. Official website links go to the vendor’s own site.",
+        "4": "Crypto donations support hosting and maintenance. Donors cannot buy a listing or a higher rank."
+      },
+      "conflict_rules": {
+        "1": "Ours cards always show an Ours badge and publisher line.",
+        "2": "Default app order puts independent tools first; Ours appear after community recommendations (or under the Ours filter).",
+        "3": "Ours never outrank a clearly better tool in the same job without a written reason on the card.",
+        "4": "Path checklists may mention our products as optional — never as the only option.",
+        "5": "If you believe a listing is unfair, open a correction issue — we publish material changes in the changelog."
+      },
+      "methodology_title": "How we choose apps",
+      "methodology": {
+        "1": "Recommendations are practical, not maximalist. Usability counts: a private tool you abandon is worse than a good-enough tool you use daily.",
+        "2": "We review listings on a rolling schedule. Each card shows a last-reviewed date. Criteria below apply to first-party and third-party tools alike."
+      },
+      "criteria": {
+        "1": "Threat-model fit — clear who it protects against, and who it does not.",
+        "2": "Security posture — encryption, open source or auditable claims, update cadence, history of incidents.",
+        "3": "Privacy business model — how the vendor makes money; avoid predatory free tiers that sell attention.",
+        "4": "Jurisdiction & governance — where the org is based and what legal pressure looks like.",
+        "5": "Usability — will non-experts actually switch and stick with it?",
+        "6": "Official distribution — we link only to official sites or well-known trusted repos (e.g. project GitHub)."
+      },
+      "transparency_title": "What this site collects",
+      "transparency": {
+        "1": "PrivGuide is a static site. There is no account system and no advertising.",
+        "2": "Checklist progress is stored in your browser’s local storage only. Clearing site data clears progress. Nothing is uploaded to us.",
+        "3": "We do not load third-party analytics, ad pixels, or social trackers. Fonts are local/system — not Google Fonts."
+      },
+      "collect": {
+        "1": "No cookies for advertising or cross-site tracking.",
+        "2": "No third-party analytics scripts.",
+        "3": "Server access logs (if any) are handled by the host — we do not run a marketing pixel layer on top.",
+        "4": "Outbound links use rel=noopener noreferrer; we do not append affiliate parameters.",
+        "5": "Verify with your own blocker — empty network requests beyond the page and assets is the point."
+      },
+      "changelog_title": "Changelog",
+      "changelog": {
+        "e1": {
+          "date": "2026-07-18",
+          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
+        },
+        "e2": {
+          "date": "2026-07-18",
+          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+        },
+        "e3": {
+          "date": "2026-07-01",
+          "text": "Multi-language guide launch with curated apps and hardening paths."
+        },
+        "e4": {
+          "date": "2026-06-15",
+          "text": "Added Vassbrekke product disclosures and Ours badges."
+        },
+        "e5": {
+          "date": "2026-06-01",
+          "text": "Initial PrivGuide public draft."
+        }
+      },
+      "corrections_title": "Suggest a correction",
+      "corrections": {
+        "1": "Disagree with a ranking, spot a dead link, or think an Ours card is unfair? File a public issue. Material changes are noted in the changelog.",
+        "2": "Security-sensitive reports about our products should go to the product’s security contact; listing mistakes belong in the PrivGuide issue tracker."
+      },
+      "corrections_cta": "Open a GitHub issue",
+      "back": "Back to PrivGuide"
     }
   },
   "de": {
@@ -1549,19 +1870,21 @@
       "desktop": "Desktop",
       "paths": "Start",
       "checklist": "Checkliste",
-      "language": "Sprache"
+      "language": "Sprache",
+      "trust": "Vertrauen"
     },
     "hero": {
-      "eyebrow": "Offen · Praktisch · Aktuell",
+      "eyebrow": "Von Vassbrekke AS · Meist nicht unsere Apps",
       "h1a": "Deine Privatsphäre ist nicht optional.",
       "h1b": "Das ist deine Karte.",
-      "lead": "Finde die besten Privacy-Apps, härte Handy und Computer und baue echte Gewohnheiten — ohne Informatikstudium.",
+      "lead": "Wir bauen Privacy-Tools. Dieser Guide existiert, damit du nicht nur auf unsere angewiesen bist.",
       "cta_apps": "Privacy-Apps entdecken",
       "cta_path": "Pfad wählen →",
       "stat_tools": "kuratierte Tools",
       "stat_levels": "Bedrohungsstufen",
       "stat_trackers": "Tracker auf dieser Seite",
-      "terminal_ok": "Du besitzt deine Daten wieder."
+      "terminal_ok": "Du besitzt deine Daten wieder.",
+      "cta_trust": "Wie wir ehrlich bleiben →"
     },
     "trust": {
       "aria": "Was dieser Guide abdeckt",
@@ -1588,7 +1911,7 @@
         "body": "Für normale Menschen mit weniger Tracking und besseren Defaults.",
         "1": "Passwortmanager + einzigartige Passwörter",
         "2": "Signal für private Chats",
-        "3": "PrivyDeck (+ Firefox / uBlock)",
+        "3": "Firefox + uBlock (PrivyDeck optional)",
         "4": "2FA für E-Mail & Banking",
         "5": "App-Berechtigungen prüfen",
         "cta": "Checkliste starten →"
@@ -1619,8 +1942,8 @@
     "apps": {
       "eyebrow": "App-Verzeichnis",
       "title": "Beste Privacy-Apps — nach Kategorie",
-      "lead": "Kuratierte Tools — angeführt von PrivyDeck und der Vassbrekke-Suite, danach die besten Community-Tools.",
-      "note": "Vassbrekke-AS-Produkte sind mit Unser markiert. Download-Quellen immer prüfen.",
+      "lead": "Zuerst unabhängige Tools. Ours sind gekennzeichnet und stehen nach dem offenen Ökosystem.",
+      "note": "Vassbrekke-AS-Produkte sind mit Ours markiert. Keine Bezahlung für Rankings. Korrekturen per GitHub.",
       "use_when": "Nutzen wenn:",
       "visit": "Website",
       "signal": {
@@ -1780,7 +2103,8 @@
         "why": "du Netzwerk-Blocking für Android-Apps brauchst."
       },
       "ours_pill": "Unser",
-      "by_vassbrekke": "Von Vassbrekke AS"
+      "by_vassbrekke": "Von Vassbrekke AS",
+      "reviewed": "Geprüft"
     },
     "filters": {
       "aria": "App-Kategorien",
@@ -2000,7 +2324,11 @@
       "q5": "Trackt diese Seite mich?",
       "a5": "Keine Analytics, keine Werbe-Cookies, keine Drittanbieter-Tracker. Checkliste nur in localStorage.",
       "q6": "Wo tiefer einsteigen?",
-      "a6": "Offizielle Docs der Tools und Ressourcen wie privacyguides.org."
+      "a6": "Offizielle Docs der Tools und Ressourcen wie privacyguides.org.",
+      "q7": "Ist PrivGuide nur Marketing für PrivyDeck und PrivBeacon?",
+      "a7": "Nein. Dieselbe Firma besitzt den Guide — das legen wir offen. Unabhängige Tools zuerst; Ours sind markiert. Details auf der Trust-Seite.",
+      "q8": "Verdient ihr an Klicks auf App-Links?",
+      "a8": "Nein. Keine Affiliate-Links."
     },
     "cta": {
       "title": "Starte heute mit einer Änderung",
@@ -2034,13 +2362,113 @@
       "disclaimer_title": "Haftung",
       "disclaimer": "Bildungsguide von Vassbrekke AS. Keine Rechts- oder Profi-Sicherheitsberatung. Markierte Produkte (PrivyDeck, PrivBeacon usw.) stammen von Vassbrekke / VassDev.",
       "built": "Für Menschen, die ihr Leben zurückwollen",
-      "privacy": "Keine Tracker · Keine Konten · Nur lokale Checkliste",
-      "owned_by": "Diese Seite wird von Vassbrekke AS gehostet und gehört dem Unternehmen."
+      "privacy": "Keine Tracker · Keine Konten · Keine Google Fonts · Checkliste nur lokal",
+      "owned_by": "Gehostet und im Besitz von Vassbrekke AS.",
+      "trust": "Vertrauen & Konflikte"
     },
     "ours": {
-      "badge": "Vassbrekke AS · Unsere Produkte",
-      "title": "Von uns gebaut — starte mit PrivyDeck",
-      "body": "PrivGuide wird von Vassbrekke AS (Norwegen) gehostet und gehört dem Unternehmen. Zuerst unsere Privacy-Produkte — angeführt von PrivyDeck — danach das offene Ökosystem. Gesamte Linie auf vassbrekke.no."
+      "badge": "Interessenkonflikt — offengelegt",
+      "title": "Unsere Produkte (optional)",
+      "body": "Wir bauen diese. Sie sind nicht nötig, um dem Guide zu folgen. Nutze sie nur, wenn sie zu deinem Bedrohungsmodell passen.",
+      "trust_link": "Vertrauen & Methodik"
+    },
+    "disclosure": {
+      "aria": "Eigentümerhinweis",
+      "title": "Von Vassbrekke AS — dieser Guide ist kein reiner Katalog unserer Produkte.",
+      "body": "PrivyDeck, PrivBeacon und andere VassDev-Tools sind mit Ours markiert. Alles andere ist unabhängig. Keine bezahlten Platzierungen. Keine Affiliate-Links.",
+      "link": "Eigentum, Interessenkonflikte & Methodik lesen"
+    },
+    "trust_page": {
+      "meta_title": "Trust, conflicts & methodology — PrivGuide",
+      "meta_description": "Who owns PrivGuide, how we handle conflicts of interest, how we choose apps, what we collect, and how to suggest corrections. Owned by Vassbrekke AS.",
+      "eyebrow": "Transparency",
+      "title": "Trust & editorial standards",
+      "lead": "We build privacy tools. This guide exists so you are not stuck with only ours. Below: ownership, conflicts, methodology, what this site collects, and how to challenge a listing.",
+      "toc_aria": "On this page",
+      "ownership_title": "Who owns PrivGuide",
+      "ownership": {
+        "1": "PrivGuide is hosted and owned by Vassbrekke AS, a Norwegian company. The same company builds PrivyDeck, PrivBeacon, and other VassDev tools.",
+        "2": "That ownership is a conflict of interest for any listing of our own products. We disclose it everywhere — not only in the footer.",
+        "3": "Editorial intent: recommend the best practical tools for each job. When a third-party tool is clearly better for most people, it stays ahead of ours."
+      },
+      "org_label": "Publisher",
+      "orgnr_label": "Org. no.",
+      "roles": {
+        "1": "vassbrekke.no — company identity, legal entity, contact.",
+        "2": "PrivGuide — how to get private (mostly tools we did not build).",
+        "3": "PrivyDeck — personal privacy dashboard for individuals.",
+        "4": "PrivBeacon — website privacy compliance for organizations."
+      },
+      "conflicts_title": "Conflicts of interest",
+      "conflicts": {
+        "1": "Products marked Ours are built by Vassbrekke AS / VassDev. They are never unlabeled.",
+        "2": "We do not accept payment for placement, ranking, or a Recommended badge on PrivGuide.",
+        "3": "We do not use affiliate links on PrivGuide. Official website links go to the vendor’s own site.",
+        "4": "Crypto donations support hosting and maintenance. Donors cannot buy a listing or a higher rank."
+      },
+      "conflict_rules": {
+        "1": "Ours cards always show an Ours badge and publisher line.",
+        "2": "Default app order puts independent tools first; Ours appear after community recommendations (or under the Ours filter).",
+        "3": "Ours never outrank a clearly better tool in the same job without a written reason on the card.",
+        "4": "Path checklists may mention our products as optional — never as the only option.",
+        "5": "If you believe a listing is unfair, open a correction issue — we publish material changes in the changelog."
+      },
+      "methodology_title": "How we choose apps",
+      "methodology": {
+        "1": "Recommendations are practical, not maximalist. Usability counts: a private tool you abandon is worse than a good-enough tool you use daily.",
+        "2": "We review listings on a rolling schedule. Each card shows a last-reviewed date. Criteria below apply to first-party and third-party tools alike."
+      },
+      "criteria": {
+        "1": "Threat-model fit — clear who it protects against, and who it does not.",
+        "2": "Security posture — encryption, open source or auditable claims, update cadence, history of incidents.",
+        "3": "Privacy business model — how the vendor makes money; avoid predatory free tiers that sell attention.",
+        "4": "Jurisdiction & governance — where the org is based and what legal pressure looks like.",
+        "5": "Usability — will non-experts actually switch and stick with it?",
+        "6": "Official distribution — we link only to official sites or well-known trusted repos (e.g. project GitHub)."
+      },
+      "transparency_title": "What this site collects",
+      "transparency": {
+        "1": "PrivGuide is a static site. There is no account system and no advertising.",
+        "2": "Checklist progress is stored in your browser’s local storage only. Clearing site data clears progress. Nothing is uploaded to us.",
+        "3": "We do not load third-party analytics, ad pixels, or social trackers. Fonts are local/system — not Google Fonts."
+      },
+      "collect": {
+        "1": "No cookies for advertising or cross-site tracking.",
+        "2": "No third-party analytics scripts.",
+        "3": "Server access logs (if any) are handled by the host — we do not run a marketing pixel layer on top.",
+        "4": "Outbound links use rel=noopener noreferrer; we do not append affiliate parameters.",
+        "5": "Verify with your own blocker — empty network requests beyond the page and assets is the point."
+      },
+      "changelog_title": "Changelog",
+      "changelog": {
+        "e1": {
+          "date": "2026-07-18",
+          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
+        },
+        "e2": {
+          "date": "2026-07-18",
+          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+        },
+        "e3": {
+          "date": "2026-07-01",
+          "text": "Multi-language guide launch with curated apps and hardening paths."
+        },
+        "e4": {
+          "date": "2026-06-15",
+          "text": "Added Vassbrekke product disclosures and Ours badges."
+        },
+        "e5": {
+          "date": "2026-06-01",
+          "text": "Initial PrivGuide public draft."
+        }
+      },
+      "corrections_title": "Suggest a correction",
+      "corrections": {
+        "1": "Disagree with a ranking, spot a dead link, or think an Ours card is unfair? File a public issue. Material changes are noted in the changelog.",
+        "2": "Security-sensitive reports about our products should go to the product’s security contact; listing mistakes belong in the PrivGuide issue tracker."
+      },
+      "corrections_cta": "Open a GitHub issue",
+      "back": "Back to PrivGuide"
     }
   },
   "fr": {
@@ -2061,19 +2489,21 @@
       "desktop": "Ordi",
       "paths": "Commencer",
       "checklist": "Liste",
-      "language": "Langue"
+      "language": "Langue",
+      "trust": "Confiance"
     },
     "hero": {
-      "eyebrow": "Ouvert · Pratique · À jour",
+      "eyebrow": "Par Vassbrekke AS · Surtout pas que nos apps",
       "h1a": "Votre vie privée n'est pas optionnelle.",
       "h1b": "Voici votre carte de référence.",
-      "lead": "Trouvez les meilleures apps de confidentialité, renforcez téléphone et ordinateurs, et adoptez des habitudes réelles — sans diplôme d'informatique.",
+      "lead": "Nous créons des outils de confidentialité. Ce guide existe pour que vous ne dépendiez pas seulement des nôtres.",
       "cta_apps": "Parcourir les apps",
       "cta_path": "Choisir mon chemin →",
       "stat_tools": "outils sélectionnés",
       "stat_levels": "niveaux de menace",
       "stat_trackers": "trackers sur cette page",
-      "terminal_ok": "Vous reprenez le contrôle de vos données."
+      "terminal_ok": "Vous reprenez le contrôle de vos données.",
+      "cta_trust": "Comment nous restons honnêtes →"
     },
     "trust": {
       "aria": "Ce que couvre ce guide",
@@ -2100,7 +2530,7 @@
         "body": "Pour moins de pistage, moins de fuites et de meilleurs défauts.",
         "1": "Gestionnaire de mots de passe + mots de passe uniques",
         "2": "Signal pour les chats privés",
-        "3": "PrivyDeck (+ Firefox / uBlock)",
+        "3": "Firefox + uBlock (PrivyDeck optionnel)",
         "4": "2FA sur e-mail et banque",
         "5": "Revoir les permissions des apps",
         "cta": "Démarrer la liste →"
@@ -2131,8 +2561,8 @@
     "apps": {
       "eyebrow": "Annuaire d'apps",
       "title": "Meilleures apps de confidentialité — par catégorie",
-      "lead": "Outils sélectionnés — menés par PrivyDeck et la suite Vassbrekke, puis le meilleur de la communauté.",
-      "note": "Les produits Vassbrekke AS sont marqués Le nôtre. Vérifiez toujours les sources de téléchargement.",
+      "lead": "D’abord les outils indépendants. Les nôtres sont étiquetés et listés après l’écosystème ouvert.",
+      "note": "Les produits Vassbrekke AS sont marqués Ours. Pas de paiement pour le classement. Corrections via GitHub.",
       "use_when": "À utiliser quand :",
       "visit": "Site web",
       "signal": {
@@ -2292,7 +2722,8 @@
         "why": "vous avez besoin d'un blocage réseau pour les apps Android."
       },
       "ours_pill": "Le nôtre",
-      "by_vassbrekke": "Par Vassbrekke AS"
+      "by_vassbrekke": "Par Vassbrekke AS",
+      "reviewed": "Révisé"
     },
     "filters": {
       "aria": "Catégories d'apps",
@@ -2512,7 +2943,11 @@
       "q5": "Ce site me piste-t-il ?",
       "a5": "Pas d'analytics, pas de cookies pub, pas de trackers tiers. La liste reste dans le localStorage uniquement.",
       "q6": "Où aller plus loin ?",
-      "a6": "Docs officielles des outils et ressources comme privacyguides.org."
+      "a6": "Docs officielles des outils et ressources comme privacyguides.org.",
+      "q7": "PrivGuide n’est-il que du marketing pour PrivyDeck et PrivBeacon ?",
+      "a7": "Non. La même société possède le guide — nous le disons clairement. Outils indépendants d’abord ; Ours étiquetés. Détails sur la page Trust.",
+      "q8": "Gagnez-vous de l’argent quand je clique un lien ?",
+      "a8": "Non. Pas de liens d’affiliation."
     },
     "cta": {
       "title": "Commencez par un changement aujourd'hui",
@@ -2546,13 +2981,113 @@
       "disclaimer_title": "Avertissement",
       "disclaimer": "Guide éducatif publié par Vassbrekke AS. Pas un conseil juridique ou de sécurité professionnel. Les produits marqués (PrivyDeck, PrivBeacon, etc.) sont de Vassbrekke / VassDev.",
       "built": "Fait pour les humains qui veulent récupérer leur vie",
-      "privacy": "Pas de trackers · Pas de comptes · Liste locale uniquement",
-      "owned_by": "Cette page est hébergée et détenue par Vassbrekke AS."
+      "privacy": "Pas de trackers · Pas de comptes · Pas de Google Fonts · Checklist locale seulement",
+      "owned_by": "Hébergé et détenu par Vassbrekke AS.",
+      "trust": "Confiance et conflits"
     },
     "ours": {
-      "badge": "Vassbrekke AS · Nos produits",
-      "title": "Construit par nous — commencez par PrivyDeck",
-      "body": "PrivGuide est hébergé et détenu par Vassbrekke AS (Norvège). D'abord nos produits privacy — menés par PrivyDeck — puis l'écosystème open que nous recommandons. Voir vassbrekke.no."
+      "badge": "Conflit d’intérêts — déclaré",
+      "title": "Nos produits (optionnels)",
+      "body": "Nous les construisons. Ils ne sont pas obligatoires. Utilisez-les s’ils correspondent à votre modèle de menace.",
+      "trust_link": "Confiance et méthodologie"
+    },
+    "disclosure": {
+      "aria": "Déclaration de propriété",
+      "title": "Créé par Vassbrekke AS — ce guide n’est pas un catalogue de nos seuls produits.",
+      "body": "PrivyDeck, PrivBeacon et autres outils VassDev sont marqués Ours. Le reste est indépendant. Pas de placements payants. Pas d’affiliation.",
+      "link": "Lire propriété, conflits et méthodologie"
+    },
+    "trust_page": {
+      "meta_title": "Trust, conflicts & methodology — PrivGuide",
+      "meta_description": "Who owns PrivGuide, how we handle conflicts of interest, how we choose apps, what we collect, and how to suggest corrections. Owned by Vassbrekke AS.",
+      "eyebrow": "Transparency",
+      "title": "Trust & editorial standards",
+      "lead": "We build privacy tools. This guide exists so you are not stuck with only ours. Below: ownership, conflicts, methodology, what this site collects, and how to challenge a listing.",
+      "toc_aria": "On this page",
+      "ownership_title": "Who owns PrivGuide",
+      "ownership": {
+        "1": "PrivGuide is hosted and owned by Vassbrekke AS, a Norwegian company. The same company builds PrivyDeck, PrivBeacon, and other VassDev tools.",
+        "2": "That ownership is a conflict of interest for any listing of our own products. We disclose it everywhere — not only in the footer.",
+        "3": "Editorial intent: recommend the best practical tools for each job. When a third-party tool is clearly better for most people, it stays ahead of ours."
+      },
+      "org_label": "Publisher",
+      "orgnr_label": "Org. no.",
+      "roles": {
+        "1": "vassbrekke.no — company identity, legal entity, contact.",
+        "2": "PrivGuide — how to get private (mostly tools we did not build).",
+        "3": "PrivyDeck — personal privacy dashboard for individuals.",
+        "4": "PrivBeacon — website privacy compliance for organizations."
+      },
+      "conflicts_title": "Conflicts of interest",
+      "conflicts": {
+        "1": "Products marked Ours are built by Vassbrekke AS / VassDev. They are never unlabeled.",
+        "2": "We do not accept payment for placement, ranking, or a Recommended badge on PrivGuide.",
+        "3": "We do not use affiliate links on PrivGuide. Official website links go to the vendor’s own site.",
+        "4": "Crypto donations support hosting and maintenance. Donors cannot buy a listing or a higher rank."
+      },
+      "conflict_rules": {
+        "1": "Ours cards always show an Ours badge and publisher line.",
+        "2": "Default app order puts independent tools first; Ours appear after community recommendations (or under the Ours filter).",
+        "3": "Ours never outrank a clearly better tool in the same job without a written reason on the card.",
+        "4": "Path checklists may mention our products as optional — never as the only option.",
+        "5": "If you believe a listing is unfair, open a correction issue — we publish material changes in the changelog."
+      },
+      "methodology_title": "How we choose apps",
+      "methodology": {
+        "1": "Recommendations are practical, not maximalist. Usability counts: a private tool you abandon is worse than a good-enough tool you use daily.",
+        "2": "We review listings on a rolling schedule. Each card shows a last-reviewed date. Criteria below apply to first-party and third-party tools alike."
+      },
+      "criteria": {
+        "1": "Threat-model fit — clear who it protects against, and who it does not.",
+        "2": "Security posture — encryption, open source or auditable claims, update cadence, history of incidents.",
+        "3": "Privacy business model — how the vendor makes money; avoid predatory free tiers that sell attention.",
+        "4": "Jurisdiction & governance — where the org is based and what legal pressure looks like.",
+        "5": "Usability — will non-experts actually switch and stick with it?",
+        "6": "Official distribution — we link only to official sites or well-known trusted repos (e.g. project GitHub)."
+      },
+      "transparency_title": "What this site collects",
+      "transparency": {
+        "1": "PrivGuide is a static site. There is no account system and no advertising.",
+        "2": "Checklist progress is stored in your browser’s local storage only. Clearing site data clears progress. Nothing is uploaded to us.",
+        "3": "We do not load third-party analytics, ad pixels, or social trackers. Fonts are local/system — not Google Fonts."
+      },
+      "collect": {
+        "1": "No cookies for advertising or cross-site tracking.",
+        "2": "No third-party analytics scripts.",
+        "3": "Server access logs (if any) are handled by the host — we do not run a marketing pixel layer on top.",
+        "4": "Outbound links use rel=noopener noreferrer; we do not append affiliate parameters.",
+        "5": "Verify with your own blocker — empty network requests beyond the page and assets is the point."
+      },
+      "changelog_title": "Changelog",
+      "changelog": {
+        "e1": {
+          "date": "2026-07-18",
+          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
+        },
+        "e2": {
+          "date": "2026-07-18",
+          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+        },
+        "e3": {
+          "date": "2026-07-01",
+          "text": "Multi-language guide launch with curated apps and hardening paths."
+        },
+        "e4": {
+          "date": "2026-06-15",
+          "text": "Added Vassbrekke product disclosures and Ours badges."
+        },
+        "e5": {
+          "date": "2026-06-01",
+          "text": "Initial PrivGuide public draft."
+        }
+      },
+      "corrections_title": "Suggest a correction",
+      "corrections": {
+        "1": "Disagree with a ranking, spot a dead link, or think an Ours card is unfair? File a public issue. Material changes are noted in the changelog.",
+        "2": "Security-sensitive reports about our products should go to the product’s security contact; listing mistakes belong in the PrivGuide issue tracker."
+      },
+      "corrections_cta": "Open a GitHub issue",
+      "back": "Back to PrivGuide"
     }
   }
 }

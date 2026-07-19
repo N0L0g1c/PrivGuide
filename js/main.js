@@ -334,7 +334,11 @@
       btn.setAttribute("aria-selected", "true");
       appCards.forEach((card) => {
         const cat = card.dataset.cat;
-        const show = filter === "all" || cat === filter;
+        const isOurs = card.dataset.ours === "1";
+        const show =
+          filter === "all" ||
+          cat === filter ||
+          (filter === "ours" && isOurs);
         card.classList.toggle("is-hidden", !show);
         if (show && !reduceMotion) {
           card.style.animation = "none";
