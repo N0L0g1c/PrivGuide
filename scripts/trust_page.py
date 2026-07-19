@@ -164,6 +164,8 @@ def render_trust_page(
   </script>
 </head>
 <body data-lang="{lang}" class="trust-page">
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
   <a class="skip-link" href="#main">{t(tr, lang, "a11y.skip")}</a>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
@@ -182,7 +184,12 @@ def render_trust_page(
       <ul class="nav-links" id="navLinks">
         <li><a href="{home}#apps">{t(tr, lang, "nav.apps")}</a></li>
         <li><a href="{trust_home}" class="is-current">{t(tr, lang, "nav.trust")}</a></li>
-        <li><a href="{home}#checklist">{t(tr, lang, "nav.checklist")}</a></li>
+        <li><a href="{home}#life">{t(tr, lang, "nav.life")}</a></li>
+        <li><a href="{home}#phone">{t(tr, lang, "nav.phone")}</a></li>
+        <li><a href="{home}#desktop">{t(tr, lang, "nav.desktop")}</a></li>
+        <li><a href="{home}#paths">{t(tr, lang, "nav.paths")}</a></li>
+        <li><a href="{home}#donate">{t(tr, lang, "donate.nav")}</a></li>
+        <li><a href="{home}#checklist" class="nav-cta">{t(tr, lang, "nav.checklist")}</a></li>
       </ul>
       <div class="nav-right">
         <div class="lang-switcher" role="navigation" aria-label="{t(tr, lang, "nav.language")}">
@@ -223,6 +230,52 @@ def render_trust_page(
   </main>
 
   <footer class="site-footer">
+    <div class="container footer-owner">
+      <p>
+        <strong>{t(tr, lang, "footer.owned_by")}</strong>
+        <a href="{COMPANY_URL}" target="_blank" rel="noopener noreferrer">www.vassbrekke.no</a>
+        · <a href="https://privydeck.com" target="_blank" rel="noopener noreferrer">privydeck.com</a>
+        · <a href="https://www.privbeacon.com" target="_blank" rel="noopener noreferrer">privbeacon.com</a>
+      </p>
+    </div>
+    <div class="container footer-grid">
+      <div>
+        <a href="{home}" class="logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <path d="M16 3L5 8v8c0 7.2 4.7 13.9 11 15.5C22.3 29.9 27 23.2 27 16V8L16 3z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M12 16.5l2.5 2.5L20 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="logo-text">Priv<span>Guide</span></span>
+        </a>
+        <p class="footer-tag">{t(tr, lang, "footer.tag")}</p>
+      </div>
+      <div>
+        <h4>{t(tr, lang, "footer.explore")}</h4>
+        <ul>
+          <li><a href="{home}#apps">{t(tr, lang, "nav.apps")}</a></li>
+          <li><a href="{trust_home}">{t(tr, lang, "footer.trust")}</a></li>
+          <li><a href="{home}#life">{t(tr, lang, "nav.life")}</a></li>
+          <li><a href="{home}#phone">{t(tr, lang, "nav.phone")}</a></li>
+          <li><a href="{home}#desktop">{t(tr, lang, "nav.desktop")}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>{t(tr, lang, "footer.start")}</h4>
+        <ul>
+          <li><a href="{home}#paths">{t(tr, lang, "nav.paths")}</a></li>
+          <li><a href="{home}#checklist">{t(tr, lang, "nav.checklist")}</a></li>
+          <li><a href="{home}#faq">{t(tr, lang, "faq.title")}</a></li>
+          <li><a href="{CORRECTIONS_URL}" target="_blank" rel="noopener noreferrer">GitHub issues</a></li>
+          <li><a href="{home}#donate">{t(tr, lang, "donate.nav")}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>{t(tr, lang, "footer.disclaimer_title")}</h4>
+        <p class="footer-fine">{t(tr, lang, "footer.disclaimer")}</p>
+      </div>
+    </div>
     <div class="container footer-bottom">
       <p>© <span id="year"></span> <a href="{COMPANY_URL}" target="_blank" rel="noopener noreferrer">Vassbrekke AS</a> · PrivGuide · {t(tr, lang, "footer.built")}</p>
       <p class="footer-privacy">{t(tr, lang, "footer.privacy")}</p>

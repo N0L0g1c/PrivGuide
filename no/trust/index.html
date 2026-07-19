@@ -49,6 +49,8 @@
   </script>
 </head>
 <body data-lang="no" class="trust-page">
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Hopp til innhold</a>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
@@ -67,7 +69,12 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="../index.html#apps">Apper</a></li>
         <li><a href="index.html" class="is-current">Tillit</a></li>
-        <li><a href="../index.html#checklist">Sjekkliste</a></li>
+        <li><a href="../index.html#life">Livet</a></li>
+        <li><a href="../index.html#phone">Telefon</a></li>
+        <li><a href="../index.html#desktop">PC</a></li>
+        <li><a href="../index.html#paths">Start her</a></li>
+        <li><a href="../index.html#donate">Doner</a></li>
+        <li><a href="../index.html#checklist" class="nav-cta">Sjekkliste</a></li>
       </ul>
       <div class="nav-right">
         <div class="lang-switcher" role="navigation" aria-label="Språk">
@@ -176,6 +183,52 @@
   </main>
 
   <footer class="site-footer">
+    <div class="container footer-owner">
+      <p>
+        <strong>Hostes og eies av Vassbrekke AS.</strong>
+        <a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">www.vassbrekke.no</a>
+        · <a href="https://privydeck.com" target="_blank" rel="noopener noreferrer">privydeck.com</a>
+        · <a href="https://www.privbeacon.com" target="_blank" rel="noopener noreferrer">privbeacon.com</a>
+      </p>
+    </div>
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <path d="M16 3L5 8v8c0 7.2 4.7 13.9 11 15.5C22.3 29.9 27 23.2 27 16V8L16 3z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M12 16.5l2.5 2.5L20 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="logo-text">Priv<span>Guide</span></span>
+        </a>
+        <p class="footer-tag">Et praktisk personvernkart fra Vassbrekke AS — mest verktøy vi ikke har bygget.</p>
+      </div>
+      <div>
+        <h4>Utforsk</h4>
+        <ul>
+          <li><a href="../index.html#apps">Apper</a></li>
+          <li><a href="index.html">Tillit og interessekonflikter</a></li>
+          <li><a href="../index.html#life">Livet</a></li>
+          <li><a href="../index.html#phone">Telefon</a></li>
+          <li><a href="../index.html#desktop">PC</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kom i gang</h4>
+        <ul>
+          <li><a href="../index.html#paths">Start her</a></li>
+          <li><a href="../index.html#checklist">Sjekkliste</a></li>
+          <li><a href="../index.html#faq">Vanlige spørsmål</a></li>
+          <li><a href="https://github.com/N0L0g1c/PrivGuide/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a></li>
+          <li><a href="../index.html#donate">Doner</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ansvarsfraskrivelse</h4>
+        <p class="footer-fine">Veiledning fra Vassbrekke AS. Ikke juridisk eller profesjonell sikkerhetsrådgivning. Trusselmodeller varierer. Tredjepartsverktøy er uavhengige. Produkter merket Vårt er bygget av Vassbrekke / VassDev. Ingen betalte plasseringer.</p>
+      </div>
+    </div>
     <div class="container footer-bottom">
       <p>© <span id="year"></span> <a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">Vassbrekke AS</a> · PrivGuide · Bygget for mennesker som vil ha livet sitt tilbake</p>
       <p class="footer-privacy">Ingen sporere · Ingen kontoer · Ingen Google Fonts · Kun lokal sjekkliste</p>

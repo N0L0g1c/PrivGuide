@@ -49,6 +49,8 @@
   </script>
 </head>
 <body data-lang="es" class="trust-page">
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Saltar al contenido</a>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
@@ -67,7 +69,12 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="../index.html#apps">Apps</a></li>
         <li><a href="index.html" class="is-current">Confianza</a></li>
-        <li><a href="../index.html#checklist">Lista</a></li>
+        <li><a href="../index.html#life">Vida</a></li>
+        <li><a href="../index.html#phone">Móvil</a></li>
+        <li><a href="../index.html#desktop">PC</a></li>
+        <li><a href="../index.html#paths">Empieza aquí</a></li>
+        <li><a href="../index.html#donate">Donar</a></li>
+        <li><a href="../index.html#checklist" class="nav-cta">Lista</a></li>
       </ul>
       <div class="nav-right">
         <div class="lang-switcher" role="navigation" aria-label="Idioma">
@@ -176,6 +183,52 @@
   </main>
 
   <footer class="site-footer">
+    <div class="container footer-owner">
+      <p>
+        <strong>Alojado y propiedad de Vassbrekke AS.</strong>
+        <a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">www.vassbrekke.no</a>
+        · <a href="https://privydeck.com" target="_blank" rel="noopener noreferrer">privydeck.com</a>
+        · <a href="https://www.privbeacon.com" target="_blank" rel="noopener noreferrer">privbeacon.com</a>
+      </p>
+    </div>
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <path d="M16 3L5 8v8c0 7.2 4.7 13.9 11 15.5C22.3 29.9 27 23.2 27 16V8L16 3z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M12 16.5l2.5 2.5L20 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="logo-text">Priv<span>Guide</span></span>
+        </a>
+        <p class="footer-tag">El mapa de referencia de privacidad personal — de Vassbrekke AS.</p>
+      </div>
+      <div>
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="../index.html#apps">Apps</a></li>
+          <li><a href="index.html">Confianza y conflictos</a></li>
+          <li><a href="../index.html#life">Vida</a></li>
+          <li><a href="../index.html#phone">Móvil</a></li>
+          <li><a href="../index.html#desktop">PC</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Empezar</h4>
+        <ul>
+          <li><a href="../index.html#paths">Empieza aquí</a></li>
+          <li><a href="../index.html#checklist">Lista</a></li>
+          <li><a href="../index.html#faq">Preguntas frecuentes</a></li>
+          <li><a href="https://github.com/N0L0g1c/PrivGuide/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a></li>
+          <li><a href="../index.html#donate">Donar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Aviso</h4>
+        <p class="footer-fine">Guía educativa publicada por Vassbrekke AS. No es asesoramiento legal ni de seguridad profesional. Los productos marcados (PrivyDeck, PrivBeacon, etc.) son de Vassbrekke / VassDev.</p>
+      </div>
+    </div>
     <div class="container footer-bottom">
       <p>© <span id="year"></span> <a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">Vassbrekke AS</a> · PrivGuide · Hecho para personas que quieren recuperar su vida</p>
       <p class="footer-privacy">Sin rastreadores · Sin cuentas · Sin Google Fonts · Lista solo local</p>

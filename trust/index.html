@@ -49,6 +49,8 @@
   </script>
 </head>
 <body data-lang="en" class="trust-page">
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
@@ -67,7 +69,12 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="../index.html#apps">Apps</a></li>
         <li><a href="index.html" class="is-current">Trust</a></li>
-        <li><a href="../index.html#checklist">Checklist</a></li>
+        <li><a href="../index.html#life">Life</a></li>
+        <li><a href="../index.html#phone">Phone</a></li>
+        <li><a href="../index.html#desktop">Desktop</a></li>
+        <li><a href="../index.html#paths">Start here</a></li>
+        <li><a href="../index.html#donate">Donate</a></li>
+        <li><a href="../index.html#checklist" class="nav-cta">Checklist</a></li>
       </ul>
       <div class="nav-right">
         <div class="lang-switcher" role="navigation" aria-label="Language">
@@ -176,6 +183,52 @@
   </main>
 
   <footer class="site-footer">
+    <div class="container footer-owner">
+      <p>
+        <strong>Hosted and owned by Vassbrekke AS.</strong>
+        <a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">www.vassbrekke.no</a>
+        · <a href="https://privydeck.com" target="_blank" rel="noopener noreferrer">privydeck.com</a>
+        · <a href="https://www.privbeacon.com" target="_blank" rel="noopener noreferrer">privbeacon.com</a>
+      </p>
+    </div>
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <path d="M16 3L5 8v8c0 7.2 4.7 13.9 11 15.5C22.3 29.9 27 23.2 27 16V8L16 3z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M12 16.5l2.5 2.5L20 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="logo-text">Priv<span>Guide</span></span>
+        </a>
+        <p class="footer-tag">A practical privacy map from Vassbrekke AS — mostly tools we did not build.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../index.html#apps">Apps</a></li>
+          <li><a href="index.html">Trust & conflicts</a></li>
+          <li><a href="../index.html#life">Life</a></li>
+          <li><a href="../index.html#phone">Phone</a></li>
+          <li><a href="../index.html#desktop">Desktop</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get started</h4>
+        <ul>
+          <li><a href="../index.html#paths">Start here</a></li>
+          <li><a href="../index.html#checklist">Checklist</a></li>
+          <li><a href="../index.html#faq">Common questions</a></li>
+          <li><a href="https://github.com/N0L0g1c/PrivGuide/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a></li>
+          <li><a href="../index.html#donate">Donate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Disclaimer</h4>
+        <p class="footer-fine">Educational guide by Vassbrekke AS. Not legal or professional security advice. Threat models differ. Third-party tools are independent; verify software yourself. Products marked Ours are built by Vassbrekke / VassDev. No paid placements on this guide.</p>
+      </div>
+    </div>
     <div class="container footer-bottom">
       <p>© <span id="year"></span> <a href="https://www.vassbrekke.no" target="_blank" rel="noopener noreferrer">Vassbrekke AS</a> · PrivGuide · Built for humans who want their lives back</p>
       <p class="footer-privacy">No trackers · No accounts · No Google Fonts · Local checklist only</p>
