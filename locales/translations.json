@@ -69,8 +69,8 @@
         "body": "For freelancers, journalists-lite, and anyone who wants a real private stack.",
         "1": "Proton or Tuta email",
         "2": "Mullvad / Proton VPN on public Wi‑Fi",
-        "3": "Encrypted cloud or local backups",
-        "4": "Hardened browser profile",
+        "3": "Encrypted cloud, CryptPad docs, or local backups",
+        "4": "LibreWolf or Mullvad Browser + uBlock",
         "5": "Separate work / personal accounts",
         "cta": "Explore the stack →"
       },
@@ -78,11 +78,11 @@
         "badge": "Level 3",
         "title": "High threat",
         "body": "For activists, whistleblowers, and high-risk targets. Assume skilled adversaries.",
-        "1": "GrapheneOS / de-Googled Android",
+        "1": "GrapheneOS (Pixel) or LineageOS /e/OS",
         "2": "Tor Browser for research",
-        "3": "Compartmentalized devices & VMs",
+        "3": "SimpleX or Session for metadata-resistant chat",
         "4": "Hardware security keys",
-        "5": "Opsec discipline (no weak links)",
+        "5": "Opsec + compartmentalized devices & VMs",
         "cta": "Phone hardening →"
       }
     },
@@ -100,6 +100,14 @@
       "session": {
         "desc": "No phone number required. Onion-routed metadata resistance. Stronger anonymity model than mainstream chat apps.",
         "why": "you want identity-light chat."
+      },
+      "simplex": {
+        "desc": "No phone, email, or persistent user IDs. One-time invite links and relays designed to resist metadata correlation. Data stays on-device.",
+        "why": "you need maximum anonymity against metadata and correlation attacks."
+      },
+      "threema": {
+        "desc": "Swiss messenger with a one-time purchase — no phone or email required. Full E2EE with forward secrecy; open-source apps and audited protocol.",
+        "why": "you want a paid, jurisdiction-strong alternative without a free-ad business model."
       },
       "element": {
         "desc": "Federated, E2EE rooms, bridges to other networks. You can self-host and own the infrastructure.",
@@ -120,6 +128,10 @@
       "mullvad_browser": {
         "desc": "Tor Browser technology without the Tor network — privacy-hardened Firefox build designed to reduce fingerprinting.",
         "why": "pairing with a trustworthy VPN."
+      },
+      "librewolf": {
+        "desc": "Hardened Firefox fork with telemetry stripped and strong anti-fingerprinting defaults out of the box. Excellent daily driver.",
+        "why": "you want Firefox privacy without hand-tuning about:config."
       },
       "mullvad": {
         "desc": "Anonymous accounts (no email), cash/crypto payment, audited, no-logs reputation. Privacy-first business model.",
@@ -177,6 +189,10 @@
         "desc": "Client-side vaults that sit on top of Dropbox, Google Drive, or any folder. Encrypt before upload.",
         "why": "you can't leave your current cloud yet."
       },
+      "veracrypt": {
+        "desc": "Open-source disk and container encryption for local drives and portable vaults. Encrypt whole volumes or create hidden volumes.",
+        "why": "you need strong local/offline encryption beyond cloud vaults."
+      },
       "nextcloud": {
         "desc": "Self-host files, photos, and calendars (Nextcloud) or peer-to-peer sync with no central server (Syncthing).",
         "why": "you're ready to leave big cloud entirely."
@@ -196,6 +212,10 @@
       "graphene": {
         "desc": "Hardened Android for Pixel devices. Best mobile security/privacy posture available to consumers today.",
         "why": "phone security is non-negotiable."
+      },
+      "lineage_eos": {
+        "desc": "Custom Android ROMs for non-Pixel devices. LineageOS (+ microG) or /e/OS cut Google services; not GrapheneOS-tier hardening.",
+        "why": "your phone isn't a Pixel but you still want a de-Googled ROM."
       },
       "linux": {
         "desc": "Leave Windows telemetry behind. Fedora/Debian for daily driving; Qubes OS for serious compartmentalization.",
@@ -220,6 +240,14 @@
       "calling": {
         "desc": "Prefer E2EE voice/video. Avoid putting sensitive conversations on SMS or unencrypted defaults.",
         "why": "the call content matters."
+      },
+      "cryptpad": {
+        "desc": "Zero-knowledge collaborative docs, sheets, and whiteboards — like Google Docs with E2EE. Self-hostable.",
+        "why": "you need real-time collaboration without a Big Tech office suite."
+      },
+      "android_apps": {
+        "desc": "NewPipe: YouTube frontend without ads, tracking, or a Google account. Aurora Store: install Play apps anonymously. Prefer F-Droid builds.",
+        "why": "you're de-Googling Android and still need video or Play apps."
       },
       "privydeck": {
         "desc": "Our personal privacy dashboard. Privacy score, one-tap tracker blocking on phone and browser, encrypted vault (with file sanitization and secure cleanup built in), and one-click data-access requests — no Raspberry Pi required.",
@@ -408,18 +436,18 @@
         "c1": "Install a password manager and migrate critical accounts",
         "c2": "Turn on 2FA (authenticator app) for email and banking",
         "c3": "Install Signal and move sensitive chats off SMS",
-        "c4": "Install PrivyDeck and harden your browser (Firefox + uBlock optional)",
+        "c4": "Install PrivyDeck and harden your browser (LibreWolf / Firefox + uBlock)",
         "c5": "Change search engine away from Google",
         "c6": "Review phone app permissions (location, mic, camera)",
         "c7": "Move primary email to Proton / Tuta (or harden current mail)",
         "c8": "Set up a no-logs VPN for travel and public Wi‑Fi",
         "c9": "Enable full-disk encryption on all computers and phones",
         "c10": "Create email aliases for shopping and newsletters",
-        "c11": "Encrypted cloud or Cryptomator vault for sensitive files",
+        "c11": "Encrypted cloud, Cryptomator/VeraCrypt, or CryptPad for sensitive files",
         "c12": "Audit social media privacy settings and public posts",
         "c13": "Hardware security key for critical accounts",
         "c14": "Separate devices or profiles for high-risk activity",
-        "c15": "GrapheneOS / hardened mobile OS evaluation",
+        "c15": "GrapheneOS (Pixel) or LineageOS /e/OS evaluation",
         "c16": "Data broker opt-outs and people-search removals",
         "c17": "Offline / encrypted backups tested with a restore drill",
         "c18": "Written personal threat model (who / what / why)"
@@ -585,22 +613,26 @@
       "changelog_title": "Changelog",
       "changelog": {
         "e1": {
-          "date": "2026-07-18",
-          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
+          "date": "2026-07-22",
+          "text": "Added SimpleX, Threema, LibreWolf, VeraCrypt, LineageOS /e/OS, CryptPad, and NewPipe / Aurora Store. Updated Level 2–3 paths and checklist."
         },
         "e2": {
           "date": "2026-07-18",
-          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
         },
         "e3": {
+          "date": "2026-07-18",
+          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+        },
+        "e4": {
           "date": "2026-07-01",
           "text": "Multi-language guide launch with curated apps and hardening paths."
         },
-        "e4": {
+        "e5": {
           "date": "2026-06-15",
           "text": "Added Vassbrekke product disclosures and Ours badges."
         },
-        "e5": {
+        "e6": {
           "date": "2026-06-01",
           "text": "Initial PrivGuide public draft."
         }
@@ -684,8 +716,8 @@
         "body": "For frilansere, journalister-lite og alle som vil ha en ekte privat stack.",
         "1": "Proton eller Tuta e-post",
         "2": "Mullvad / Proton VPN på offentlig Wi‑Fi",
-        "3": "Kryptert sky eller lokale sikkerhetskopier",
-        "4": "Herdet nettleserprofil",
+        "3": "Kryptert sky, CryptPad-dokumenter eller lokale sikkerhetskopier",
+        "4": "LibreWolf eller Mullvad Browser + uBlock",
         "5": "Separate jobb- og privatkontoer",
         "cta": "Utforsk stakken →"
       },
@@ -693,11 +725,11 @@
         "badge": "Nivå 3",
         "title": "Høy trussel",
         "body": "For aktivister, varslere og høyrisikomål. Anta dyktige motstandere.",
-        "1": "GrapheneOS / de-Googlet Android",
+        "1": "GrapheneOS (Pixel) eller LineageOS /e/OS",
         "2": "Tor Browser til research",
-        "3": "Kompartmenterte enheter og VM-er",
+        "3": "SimpleX eller Session for metadata-motstandsdyktig chat",
         "4": "Maskinvaresikkerhetsnøkler",
-        "5": "Opsec-disiplin (ingen svake ledd)",
+        "5": "Opsec + kompartmenterte enheter og VM-er",
         "cta": "Telefonherding →"
       }
     },
@@ -715,6 +747,14 @@
       "session": {
         "desc": "Ingen telefonnummer påkrevd. Løk-rutet metadata-motstand. Sterkere anonymitetsmodell enn vanlige chat-apper.",
         "why": "du vil ha identitet-lett chat."
+      },
+      "simplex": {
+        "desc": "Ingen telefon, e-post eller faste bruker-ID-er. Engangs-invitasjonslenker og releer designet mot metadata-korrelasjon. Data blir på enheten.",
+        "why": "du trenger maksimal anonymitet mot metadata- og korrelasjonsangrep."
+      },
+      "threema": {
+        "desc": "Sveitsisk messenger med engangskjøp — ingen telefon eller e-post påkrevd. Full E2EE med forward secrecy; åpen kildekode-apper og revidert protokoll.",
+        "why": "du vil ha et betalt, jurisdiksjonssterkt alternativ uten gratis-annonse-modell."
       },
       "element": {
         "desc": "Fødererte E2EE-rom, broer til andre nettverk. Du kan self-hoste og eie infrastrukturen.",
@@ -735,6 +775,10 @@
       "mullvad_browser": {
         "desc": "Tor Browser-teknologi uten Tor-nettverket — personvernherdet Firefox for mindre fingerprinting.",
         "why": "kombinert med en pålitelig VPN."
+      },
+      "librewolf": {
+        "desc": "Herdet Firefox-fork med telemetri fjernet og sterke anti-fingerprinting-standarder ferdig satt. Utmerket daglig nettleser.",
+        "why": "du vil ha Firefox-personvern uten å håndtune about:config."
       },
       "mullvad": {
         "desc": "Anonyme kontoer (ingen e-post), kontant/krypto-betaling, revidert, no-logs-rykte.",
@@ -792,6 +836,10 @@
         "desc": "Klient-side hvelv oppå Dropbox, Google Drive eller hvilken som helst mappe. Krypter før opplasting.",
         "why": "du ikke kan forlate nåværende sky ennå."
       },
+      "veracrypt": {
+        "desc": "Åpen kildekode disk- og beholderkryptering for lokale disker og bærbare hvelv. Krypter hele volumer eller lag skjulte volumer.",
+        "why": "du trenger sterk lokal/offline-kryptering utover skyhvelv."
+      },
       "nextcloud": {
         "desc": "Self-host filer, bilder og kalendere (Nextcloud) eller P2P-synk uten sentral server (Syncthing).",
         "why": "du er klar til å forlate storsky helt."
@@ -811,6 +859,10 @@
       "graphene": {
         "desc": "Herdet Android for Pixel. Beste mobile sikkerhets-/personvernposisjon for forbrukere i dag.",
         "why": "telefonsikkerhet er ufravikelig."
+      },
+      "lineage_eos": {
+        "desc": "Tilpassede Android-ROM-er for ikke-Pixel-enheter. LineageOS (+ microG) eller /e/OS kutter Google-tjenester; ikke GrapheneOS-nivå herding.",
+        "why": "telefonen din ikke er Pixel, men du vil fortsatt ha en de-Googlet ROM."
       },
       "linux": {
         "desc": "Forlat Windows-telemetri. Fedora/Debian til daglig bruk; Qubes for seriøs kompartmentering.",
@@ -839,6 +891,14 @@
       "calling": {
         "desc": "Foretrekk E2EE tale/video. Unngå sensitive samtaler på SMS eller ukrypterte standarder.",
         "why": "samtaleinnholdet betyr noe."
+      },
+      "cryptpad": {
+        "desc": "Zero-knowledge samarbeidsdokumenter, ark og whiteboards — som Google Docs med E2EE. Self-hostbar.",
+        "why": "du trenger sanntidssamarbeid uten en Big Tech-kontorpakke."
+      },
+      "android_apps": {
+        "desc": "NewPipe: YouTube-frontend uten annonser, sporing eller Google-konto. Aurora Store: installer Play-apper anonymt. Foretrekk F-Droid-bygg.",
+        "why": "du de-Googler Android og fortsatt trenger video eller Play-apper."
       },
       "privydeck": {
         "desc": "Vårt personlige personvern-dashbord. Personvernscore, sporingsblokkering på telefon og nettleser med ett trykk, kryptert hvelv (med filrensing og sikker opprydding innebygd), og dataforespørsler — uten Raspberry Pi.",
@@ -1027,18 +1087,18 @@
         "c1": "Installer passordbehandler og migrer kritiske kontoer",
         "c2": "Slå på 2FA (authenticator) for e-post og bank",
         "c3": "Installer Signal og flytt sensitive samtaler bort fra SMS",
-        "c4": "Installer PrivyDeck og herd nettleseren (Firefox + uBlock valgfritt)",
+        "c4": "Installer PrivyDeck og herd nettleseren (LibreWolf / Firefox + uBlock)",
         "c5": "Bytt søkemotor bort fra Google",
         "c6": "Gå gjennom app-tillatelser (posisjon, mic, kamera)",
         "c7": "Flytt primær e-post til Proton / Tuta (eller herd nåværende)",
         "c8": "Sett opp no-logs VPN for reise og offentlig Wi‑Fi",
         "c9": "Aktiver full diskkryptering på alle PC-er og telefoner",
         "c10": "Lag e-postaliaser for shopping og nyhetsbrev",
-        "c11": "Kryptert sky eller Cryptomator-hvelv for sensitive filer",
+        "c11": "Kryptert sky, Cryptomator/VeraCrypt eller CryptPad for sensitive filer",
         "c12": "Revider personverninnstillinger og offentlige innlegg i sosiale medier",
         "c13": "Maskinvaresikkerhetsnøkkel for kritiske kontoer",
         "c14": "Separate enheter eller profiler for høyrisikoaktivitet",
-        "c15": "Vurder GrapheneOS / herdet mobil-OS",
+        "c15": "Evaluer GrapheneOS (Pixel) eller LineageOS /e/OS",
         "c16": "Utmelding fra datameglere og people-search",
         "c17": "Offline / krypterte backups testet med gjenoppretting",
         "c18": "Skriftlig personlig trusselmodell (hvem / hva / hvorfor)"
@@ -1204,22 +1264,26 @@
       "changelog_title": "Endringslogg",
       "changelog": {
         "e1": {
-          "date": "2026-07-18",
-          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
+          "date": "2026-07-22",
+          "text": "Lagt til SimpleX, Threema, LibreWolf, VeraCrypt, LineageOS /e/OS, CryptPad og NewPipe / Aurora Store. Oppdaterte nivå 2–3-stier og sjekkliste."
         },
         "e2": {
           "date": "2026-07-18",
-          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
         },
         "e3": {
+          "date": "2026-07-18",
+          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+        },
+        "e4": {
           "date": "2026-07-01",
           "text": "Multi-language guide launch with curated apps and hardening paths."
         },
-        "e4": {
+        "e5": {
           "date": "2026-06-15",
           "text": "Added Vassbrekke product disclosures and Ours badges."
         },
-        "e5": {
+        "e6": {
           "date": "2026-06-01",
           "text": "Initial PrivGuide public draft."
         }
@@ -1303,8 +1367,8 @@
         "body": "Para freelancers y quien quiere un stack privado de verdad.",
         "1": "Correo Proton o Tuta",
         "2": "VPN Mullvad / Proton en Wi‑Fi público",
-        "3": "Nube cifrada o copias locales",
-        "4": "Perfil de navegador endurecido",
+        "3": "Nube cifrada, docs CryptPad o backups locales",
+        "4": "LibreWolf o Mullvad Browser + uBlock",
         "5": "Cuentas trabajo / personal separadas",
         "cta": "Explorar el stack →"
       },
@@ -1312,11 +1376,11 @@
         "badge": "Nivel 3",
         "title": "Alta amenaza",
         "body": "Para activistas, denunciantes y objetivos de alto riesgo.",
-        "1": "GrapheneOS / Android sin Google",
+        "1": "GrapheneOS (Pixel) o LineageOS /e/OS",
         "2": "Tor Browser para investigación",
-        "3": "Dispositivos y VMs compartimentados",
+        "3": "SimpleX o Session para chat resistente a metadatos",
         "4": "Llaves de seguridad hardware",
-        "5": "Disciplina de opsec",
+        "5": "Opsec + dispositivos y VMs compartimentados",
         "cta": "Endurecer el móvil →"
       }
     },
@@ -1334,6 +1398,14 @@
       "session": {
         "desc": "Sin número de teléfono. Resistencia a metadatos por enrutado cebolla. Modelo de anonimato más fuerte.",
         "why": "quieres chat con poca identidad."
+      },
+      "simplex": {
+        "desc": "Sin teléfono, email ni IDs de usuario persistentes. Enlaces de invitación de un solo uso y relays pensados contra correlación de metadatos. Los datos quedan en el dispositivo.",
+        "why": "necesitas máximo anonimato frente a metadatos y correlación."
+      },
+      "threema": {
+        "desc": "Mensajería suiza con compra única — sin teléfono ni email. E2EE completa con forward secrecy; apps de código abierto y protocolo auditado.",
+        "why": "quieres una alternativa de pago con buena jurisdicción, sin modelo de anuncios gratis."
       },
       "element": {
         "desc": "Salas E2EE federadas, puentes a otras redes. Puedes autoalojar e infra propia.",
@@ -1354,6 +1426,10 @@
       "mullvad_browser": {
         "desc": "Tecnología de Tor Browser sin la red Tor — Firefox endurecido anti-fingerprinting.",
         "why": "lo combinas con una VPN de confianza."
+      },
+      "librewolf": {
+        "desc": "Fork endurecido de Firefox sin telemetría y con anti-fingerprinting fuerte por defecto. Excelente navegador diario.",
+        "why": "quieres privacidad de Firefox sin retocar about:config a mano."
       },
       "mullvad": {
         "desc": "Cuentas anónimas (sin email), pago en efectivo/cripto, auditado, reputación no-logs.",
@@ -1411,6 +1487,10 @@
         "desc": "Bóvedas del lado del cliente sobre Dropbox, Google Drive o cualquier carpeta. Cifra antes de subir.",
         "why": "aún no puedes dejar tu nube actual."
       },
+      "veracrypt": {
+        "desc": "Cifrado de disco y contenedores de código abierto para unidades locales y bóvedas portátiles. Cifra volúmenes enteros o crea volúmenes ocultos.",
+        "why": "necesitas cifrado local/offline fuerte más allá de bóvedas en la nube."
+      },
       "nextcloud": {
         "desc": "Autoalojar archivos y calendarios (Nextcloud) o sincronización P2P sin servidor central (Syncthing).",
         "why": "estás listo para dejar la gran nube."
@@ -1430,6 +1510,10 @@
       "graphene": {
         "desc": "Android endurecido para Pixel. Mejor postura de seguridad/privacidad móvil al consumidor hoy.",
         "why": "la seguridad del teléfono es innegociable."
+      },
+      "lineage_eos": {
+        "desc": "ROMs Android personalizadas para dispositivos que no son Pixel. LineageOS (+ microG) o /e/OS reducen Google; no alcanzan el nivel GrapheneOS.",
+        "why": "tu teléfono no es Pixel pero aún quieres una ROM sin Google."
       },
       "linux": {
         "desc": "Deja la telemetría de Windows. Fedora/Debian para el día a día; Qubes para compartimentación seria.",
@@ -1458,6 +1542,14 @@
       "calling": {
         "desc": "Prefiere voz/vídeo E2EE. Evita conversaciones sensibles en SMS o defaults sin cifrar.",
         "why": "el contenido de la llamada importa."
+      },
+      "cryptpad": {
+        "desc": "Docs, hojas y pizarras colaborativas de conocimiento cero — como Google Docs con E2EE. Autoalojable.",
+        "why": "necesitas colaboración en tiempo real sin suite ofimática Big Tech."
+      },
+      "android_apps": {
+        "desc": "NewPipe: frontend de YouTube sin anuncios, rastreo ni cuenta Google. Aurora Store: instala apps de Play de forma anónima. Prefiere builds de F-Droid.",
+        "why": "estás quitando Google de Android y aún necesitas vídeo o apps de Play."
       },
       "privydeck": {
         "desc": "Nuestro panel de privacidad personal. Puntuación de privacidad, bloqueo de rastreadores en móvil y navegador con un toque, bóveda cifrada (con saneado de archivos y limpieza segura integrados) y solicitudes de datos — sin Raspberry Pi.",
@@ -1646,18 +1738,18 @@
         "c1": "Instalar gestor de contraseñas y migrar cuentas críticas",
         "c2": "Activar 2FA (authenticator) en correo y banca",
         "c3": "Instalar Signal y sacar chats sensibles del SMS",
-        "c4": "Cambiar navegador predeterminado + uBlock Origin",
+        "c4": "Instala PrivyDeck y endurece el navegador (LibreWolf / Firefox + uBlock)",
         "c5": "Cambiar buscador lejos de Google",
         "c6": "Revisar permisos del móvil (ubicación, mic, cámara)",
         "c7": "Mover correo principal a Proton / Tuta (o endurecer el actual)",
         "c8": "Configurar VPN sin logs para viajes y Wi‑Fi público",
         "c9": "Cifrado de disco completo en todos los equipos y teléfonos",
         "c10": "Crear alias de correo para compras y newsletters",
-        "c11": "Nube cifrada o bóveda Cryptomator para archivos sensibles",
+        "c11": "Nube cifrada, Cryptomator/VeraCrypt o CryptPad para archivos sensibles",
         "c12": "Auditar privacidad y publicaciones en redes sociales",
         "c13": "Llave de seguridad hardware para cuentas críticas",
         "c14": "Dispositivos o perfiles separados para actividad de alto riesgo",
-        "c15": "Evaluar GrapheneOS / SO móvil endurecido",
+        "c15": "Evalúa GrapheneOS (Pixel) o LineageOS /e/OS",
         "c16": "Opt-outs de data brokers y buscadores de personas",
         "c17": "Backups offline/cifrados probados con restauración",
         "c18": "Modelo de amenaza personal por escrito (quién / qué / por qué)"
@@ -1823,22 +1915,26 @@
       "changelog_title": "Changelog",
       "changelog": {
         "e1": {
-          "date": "2026-07-18",
-          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
+          "date": "2026-07-22",
+          "text": "Añadidos SimpleX, Threema, LibreWolf, VeraCrypt, LineageOS /e/OS, CryptPad y NewPipe / Aurora Store. Rutas nivel 2–3 y checklist actualizadas."
         },
         "e2": {
           "date": "2026-07-18",
-          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
         },
         "e3": {
+          "date": "2026-07-18",
+          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+        },
+        "e4": {
           "date": "2026-07-01",
           "text": "Multi-language guide launch with curated apps and hardening paths."
         },
-        "e4": {
+        "e5": {
           "date": "2026-06-15",
           "text": "Added Vassbrekke product disclosures and Ours badges."
         },
-        "e5": {
+        "e6": {
           "date": "2026-06-01",
           "text": "Initial PrivGuide public draft."
         }
@@ -1922,8 +2018,8 @@
         "body": "Für Freelancer und alle, die einen echten privaten Stack wollen.",
         "1": "Proton- oder Tuta-Mail",
         "2": "Mullvad / Proton VPN im öffentlichen WLAN",
-        "3": "Verschlüsselte Cloud oder lokale Backups",
-        "4": "Gehärtetes Browserprofil",
+        "3": "Verschlüsselte Cloud, CryptPad-Docs oder lokale Backups",
+        "4": "LibreWolf oder Mullvad Browser + uBlock",
         "5": "Getrennte Arbeits-/Privatkonten",
         "cta": "Stack erkunden →"
       },
@@ -1931,11 +2027,11 @@
         "badge": "Level 3",
         "title": "Hohe Bedrohung",
         "body": "Für Aktivisten, Whistleblower und Hochrisiko-Ziele.",
-        "1": "GrapheneOS / de-Googletes Android",
+        "1": "GrapheneOS (Pixel) oder LineageOS /e/OS",
         "2": "Tor Browser für Recherche",
-        "3": "Kompartmentierte Geräte & VMs",
+        "3": "SimpleX oder Session für metadatenresistente Chats",
         "4": "Hardware-Sicherheitsschlüssel",
-        "5": "Opsec-Disziplin",
+        "5": "Opsec + kompartmentierte Geräte & VMs",
         "cta": "Handy härten →"
       }
     },
@@ -1953,6 +2049,14 @@
       "session": {
         "desc": "Keine Telefonnummer nötig. Onion-Routing gegen Metadaten. Stärkeres Anonymitätsmodell.",
         "why": "du identitätsarme Chats willst."
+      },
+      "simplex": {
+        "desc": "Keine Telefonnummer, E-Mail oder dauerhaften User-IDs. Einmal-Einladungslinks und Relays gegen Metadaten-Korrelation. Daten bleiben auf dem Gerät.",
+        "why": "du maximale Anonymität gegen Metadaten- und Korrelationsangriffe brauchst."
+      },
+      "threema": {
+        "desc": "Schweizer Messenger mit Einmalkauf — keine Telefonnummer oder E-Mail nötig. Volle E2EE mit Forward Secrecy; Open-Source-Apps und auditiertes Protokoll.",
+        "why": "du eine bezahlte, jurisdiktionsstarke Alternative ohne Werbe-Gratis-Modell willst."
       },
       "element": {
         "desc": "Föderierte E2EE-Räume, Bridges zu anderen Netzen. Self-Hosting möglich.",
@@ -1973,6 +2077,10 @@
       "mullvad_browser": {
         "desc": "Tor-Browser-Technik ohne Tor-Netz — gehärteter Firefox gegen Fingerprinting.",
         "why": "du ihn mit einem vertrauenswürdigen VPN koppelst."
+      },
+      "librewolf": {
+        "desc": "Gehärteter Firefox-Fork ohne Telemetrie und mit starken Anti-Fingerprinting-Defaults. Sehr guter Alltagsbrowser.",
+        "why": "du Firefox-Privatsphäre ohne about:config-Handarbeit willst."
       },
       "mullvad": {
         "desc": "Anonyme Konten (keine E-Mail), Bar/Krypto-Zahlung, auditiert, No-Logs-Ruf.",
@@ -2030,6 +2138,10 @@
         "desc": "Client-seitige Tresore über Dropbox, Google Drive oder Ordner. Vor dem Upload verschlüsseln.",
         "why": "du die aktuelle Cloud noch nicht verlassen kannst."
       },
+      "veracrypt": {
+        "desc": "Open-Source-Festplatten- und Container-Verschlüsselung für lokale Laufwerke und portable Tresore. Ganze Volumes oder versteckte Volumes.",
+        "why": "du starke lokale/Offline-Verschlüsselung jenseits von Cloud-Tresoren brauchst."
+      },
       "nextcloud": {
         "desc": "Self-Host Dateien und Kalender (Nextcloud) oder P2P-Sync ohne zentralen Server (Syncthing).",
         "why": "du die Big Cloud ganz verlassen willst."
@@ -2049,6 +2161,10 @@
       "graphene": {
         "desc": "Gehärtetes Android für Pixel. Beste mobile Security/Privacy-Haltung für Verbraucher heute.",
         "why": "Handy-Sicherheit nicht verhandelbar ist."
+      },
+      "lineage_eos": {
+        "desc": "Custom-Android-ROMs für Nicht-Pixel-Geräte. LineageOS (+ microG) oder /e/OS reduzieren Google-Dienste; nicht GrapheneOS-Härtegrad.",
+        "why": "dein Handy kein Pixel ist, du aber trotzdem ein de-Googeltes ROM willst."
       },
       "linux": {
         "desc": "Windows-Telemetrie hinter dir lassen. Fedora/Debian für den Alltag; Qubes für ernsthafte Kompartmentierung.",
@@ -2077,6 +2193,14 @@
       "calling": {
         "desc": "E2EE-Sprache/Video bevorzugen. Keine sensiblen Gespräche über SMS oder unverschlüsselte Defaults.",
         "why": "der Gesprächsinhalt zählt."
+      },
+      "cryptpad": {
+        "desc": "Zero-Knowledge-Kollaboration für Docs, Tabellen und Whiteboards — wie Google Docs mit E2EE. Self-hostbar.",
+        "why": "du Echtzeit-Kollaboration ohne Big-Tech-Office-Suite brauchst."
+      },
+      "android_apps": {
+        "desc": "NewPipe: YouTube-Frontend ohne Werbung, Tracking oder Google-Konto. Aurora Store: Play-Apps anonym installieren. F-Droid-Builds bevorzugen.",
+        "why": "du Android entgoogelst und trotzdem Video oder Play-Apps brauchst."
       },
       "privydeck": {
         "desc": "Unser persönliches Privacy-Dashboard. Privacy-Score, Ein-Tipp-Tracker-Block auf Handy und Browser, verschlüsselter Tresor (inkl. Dateibereinigung und sicherer Cleanup) und Datenanfragen — ohne Raspberry Pi.",
@@ -2265,18 +2389,18 @@
         "c1": "Passwortmanager installieren und kritische Konten migrieren",
         "c2": "2FA (Authenticator) für E-Mail und Banking aktivieren",
         "c3": "Signal installieren und sensible Chats von SMS wegholen",
-        "c4": "Standardbrowser wechseln + uBlock Origin",
+        "c4": "PrivyDeck installieren und Browser härten (LibreWolf / Firefox + uBlock)",
         "c5": "Suchmaschine weg von Google ändern",
         "c6": "Handy-Berechtigungen prüfen (Standort, Mikro, Kamera)",
         "c7": "Primäre E-Mail zu Proton / Tuta (oder härten)",
         "c8": "No-Logs-VPN für Reisen und öffentliches WLAN",
         "c9": "Vollverschlüsselung auf allen Computern und Handys",
         "c10": "E-Mail-Aliase für Shopping und Newsletter",
-        "c11": "Verschlüsselte Cloud oder Cryptomator-Tresor",
+        "c11": "Verschlüsselte Cloud, Cryptomator/VeraCrypt oder CryptPad für sensible Dateien",
         "c12": "Social-Media-Privatsphäre und öffentliche Posts prüfen",
         "c13": "Hardware-Sicherheitsschlüssel für kritische Konten",
         "c14": "Getrennte Geräte oder Profile für Hochrisiko-Aktivitäten",
-        "c15": "GrapheneOS / gehärtetes Mobile-OS evaluieren",
+        "c15": "GrapheneOS (Pixel) oder LineageOS /e/OS prüfen",
         "c16": "Data-Broker-Opt-outs und People-Search-Entfernungen",
         "c17": "Offline/verschlüsselte Backups mit Restore getestet",
         "c18": "Schriftliches persönliches Bedrohungsmodell"
@@ -2442,22 +2566,26 @@
       "changelog_title": "Changelog",
       "changelog": {
         "e1": {
-          "date": "2026-07-18",
-          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
+          "date": "2026-07-22",
+          "text": "SimpleX, Threema, LibreWolf, VeraCrypt, LineageOS /e/OS, CryptPad und NewPipe / Aurora Store hinzugefügt. Level-2–3-Pfade und Checkliste aktualisiert."
         },
         "e2": {
           "date": "2026-07-18",
-          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
         },
         "e3": {
+          "date": "2026-07-18",
+          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+        },
+        "e4": {
           "date": "2026-07-01",
           "text": "Multi-language guide launch with curated apps and hardening paths."
         },
-        "e4": {
+        "e5": {
           "date": "2026-06-15",
           "text": "Added Vassbrekke product disclosures and Ours badges."
         },
-        "e5": {
+        "e6": {
           "date": "2026-06-01",
           "text": "Initial PrivGuide public draft."
         }
@@ -2541,8 +2669,8 @@
         "body": "Pour freelances et quiconque veut un vrai stack privé.",
         "1": "E-mail Proton ou Tuta",
         "2": "VPN Mullvad / Proton sur Wi‑Fi public",
-        "3": "Cloud chiffré ou sauvegardes locales",
-        "4": "Profil navigateur renforcé",
+        "3": "Cloud chiffré, docs CryptPad ou sauvegardes locales",
+        "4": "LibreWolf ou Mullvad Browser + uBlock",
         "5": "Comptes pro / perso séparés",
         "cta": "Explorer le stack →"
       },
@@ -2550,11 +2678,11 @@
         "badge": "Niveau 3",
         "title": "Haute menace",
         "body": "Pour activistes, lanceurs d'alerte et cibles à haut risque.",
-        "1": "GrapheneOS / Android sans Google",
+        "1": "GrapheneOS (Pixel) ou LineageOS /e/OS",
         "2": "Tor Browser pour la recherche",
-        "3": "Appareils et VMs compartimentés",
+        "3": "SimpleX ou Session pour un chat résistant aux métadonnées",
         "4": "Clés de sécurité matérielles",
-        "5": "Discipline opsec",
+        "5": "Opsec + appareils et VMs compartimentés",
         "cta": "Renforcer le téléphone →"
       }
     },
@@ -2572,6 +2700,14 @@
       "session": {
         "desc": "Pas de numéro de téléphone. Résistance aux métadonnées via routage en oignon. Anonymat plus fort.",
         "why": "vous voulez un chat à faible identité."
+      },
+      "simplex": {
+        "desc": "Pas de téléphone, e-mail ni identifiants persistants. Liens d'invitation à usage unique et relais conçus contre la corrélation de métadonnées. Données sur l'appareil.",
+        "why": "vous avez besoin d'un anonymat maximal contre les métadonnées et la corrélation."
+      },
+      "threema": {
+        "desc": "Messagerie suisse à achat unique — sans téléphone ni e-mail. E2EE complète avec forward secrecy ; apps open source et protocole audité.",
+        "why": "vous voulez une alternative payante, forte en juridiction, sans modèle pub gratuit."
       },
       "element": {
         "desc": "Salles E2EE fédérées, ponts vers d'autres réseaux. Auto-hébergement possible.",
@@ -2592,6 +2728,10 @@
       "mullvad_browser": {
         "desc": "Tech Tor Browser sans le réseau Tor — Firefox renforcé anti-empreinte.",
         "why": "vous le couplez à un VPN de confiance."
+      },
+      "librewolf": {
+        "desc": "Fork Firefox durci sans télémétrie, avec anti-empreinte forte par défaut. Excellent navigateur du quotidien.",
+        "why": "vous voulez la privacy Firefox sans bricoler about:config."
       },
       "mullvad": {
         "desc": "Comptes anonymes (pas d'e-mail), paiement cash/crypto, audité, réputation no-logs.",
@@ -2649,6 +2789,10 @@
         "desc": "Coffres côté client sur Dropbox, Google Drive ou tout dossier. Chiffrez avant l'envoi.",
         "why": "vous ne pouvez pas encore quitter le cloud actuel."
       },
+      "veracrypt": {
+        "desc": "Chiffrement open source de disques et conteneurs pour lecteurs locaux et coffres portables. Volumes entiers ou volumes cachés.",
+        "why": "vous avez besoin d'un chiffrement local/hors ligne fort au-delà des coffres cloud."
+      },
       "nextcloud": {
         "desc": "Auto-hébergez fichiers et calendriers (Nextcloud) ou sync P2P sans serveur central (Syncthing).",
         "why": "vous êtes prêt à quitter le big cloud."
@@ -2668,6 +2812,10 @@
       "graphene": {
         "desc": "Android renforcé pour Pixel. Meilleure posture sécu/privacy mobile grand public aujourd'hui.",
         "why": "la sécurité du téléphone est non négociable."
+      },
+      "lineage_eos": {
+        "desc": "ROM Android custom pour appareils non-Pixel. LineageOS (+ microG) ou /e/OS réduisent Google ; pas au niveau GrapheneOS.",
+        "why": "votre téléphone n'est pas un Pixel mais vous voulez quand même une ROM sans Google."
       },
       "linux": {
         "desc": "Quittez la télémétrie Windows. Fedora/Debian au quotidien ; Qubes pour une compartimentation sérieuse.",
@@ -2696,6 +2844,14 @@
       "calling": {
         "desc": "Préférez voix/vidéo E2EE. Évitez les conversations sensibles en SMS ou défauts non chiffrés.",
         "why": "le contenu de l'appel compte."
+      },
+      "cryptpad": {
+        "desc": "Docs, feuilles et tableaux blancs collaboratifs zero-knowledge — comme Google Docs en E2EE. Auto-hébergeable.",
+        "why": "vous avez besoin de collaboration temps réel sans suite bureautique Big Tech."
+      },
+      "android_apps": {
+        "desc": "NewPipe : frontend YouTube sans pubs, tracking ni compte Google. Aurora Store : installer des apps Play anonymement. Préférez les builds F-Droid.",
+        "why": "vous dé-Googlez Android et avez encore besoin de vidéo ou d'apps Play."
       },
       "privydeck": {
         "desc": "Notre tableau de bord de confidentialité. Score privacy, blocage des trackers en un tap sur téléphone et navigateur, coffre chiffré (assainissement de fichiers et nettoyage sécurisé intégrés) et demandes d'accès aux données — sans Raspberry Pi.",
@@ -2884,18 +3040,18 @@
         "c1": "Installer un gestionnaire de mots de passe et migrer les comptes critiques",
         "c2": "Activer la 2FA (authenticator) pour e-mail et banque",
         "c3": "Installer Signal et sortir les chats sensibles du SMS",
-        "c4": "Changer de navigateur par défaut + uBlock Origin",
+        "c4": "Installer PrivyDeck et durcir le navigateur (LibreWolf / Firefox + uBlock)",
         "c5": "Changer de moteur de recherche hors Google",
         "c6": "Revoir les permissions téléphone (localisation, micro, caméra)",
         "c7": "Passer l'e-mail principal à Proton / Tuta (ou le renforcer)",
         "c8": "VPN sans logs pour voyages et Wi‑Fi public",
         "c9": "Chiffrement disque complet sur tous les appareils",
         "c10": "Créer des alias e-mail pour achats et newsletters",
-        "c11": "Cloud chiffré ou coffre Cryptomator pour fichiers sensibles",
+        "c11": "Cloud chiffré, Cryptomator/VeraCrypt ou CryptPad pour les fichiers sensibles",
         "c12": "Auditer vie privée et posts publics des réseaux sociaux",
         "c13": "Clé de sécurité matérielle pour comptes critiques",
         "c14": "Appareils ou profils séparés pour activité à haut risque",
-        "c15": "Évaluer GrapheneOS / OS mobile renforcé",
+        "c15": "Évaluer GrapheneOS (Pixel) ou LineageOS /e/OS",
         "c16": "Opt-outs data brokers et suppressions people-search",
         "c17": "Sauvegardes offline/chiffrées testées avec restauration",
         "c18": "Modèle de menace personnel écrit (qui / quoi / pourquoi)"
@@ -3061,22 +3217,26 @@
       "changelog_title": "Changelog",
       "changelog": {
         "e1": {
-          "date": "2026-07-18",
-          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
+          "date": "2026-07-22",
+          "text": "Ajout de SimpleX, Threema, LibreWolf, VeraCrypt, LineageOS /e/OS, CryptPad et NewPipe / Aurora Store. Chemins niveaux 2–3 et checklist mis à jour."
         },
         "e2": {
           "date": "2026-07-18",
-          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+          "text": "Published Trust page (ownership, conflicts, methodology, transparency). Moved Ours listings after independent tools; clearer disclosures."
         },
         "e3": {
+          "date": "2026-07-18",
+          "text": "Removed Google Fonts; use system/local stacks to avoid third-party font requests."
+        },
+        "e4": {
           "date": "2026-07-01",
           "text": "Multi-language guide launch with curated apps and hardening paths."
         },
-        "e4": {
+        "e5": {
           "date": "2026-06-15",
           "text": "Added Vassbrekke product disclosures and Ours badges."
         },
-        "e5": {
+        "e6": {
           "date": "2026-06-01",
           "text": "Initial PrivGuide public draft."
         }

@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from trust_page import render_trust_page  # noqa: E402
 SITE_URL = "https://www.privguide.com"
-DEFAULT_REVIEWED = "2026-07-18"
+DEFAULT_REVIEWED = "2026-07-22"
 CORRECTIONS_URL = "https://github.com/N0L0g1c/PrivGuide/issues"
 LANGS = ["en", "no", "es", "de", "fr"]
 LANG_NAMES = {
@@ -73,6 +73,26 @@ APPS = [
         "pills": [("good", "No phone #"), ("", "Cross-platform")],
     },
     {
+        "id": "simplex",
+        "cat": "messaging",
+        "icon": "🔗",
+        "tag": "Messaging",
+        "name": "SimpleX Chat",
+        "url": "https://simplex.chat",
+        "host": "simplex.chat",
+        "pills": [("good", "No user IDs"), ("", "iOS · Android · Desktop")],
+    },
+    {
+        "id": "threema",
+        "cat": "messaging",
+        "icon": "🇨🇭",
+        "tag": "Messaging",
+        "name": "Threema",
+        "url": "https://threema.ch",
+        "host": "threema.ch",
+        "pills": [("good", "Swiss · Paid"), ("", "iOS · Android · Desktop")],
+    },
+    {
         "id": "element",
         "cat": "messaging",
         "icon": "⬡",
@@ -121,6 +141,16 @@ APPS = [
         "url": "https://mullvad.net/browser",
         "host": "mullvad.net/browser",
         "pills": [("", "Anti-fingerprint"), ("", "Desktop")],
+    },
+    {
+        "id": "librewolf",
+        "cat": "browser",
+        "icon": "🐺",
+        "tag": "Browser",
+        "name": "LibreWolf",
+        "url": "https://librewolf.net",
+        "host": "librewolf.net",
+        "pills": [("good", "Hardened defaults"), ("", "Desktop")],
     },
     {
         "id": "mullvad",
@@ -267,6 +297,16 @@ APPS = [
         "pills": [("good", "Works with any cloud"), ("", "Desktop · Mobile")],
     },
     {
+        "id": "veracrypt",
+        "cat": "storage",
+        "icon": "📦",
+        "tag": "Storage",
+        "name": "VeraCrypt",
+        "url": "https://www.veracrypt.fr",
+        "host": "veracrypt.fr",
+        "pills": [("good", "Local containers"), ("", "Desktop")],
+    },
+    {
         "id": "nextcloud",
         "cat": "storage",
         "icon": "🏠",
@@ -317,6 +357,18 @@ APPS = [
         "url": "https://grapheneos.org",
         "host": "grapheneos.org",
         "pills": [("good", "Highest bar"), ("", "Pixel only")],
+    },
+    {
+        "id": "lineage_eos",
+        "cat": "os",
+        "icon": "📲",
+        "tag": "Mobile OS",
+        "name": "LineageOS /e/OS",
+        "url": "https://lineageos.org",
+        "host": "lineageos.org",
+        "url2": "https://e.foundation",
+        "host2": "e.foundation",
+        "pills": [("", "Non-Pixel option"), ("", "Android")],
     },
     {
         "id": "linux",
@@ -407,6 +459,28 @@ APPS = [
         "url2": "https://jitsi.org",
         "host2": "jitsi.org",
         "pills": [("", "E2EE options"), ("", "Mobile · Desktop")],
+    },
+    {
+        "id": "cryptpad",
+        "cat": "extra",
+        "icon": "📄",
+        "tag": "Productivity",
+        "name": "CryptPad",
+        "url": "https://cryptpad.org",
+        "host": "cryptpad.org",
+        "pills": [("good", "E2EE collab"), ("", "Self-hostable")],
+    },
+    {
+        "id": "android_apps",
+        "cat": "extra",
+        "icon": "▶️",
+        "tag": "Android",
+        "name": "NewPipe / Aurora Store",
+        "url": "https://newpipe.net",
+        "host": "newpipe.net",
+        "url2": "https://auroraoss.com",
+        "host2": "auroraoss.com",
+        "pills": [("good", "No Google account"), ("", "Android · F-Droid")],
     },
     # —— Vassbrekke AS / VassDev (disclosed; listed after independent tools) ——
     {
