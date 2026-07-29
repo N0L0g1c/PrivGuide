@@ -252,9 +252,16 @@
   }
 
   // ---------- Language ----------
+  const ALLOWED_LANGS = new Set(["en", "no", "es", "de", "fr"]);
+  function normalizeLangTag(value) {
+    if (typeof value !== "string") return null;
+    const normalized = value.trim().toLowerCase();
+    return ALLOWED_LANGS.has(normalized) ? normalized : null;
+  }
+
   document.querySelectorAll(".lang-option").forEach((link) => {
     link.addEventListener("click", () => {
-      const lang = link.getAttribute("data-lang");
+      const lang = normalizeLangTag(link.getAttribute("data-lang"));
       if (lang) {
         try {
           localStorage.setItem(LANG_KEY, lang);
@@ -270,9 +277,9 @@
       if (sessionStorage.getItem("privguide-lang-checked")) return;
       sessionStorage.setItem("privguide-lang-checked", "1");
       if (document.documentElement.lang !== "en") return;
-      const saved = localStorage.getItem(LANG_KEY);
+      const saved = normalizeLangTag(localStorage.getItem(LANG_KEY));
       if (saved && saved !== "en") {
-        window.location.replace(`${saved}/index.html`);
+        window.location.replace(`${encodeURIComponent(saved)}/index.html`);
       }
     } catch {
       /* ignore */
