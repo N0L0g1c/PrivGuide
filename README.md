@@ -8,7 +8,7 @@ A multi-language privacy guide covering recommended apps, everyday privacy pract
 
 PrivGuide is **owned and hosted by [Vassbrekke AS](https://www.vassbrekke.no)** (Haugesund, Norway), makers of [PrivyDeck](https://privydeck.com) and [PrivBeacon](https://www.privbeacon.com). Source code is published under the [N0L0g1c](https://github.com/N0L0g1c) GitHub organization.
 
-Copyright: **N0L0g1c** and **Vassbrekke AS** — see [`LICENSE`](LICENSE) (MIT).
+Copyright: **Vassbrekke AS** — see [`LICENSE`](LICENSE) (MIT).
 
 Trust, conflicts of interest, and methodology: [privguide.com/trust](https://www.privguide.com/trust/)
 
@@ -86,6 +86,6 @@ App metadata lives in `scripts/build_site.py` (`APPS`). Descriptions and Trust c
 
 ## License
 
-Released under the [MIT License](LICENSE). Copyright © 2026 N0L0g1c and Vassbrekke AS.
+Released under the [MIT License](LICENSE). Copyright © 2026 Vassbrekke AS.
 
 Listed tools and brands are trademarks of their respective owners — no affiliation implied unless marked **Ours**.
