@@ -14,7 +14,7 @@ Trust, conflicts of interest, and methodology: [privguide.com/trust](https://www
 
 ## Issues & corrections
 
-Report problems, suggest corrections, or request content changes via **[GitHub issues](https://github.com/N0L0g1c/PrivGuide/issues)**.
+Report problems, suggest corrections, or request content changes via **[GitHub issues](https://github.com/N0L0g1c/PrivGuide/issues)**. Questions and ideas: **[GitHub Discussions](https://github.com/N0L0g1c/PrivGuide/discussions)**.
 
 Company contact: [vassbrekke.no](https://www.vassbrekke.no) · [contact@vassbrekke.no](mailto:contact@vassbrekke.no)
 

@@ -7,6 +7,7 @@ from html import escape as esc
 from typing import Callable
 
 CORRECTIONS_URL = "https://github.com/N0L0g1c/PrivGuide/issues"
+DISCUSSIONS_URL = "https://github.com/N0L0g1c/PrivGuide/discussions"
 COMPANY_URL = "https://www.vassbrekke.no"
 
 
@@ -267,7 +268,8 @@ def render_trust_page(
           <li><a href="{home}#paths">{t(tr, lang, "nav.paths")}</a></li>
           <li><a href="{home}#checklist">{t(tr, lang, "nav.checklist")}</a></li>
           <li><a href="{home}#faq">{t(tr, lang, "faq.title")}</a></li>
-          <li><a href="{CORRECTIONS_URL}" target="_blank" rel="noopener noreferrer">GitHub issues</a></li>
+          <li><a href="{CORRECTIONS_URL}" target="_blank" rel="noopener noreferrer">{t(tr, lang, "footer.issues")}</a></li>
+          <li><a href="{DISCUSSIONS_URL}" target="_blank" rel="noopener noreferrer">{t(tr, lang, "footer.discussions")}</a></li>
           <li><a href="{home}#donate">{t(tr, lang, "donate.nav")}</a></li>
         </ul>
       </div>

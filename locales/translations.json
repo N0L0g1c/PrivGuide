@@ -535,7 +535,9 @@
       "built": "Built for humans who want their lives back",
       "privacy": "No trackers · No accounts · No Google Fonts · Local checklist only",
       "owned_by": "Hosted and owned by Vassbrekke AS.",
-      "trust": "Trust & conflicts"
+      "trust": "Trust & conflicts",
+      "issues": "GitHub issues",
+      "discussions": "GitHub Discussions"
     },
     "ours": {
       "badge": "Conflict of interest — disclosed",
@@ -1186,7 +1188,9 @@
       "built": "Bygget for mennesker som vil ha livet sitt tilbake",
       "privacy": "Ingen sporere · Ingen kontoer · Ingen Google Fonts · Kun lokal sjekkliste",
       "owned_by": "Hostes og eies av Vassbrekke AS.",
-      "trust": "Tillit og interessekonflikter"
+      "trust": "Tillit og interessekonflikter",
+      "issues": "GitHub-saker",
+      "discussions": "GitHub Discussions"
     },
     "ours": {
       "badge": "Interessekonflikt — opplyst",
@@ -1837,7 +1841,9 @@
       "built": "Hecho para personas que quieren recuperar su vida",
       "privacy": "Sin rastreadores · Sin cuentas · Sin Google Fonts · Lista solo local",
       "owned_by": "Alojado y propiedad de Vassbrekke AS.",
-      "trust": "Confianza y conflictos"
+      "trust": "Confianza y conflictos",
+      "issues": "Issues de GitHub",
+      "discussions": "GitHub Discussions"
     },
     "ours": {
       "badge": "Conflicto de interés — declarado",
@@ -2488,7 +2494,9 @@
       "built": "Für Menschen, die ihr Leben zurückwollen",
       "privacy": "Keine Tracker · Keine Konten · Keine Google Fonts · Checkliste nur lokal",
       "owned_by": "Gehostet und im Besitz von Vassbrekke AS.",
-      "trust": "Vertrauen & Konflikte"
+      "trust": "Vertrauen & Konflikte",
+      "issues": "GitHub Issues",
+      "discussions": "GitHub Discussions"
     },
     "ours": {
       "badge": "Interessenkonflikt — offengelegt",
@@ -3139,7 +3147,9 @@
       "built": "Fait pour les humains qui veulent récupérer leur vie",
       "privacy": "Pas de trackers · Pas de comptes · Pas de Google Fonts · Checklist locale seulement",
       "owned_by": "Hébergé et détenu par Vassbrekke AS.",
-      "trust": "Confiance et conflits"
+      "trust": "Confiance et conflits",
+      "issues": "Issues GitHub",
+      "discussions": "GitHub Discussions"
     },
     "ours": {
       "badge": "Conflit d’intérêts — déclaré",

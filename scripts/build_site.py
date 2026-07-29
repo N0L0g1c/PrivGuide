@@ -14,6 +14,7 @@ from trust_page import render_trust_page  # noqa: E402
 SITE_URL = "https://www.privguide.com"
 DEFAULT_REVIEWED = "2026-07-22"
 CORRECTIONS_URL = "https://github.com/N0L0g1c/PrivGuide/issues"
+DISCUSSIONS_URL = "https://github.com/N0L0g1c/PrivGuide/discussions"
 LANGS = ["en", "no", "es", "de", "fr"]
 LANG_NAMES = {
     "en": "English",
@@ -1452,7 +1453,8 @@ def render_page(lang: str, tr: dict) -> str:
           <li><a href="#paths">{t(tr, lang, "nav.paths")}</a></li>
           <li><a href="#checklist">{t(tr, lang, "nav.checklist")}</a></li>
           <li><a href="#faq">{t(tr, lang, "faq.title")}</a></li>
-          <li><a href="{CORRECTIONS_URL}" target="_blank" rel="noopener noreferrer">GitHub issues</a></li>
+          <li><a href="{CORRECTIONS_URL}" target="_blank" rel="noopener noreferrer">{t(tr, lang, "footer.issues")}</a></li>
+          <li><a href="{DISCUSSIONS_URL}" target="_blank" rel="noopener noreferrer">{t(tr, lang, "footer.discussions")}</a></li>
           <li><a href="#donate">{t(tr, lang, "donate.nav")}</a></li>
         </ul>
       </div>
