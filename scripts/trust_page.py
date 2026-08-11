@@ -279,8 +279,14 @@ def render_trust_page(
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© <span id="year"></span> <a href="{COMPANY_URL}" target="_blank" rel="noopener noreferrer">Vassbrekke AS</a> · PrivGuide · {t(tr, lang, "footer.built")}</p>
-      <p class="footer-privacy">{t(tr, lang, "footer.privacy")}</p>
+      <div class="footer-bottom-meta">
+        <p>© <span id="year"></span> <a href="{COMPANY_URL}" target="_blank" rel="noopener noreferrer">Vassbrekke AS</a> · PrivGuide · {t(tr, lang, "footer.built")}</p>
+        <p class="footer-privacy">{t(tr, lang, "footer.privacy")}</p>
+      </div>
+      <!-- PrivBeacon Certified Private Badge -->
+      <a class="privbeacon-badge" href="https://privbeacon.com/verify/cmsp6uvg00005zqdcg2zwvx6z" target="_blank" rel="noopener noreferrer">
+        <img src="https://privbeacon.com/api/badge/png?siteId=cmsp6uvg00005zqdcg2zwvx6z" alt="PrivBeacon Certified Private — Score 99/100" width="168" height="54" />
+      </a>
     </div>
   </footer>
   <script src="{js_main}" defer></script>
