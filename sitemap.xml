@@ -3,6 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.privguide.com/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
       <xhtml:link rel="alternate" hreflang="en" href="https://www.privguide.com/"/>
@@ -14,6 +15,7 @@
   </url>
   <url>
     <loc>https://www.privguide.com/no/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
       <xhtml:link rel="alternate" hreflang="en" href="https://www.privguide.com/"/>
@@ -25,6 +27,7 @@
   </url>
   <url>
     <loc>https://www.privguide.com/es/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
       <xhtml:link rel="alternate" hreflang="en" href="https://www.privguide.com/"/>
@@ -36,6 +39,7 @@
   </url>
   <url>
     <loc>https://www.privguide.com/de/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
       <xhtml:link rel="alternate" hreflang="en" href="https://www.privguide.com/"/>
@@ -47,6 +51,7 @@
   </url>
   <url>
     <loc>https://www.privguide.com/fr/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
       <xhtml:link rel="alternate" hreflang="en" href="https://www.privguide.com/"/>
@@ -58,6 +63,7 @@
   </url>
   <url>
     <loc>https://www.privguide.com/trust/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
       <xhtml:link rel="alternate" hreflang="en" href="https://www.privguide.com/trust/"/>
@@ -69,6 +75,7 @@
   </url>
   <url>
     <loc>https://www.privguide.com/no/trust/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="en" href="https://www.privguide.com/trust/"/>
@@ -80,6 +87,7 @@
   </url>
   <url>
     <loc>https://www.privguide.com/es/trust/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="en" href="https://www.privguide.com/trust/"/>
@@ -91,6 +99,7 @@
   </url>
   <url>
     <loc>https://www.privguide.com/de/trust/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="en" href="https://www.privguide.com/trust/"/>
@@ -102,6 +111,7 @@
   </url>
   <url>
     <loc>https://www.privguide.com/fr/trust/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="en" href="https://www.privguide.com/trust/"/>

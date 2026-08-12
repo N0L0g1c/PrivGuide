@@ -3,3 +3,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.privguide.com/sitemap.xml
+
+# Optional AI/site summary
+# https://www.privguide.com/llms.txt

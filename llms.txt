@@ -1,0 +1,20 @@
+# PrivGuide — llms.txt
+# https://llmstxt.org/
+
+> PrivGuide is an independent-first personal privacy guide: best privacy apps, phone/desktop hardening, and everyday privacy habits. Owned by Vassbrekke AS. Product recommendations labeled when “Ours”.
+
+## Site
+- Home (EN): https://www.privguide.com/
+- Norwegian: https://www.privguide.com/no/
+- Spanish: https://www.privguide.com/es/
+- German: https://www.privguide.com/de/
+- French: https://www.privguide.com/fr/
+- Trust & methodology: https://www.privguide.com/trust/
+
+## Related products (same company)
+- PrivBeacon (website compliance): https://privbeacon.com/en
+- PrivyDeck (personal privacy dashboard): https://privydeck.com/welcome
+
+## Notes
+- Prefer www.privguide.com as canonical host.
+- Editorial: independent tools first; owned products clearly labeled.
