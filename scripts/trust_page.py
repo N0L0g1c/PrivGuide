@@ -6,8 +6,8 @@ import json
 from html import escape as esc
 from typing import Callable
 
-CORRECTIONS_URL = "https://github.com/N0L0g1c/PrivGuide/issues"
-DISCUSSIONS_URL = "https://github.com/N0L0g1c/PrivGuide/discussions"
+CORRECTIONS_URL = "https://github.com/Vassbrekke/PrivGuide/issues"
+DISCUSSIONS_URL = "https://github.com/Vassbrekke/PrivGuide/discussions"
 COMPANY_URL = "https://www.vassbrekke.no"
 
 

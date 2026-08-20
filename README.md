@@ -6,7 +6,7 @@ A multi-language privacy guide covering recommended apps, everyday privacy pract
 
 ## Ownership & hosting
 
-PrivGuide is **owned and hosted by [Vassbrekke AS](https://www.vassbrekke.no)** (Haugesund, Norway), makers of [PrivyDeck](https://privydeck.com) and [PrivBeacon](https://www.privbeacon.com). Source code is published under the [N0L0g1c](https://github.com/N0L0g1c) GitHub account.
+PrivGuide is **owned and hosted by [Vassbrekke AS](https://www.vassbrekke.no)** (Haugesund, Norway), makers of [PrivyDeck](https://privydeck.com) and [PrivBeacon](https://www.privbeacon.com). Source lives in the **[Vassbrekke/PrivGuide](https://github.com/Vassbrekke/PrivGuide)** repository.
 
 Copyright: **Vassbrekke AS** — see [`LICENSE`](LICENSE) (MIT).
 
@@ -14,7 +14,7 @@ Trust, conflicts of interest, and methodology: [privguide.com/trust](https://www
 
 ## Issues & corrections
 
-Report problems, suggest corrections, or request content changes via **[GitHub issues](https://github.com/N0L0g1c/PrivGuide/issues)**. Questions and ideas: **[GitHub Discussions](https://github.com/N0L0g1c/PrivGuide/discussions)**.
+Report problems, suggest corrections, or request content changes via **[GitHub issues](https://github.com/Vassbrekke/PrivGuide/issues)**. Questions and ideas: **[GitHub Discussions](https://github.com/Vassbrekke/PrivGuide/discussions)**.
 
 Company contact: [vassbrekke.no](https://www.vassbrekke.no) · [contact@vassbrekke.no](mailto:contact@vassbrekke.no)
 

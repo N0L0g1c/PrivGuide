@@ -13,8 +13,8 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from trust_page import render_trust_page  # noqa: E402
 SITE_URL = "https://www.privguide.com"
 DEFAULT_REVIEWED = "2026-07-22"
-CORRECTIONS_URL = "https://github.com/N0L0g1c/PrivGuide/issues"
-DISCUSSIONS_URL = "https://github.com/N0L0g1c/PrivGuide/discussions"
+CORRECTIONS_URL = "https://github.com/Vassbrekke/PrivGuide/issues"
+DISCUSSIONS_URL = "https://github.com/Vassbrekke/PrivGuide/discussions"
 LANGS = ["en", "no", "es", "de", "fr"]
 LANG_NAMES = {
     "en": "English",
